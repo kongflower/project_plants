@@ -4,11 +4,20 @@ Ext.define('plants.controller.searchController', {
     	refs: {
     		mainView: '#mainView',
     		searchPlants: '#searchPlants',
+    		detailResult: 'detailResult',
+    		overlay: 'overlay',
         },
         control: {
         	"[action=movePage]": {
                 tap: 'onMovePage'
             },
+            "[action=showSelect]": {
+            	tap: 'onShowSelect'
+            },
+            'detailResult':{
+				itemtap : 'resultListTap'
+			},
+			
         }
     },
     
@@ -16,6 +25,14 @@ Ext.define('plants.controller.searchController', {
     	this.getMainView().push(button.value);
     	//this.getMainView().animateActiveItem(button.value, { type: "slide", direction: "left" });
     	console.log('plants');
+    },
+    
+    resultListTap:function(list, index, target,record, e, eOpts){
+    	this.getMainView().push({xtype: 'resultInfo'});
+    },
+    
+    onShowSelect: function(button, e, options){
+    	this.getOverlay().show();
     }
 
 });

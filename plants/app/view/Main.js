@@ -8,6 +8,9 @@ Ext.define("plants.view.Main", {
         items: [
              {
             	 xtype: 'plantsMain' //0
+             },
+             {
+            	 xtype: 'overlay'
              }
         ]
     }

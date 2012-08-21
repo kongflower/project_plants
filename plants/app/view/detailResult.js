@@ -1,19 +1,17 @@
 Ext.define('plants.view.detailResult',{
-	extend : 'Ext.Panel',
+	extend : 'Ext.List',
 	xtype: 'detailResult',
 	
-	config : {
+	requires : [
+	  	      'Ext.dataview.List',
+	  	      'Ext.data.proxy.JsonP',
+	  	      'Ext.data.Store'
+	],
+	config:{
 		title : 'detailResult',
-		
-		scrollable:true,
-		styleHtmlContent:true,
-		
-		items: [
-		    {
-		    	xtype : 'list', 	
-		    }
-		],
-		
-		html : [ '<h2>detailResult</h2>' ].join("")
+		fullscreen 	: true,
+		itemTpl 	:'{title}',
+		store 		:  'List',
+	
 	}
 });

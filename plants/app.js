@@ -19,6 +19,8 @@ Ext.Loader.setConfig({
 
 Ext.application({
     
+	stores: ['List'],
+	
     views: [
         'Main',
         'plantsMain',
@@ -28,7 +30,8 @@ Ext.application({
         'galleryBoard',
         'galleryPreview',
         'galleryWrite',
-        'myPage'
+        'myPage',
+        'overlaySelect'
     ],
     name: 'plants',
     controllers: [
