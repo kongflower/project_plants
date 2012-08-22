@@ -8,7 +8,15 @@ Ext.define('plants.view.myPage',{
 		scrollable:true,
 		styleHtmlContent:true,
 		
-		items: [],
+		items: [
+			{
+				xtype: 'button',
+				id : 'buttonboardInput',
+				text: '새글쓰기',
+				value: {xtype: 'boardInput'},
+				action: 'movePage'
+			}
+		],
 		
 		html : [ '<h2>myPage</h2>' ].join("")
 	}
