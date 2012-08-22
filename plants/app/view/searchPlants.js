@@ -3,6 +3,8 @@ Ext.define('plants.view.searchPlants',{
 	xtype 	: 'searchPlants',
 	id 		: 'searchPlants',
 	
+	requires: ["Ext.Img"],
+	
 	config : {
 		title   : 'searchPlants',
 		

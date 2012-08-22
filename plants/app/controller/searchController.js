@@ -23,8 +23,7 @@ Ext.define('plants.controller.searchController', {
     
     onMovePage : function(button, e, options){
     	this.getMainView().push(button.value);
-    	//this.getMainView().animateActiveItem(button.value, { type: "slide", direction: "left" });
-    	console.log('plants');
+    	console.log('plants' + button.value);
     },
     
     resultListTap:function(list, index, target,record, e, eOpts){

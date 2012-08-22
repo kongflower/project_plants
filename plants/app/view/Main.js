@@ -1,8 +1,9 @@
 Ext.define("plants.view.Main", {
 	extend: 'Ext.navigation.View',
+	
 
     config: {
-        id: 'mainView',
+    	id: 'mainView',
         autoDestroy: true,
       
         items: [

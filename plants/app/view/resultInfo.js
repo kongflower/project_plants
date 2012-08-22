@@ -2,6 +2,12 @@ Ext.define('plants.view.resultInfo',{
 	extend : 'Ext.Panel',
 	xtype: 'resultInfo',
 	
+	requires: [
+	       'Ext.Img',
+	       'Ext.Label',
+	       'Ext.field.Text'
+	],
+	
 	config : {
 		title : 'resultInfo',
 		
