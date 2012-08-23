@@ -31,13 +31,13 @@ Ext.define('plants.view.searchPlants',{
 		    		    xtype 	: 'button',
 		    		    id  	: 'buttonLeaf',
 		   			    text  	: '잎',
-		   			    action: 'showSelect'
+		   			    action 	: 'showSelect'
 		   		    },
 		    		{
 		   		        xtype 	: 'button',
 		    		    id  	: 'buttonFlower',
 		    		    text  	: '꽃',
-		    		    action: 'showSelect'
+		    		    action 	: 'showSelect'
 		    		},
 		    	    {
 		    			xtype 	: 'button',
@@ -55,33 +55,58 @@ Ext.define('plants.view.searchPlants',{
 		        ],
 		    },
 		    {
-		    	xtype 	: 'panel',
-		    	layout 	: {type:'hbox', align:'stretch',pack:'center'},
-		    	width 	: '90%',
-		    	defaults: {flex:1, margin  : '22 4 22 4'},
-		    	items:[
-		    	    {
-		    	    	xtype 	: 'img',
-				    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		    	    },
-		    	    {
-		    	    	xtype 	: 'img',
-		    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		    	    },
-		    	    {
-		    	    	xtype 	: 'img',
-		    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		    	    },
-		    	    {
-		    	    	xtype 	: 'img',
-		    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		    	    },
-		    	    {
-		    	    	xtype 	: 'img',
-		    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		    	    }
-		    	],
-		    },
+		    	 xtype:'panel',
+		    	 width:'90%',
+		    	 layout 	: {type:'hbox', align:'stretch',pack:'center'},
+			     defaults: {width: '65px', margin  : '0 4 10 4'},
+		    	 scrollable: {
+		    		 direction: 'horizontal',
+		    		 directionLock: true
+		    	 },
+		    	 
+		    	 items:[
+			    	    {
+			    	    	xtype 	: 'img',
+					    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	    {
+			    	    	xtype 	: 'img',
+			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    },
+			    	],
+		    }
 		],
 	}
 });

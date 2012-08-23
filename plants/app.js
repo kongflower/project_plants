@@ -32,11 +32,15 @@ Ext.application({
         'galleryWrite',
         'myPage',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'overlaySelect'
 =======
         'testPage',
         'boardInput' 
 >>>>>>> page add
+=======
+        'overlaySelect',
+>>>>>>> add scroll
     ],
     name: 'plants',
     controllers: [
