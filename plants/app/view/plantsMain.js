@@ -3,9 +3,10 @@ Ext.define('plants.view.plantsMain',{
 	xtype: 'plantsMain',
 	
 	config : {
-		layout: {type:"vbox", align:'stretch'},
+		layout 	: {type:"vbox", align:'stretch'},
+		id 		:'plantsMain',
 		defaults: {flex:1},
-		items: [
+		items 	: [
 		        {
 		        	xtype  	: 'button',
 		        	text 	: '식물찾기',
