@@ -1,6 +1,8 @@
 Ext.define('plants.view.MyPage01', {
     extend: 'Ext.Panel',
     xtype: 'mypage01',
+    
+    requires: ['Ext.SegmentedButton'],
 
     config: {
         items: [

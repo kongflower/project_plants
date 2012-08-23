@@ -23,27 +23,13 @@ Ext.define('plants.view.plantsMain',{
 		        	flex 	: 10,
 		        },
 		        {
-<<<<<<< HEAD
-		        	xtype: 'button',
-		        	id : 'buttonMypage',
-		        	text: '마이',
-		        	value: {xtype: 'myPage'},
-		        	action: 'movePage'
-		        },
-		        {
-=======
->>>>>>> Add Page 2012.8.23
-					xtype: 'button',
-					id : 'buttonMyPage01',
+					xtype 	: 'button',
+					id  	: 'buttonMyPage01',
 					//cls: 'btnAction',
-					text: '마이페이지',
-					value: {xtype: 'mypage01'},
-					action: 'movePage'
+					text 	: '마이페이지',
+					value 	: {xtype: 'mypage01'},
+					action 	: 'movePage'
 				}
-<<<<<<< HEAD
-=======
-
->>>>>>> Add Page 2012.8.23
 		]
 	}
 });
