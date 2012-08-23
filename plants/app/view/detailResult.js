@@ -12,6 +12,5 @@ Ext.define('plants.view.detailResult',{
 		fullscreen 	: true,
 		itemTpl 	:'{title}',
 		store 		:  'List',
-	
 	}
 });

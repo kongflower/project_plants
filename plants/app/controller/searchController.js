@@ -23,8 +23,11 @@ Ext.define('plants.controller.searchController', {
     },
     
     onMovePage : function(button, e, options){
-    	this.getMainView().push(button.value);
-    	console.log('plants' + button.value);
+//    	if(button.getItemId() == 'searchPlants'){
+//    		this.getMainView().push(button.value);
+//    	}
+    	this.getMainView().push({xtype: button.getItemId()});
+    	console.log('plants  :  ' + button.getItemId());
     },
     
     resultListTap:function(list, index, target,record, e, eOpts){

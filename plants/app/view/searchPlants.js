@@ -23,6 +23,7 @@ Ext.define('plants.view.searchPlants',{
 //		    	]
 		    	
 		    	xtype 	: 'img',
+		    	itemId 	: 'resultInfo',
 		   	    width 	: '95%',
 		   	    height 	: '70%',
 		   	   	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
@@ -60,6 +61,7 @@ Ext.define('plants.view.searchPlants',{
 		    		{
 		    			xtype 	: 'button',
 		    			id  	: 'buttonGoDetail',
+		    			itemId 	: 'detailResult',
 		    			text  	: 'Detail',
 		    			value 	: {xtype: 'detailResult'},
 		    			action 	: 'movePage',

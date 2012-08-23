@@ -8,8 +8,9 @@ Ext.define('plants.view.plantsMain',{
 		items: [
 		        {
 		        	xtype  	: 'button',
-		        	id  	: 'buttonSearch',
 		        	text 	: '식물찾기',
+		        	id 		: 'buttonSearch',
+		        	itemId 	: 'searchPlants',
 		        	value 	: {xtype: 'searchPlants'},
 		        	action 	: 'movePage',
 		        	flex 	: 10,
@@ -17,6 +18,7 @@ Ext.define('plants.view.plantsMain',{
 		        {
 		        	xtype 	: 'button',
 		        	id  	: 'buttonGallery',
+		        	itemId 	: 'galleryBoard',
 		        	text 	: '갤러리',
 		        	value 	: {xtype: 'galleryBoard'},
 		        	action 	: 'movePage',
@@ -25,6 +27,7 @@ Ext.define('plants.view.plantsMain',{
 		        {
 					xtype 	: 'button',
 					id  	: 'buttonMyPage01',
+					itemId 	: 'mypage01',
 					//cls: 'btnAction',
 					text 	: '마이페이지',
 					value 	: {xtype: 'mypage01'},
