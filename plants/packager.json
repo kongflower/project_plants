@@ -11,7 +11,7 @@
 	 * @cfg {String} applicationId
 	 * This is the name namespace for your application. On IOS, this should match the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationId":"com.dev5.plantsok",
+	"applicationId":"com.dev5.plants",
 
 	/**
 	 * @cfg {String} versionString
@@ -104,7 +104,7 @@
 	 * @cfg {String} sdkPath
 	 * This is the path to the Android SDK, if you are developing an Android application.
 	 */
-	"sdkPath":"/Users/sinduhwa/hybrid2/android-sdk-macosx",
+	"sdkPath":"/hybrid2/android-sdk-macosx",
 	
 	/**
 	 * @cfg  androidAPILevel
