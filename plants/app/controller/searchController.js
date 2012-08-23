@@ -6,6 +6,7 @@ Ext.define('plants.controller.searchController', {
     		searchPlants: '#searchPlants',
     		detailResult: 'detailResult',
     		overlay: 'overlay',
+    		test : '#test',
         },
         control: {
         	"[action=movePage]": {
@@ -33,5 +34,4 @@ Ext.define('plants.controller.searchController', {
     onShowSelect: function(button, e, options){
     	this.getOverlay().show();
     }
-
 });
