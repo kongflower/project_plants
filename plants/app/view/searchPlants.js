@@ -27,6 +27,7 @@ Ext.define('plants.view.searchPlants',{
 		   	    width 	: '95%',
 		   	    height 	: '70%',
 		   	   	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+		   	   	//src 	: './resources/images/img1.jpeg',
 		   	   	margin 	: 20,
 	    	   	action 	: 'movePage',
 	        	value 	: {xtype: 'resultInfo'},
@@ -82,7 +83,8 @@ Ext.define('plants.view.searchPlants',{
 		    	 items:[
 			    	    {
 			    	    	xtype 	: 'button',
-					    	style 	: "background-image:url('http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345')" 				
+					    	style 	: "background-image:url('http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345')", 				
+					    	//style 	: "background-image:url('./resources/images/btn1.jpg')" 				
 			    	    },
 			    	    {
 			    	    	xtype 	: 'img',
@@ -95,6 +97,7 @@ Ext.define('plants.view.searchPlants',{
 			    	    {
 			    	    	xtype 	: 'img',
 			    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+			    	    	//src 	: './resources/images/img1.jpeg',
 			    	    },
 			    	    {
 			    	    	xtype 	: 'img',

@@ -8,6 +8,10 @@ Ext.define('plants.view.MyPage01', {
         items: [
             {
                 xtype: 'segmentedbutton',
+                layout: {
+                    align: 'stretchmax',
+                    type: 'hbox'
+                },
                 items: [
                     {
                         xtype: 'button',
@@ -32,7 +36,14 @@ Ext.define('plants.view.MyPage01', {
                     '<div>List Item4 {string}</div>',
                     '<div>List Item5 {string}</div>'
                 ]
-            }
+            },
+            {
+				xtype: 'button',
+				id : 'buttonboardInput',
+				text: '새글쓰기',
+				value: {xtype: 'boardInput'},
+				action: 'movePage'
+			}
         ]
     }
 

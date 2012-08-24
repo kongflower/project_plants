@@ -6,6 +6,7 @@ Ext.define('plants.view.plantsMain',{
 		layout 	: {type:"vbox", align:'stretch'},
 		id 		:'plantsMain',
 		defaults: {flex:1},
+<<<<<<< HEAD
 		items 	: [
 		        {
 		        	xtype  	: 'button',
@@ -34,6 +35,34 @@ Ext.define('plants.view.plantsMain',{
 					value 	: {xtype: 'mypage01'},
 					action 	: 'movePage'
 				}
+=======
+		items: [
+	        {
+	        	xtype  	: 'button',
+	        	id  	: 'buttonSearch',
+	        	text 	: '식물찾기',
+	        	value 	: {xtype: 'searchPlants'},
+	        	action 	: 'movePage',
+	        	flex 	: 10,
+	        },
+	        {
+	        	xtype 	: 'button',
+	        	id  	: 'buttonGallery',
+	        	text 	: '갤러리',
+	        	value 	: {xtype: 'galleryBoard'},
+	        	action 	: 'movePage',
+	        	flex 	: 10,
+	        },
+	        {
+
+				xtype: 'button',
+				id : 'buttonMyPage01',
+				//cls: 'btnAction',
+				text: '마이페이지',
+				value: {xtype: 'mypage01'},
+				action: 'movePage'
+			}
+>>>>>>> 2012_08_23_21:00 Add Page
 		]
 	}
 });

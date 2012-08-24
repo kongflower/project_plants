@@ -31,10 +31,18 @@ Ext.application({
         'galleryPreview',
         'galleryWrite',
         'myPage',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2012_08_23_21:00 Add Page
         'MyPage01',
         'overlaySelect',
         'testPage',
         'boardInput' 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2012_08_23_21:00 Add Page
     ],
     name: 'plants',
     controllers: [
