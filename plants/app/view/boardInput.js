@@ -6,7 +6,8 @@ Ext.define('plants.view.boardInput', {
 	   'Ext.form.FieldSet',
 	   'Ext.field.Text',
 	   'Ext.field.TextArea',
-	   'Ext.MessageBox'
+	   'Ext.MessageBox',
+	   'Ext.Img'
 	],
 	
 	config: {
@@ -39,25 +40,28 @@ Ext.define('plants.view.boardInput', {
                     align: 'center',
                     type: 'hbox',                                     	
                 },
-                defaults : {width: '45px', height: '45px',  margin  : '0 4 10 4'},
+                defaults : {width: '75px', height: '52px',  margin  : '0 4 10 4'},
                 items:[
   		    		{
-  		    		    xtype 	: 'button',
+  		    		    xtype 	: 'img',
   		    		    id  	: 'buttonLeaf',
-  		    		    style 	: "background-image:url('./resources/images/btn1.jpg')",
+  		    		    src 	: './resources/images/btnLeaves.jpg',
+  		    		    //style 	: "background-image:url('./resources/images/btn1.jpg')",
   		   			    //text  	: '잎',
   		   			    action 	: 'showSelect'
   		   		    },
   		    		{
-  		   		        xtype 	: 'button',
+  		   		        xtype 	: 'img',
   		    		    id  	: 'buttonFlower',
-  		    		    text  	: '꽃',
+  		    		    src 	: './resources/images/btnFlowers.jpg',
+  		    		    //text  	: '꽃',
   		    		    action 	: 'showSelect'
   		    		},
   		    	    {
-  		    			xtype 	: 'button',
+  		    			xtype 	: 'img',
   		    			id  	: 'buttonFruit',
-  		    			text 	: '열매',
+  		    			src 	: './resources/images/btnFruits.jpg',
+  		    			//text 	: '열매',
   		    			action: 'showSelect'
   		    		},
   		        ]
