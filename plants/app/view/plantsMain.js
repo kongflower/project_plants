@@ -9,6 +9,7 @@ Ext.define('plants.view.plantsMain',{
 	config : {
 		layout: {type:"vbox", align:'stretch'},
 		defaults: {flex:1},
+		id : 'plantsMain',
 
 		items 	: [
 		        {

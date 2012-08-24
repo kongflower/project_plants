@@ -44,19 +44,13 @@ Ext.define('plants.controller.searchController', {
     pagePop: function(navi,view, eOpts){
     	console.log('pop : ' + navi.getActiveItem().getId());
     	if(navi.getActiveItem().getId() == 'plantsMain'){
-    		console.log('pushpush');
     		navi.getNavigationBar().setHidden(true);
     	}
     },
     pagePush: function(navi,view, eOpts){
     	console.log('push : ' + navi.getActiveItem().getId());
     	if(navi.getActiveItem().getId() != 'plantsMain'){
-    		console.log('pushpush');
     		navi.getNavigationBar().setHidden(false);
     	}
-//    	if(view){
-//    		console.log('push');
-//    	}
-    	//navi.setNavigationBar(false);
     }
 });
