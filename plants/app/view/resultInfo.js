@@ -31,8 +31,6 @@ Ext.define('plants.view.resultInfo',{
 		    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
 		    	width 	: '90%',
 		    	margin 	: 20,
-		    	action 	: 'movePage',
-		    	value 	: {xtype: 'resultInfo'},
 		    	margin  : '0 4 10 4'
 		    },
 		    {	

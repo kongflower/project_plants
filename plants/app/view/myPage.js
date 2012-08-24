@@ -12,8 +12,8 @@ Ext.define('plants.view.myPage',{
 			{
 				xtype: 'button',
 				id : 'buttonboardInput',
+				itemId 	: 'boardInput',
 				text: '새글쓰기',
-				value: {xtype: 'boardInput'},
 				action: 'movePage'
 			}
 		],

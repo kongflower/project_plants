@@ -30,7 +30,6 @@ Ext.define('plants.view.searchPlants',{
 		   	   	//src 	: './resources/images/img1.jpeg',
 		   	   	margin 	: 20,
 	    	   	action 	: 'movePage',
-	        	value 	: {xtype: 'resultInfo'},
 	        	mode 	: 'none',
 		    	
 		    },
@@ -64,7 +63,6 @@ Ext.define('plants.view.searchPlants',{
 		    			id  	: 'buttonGoDetail',
 		    			itemId 	: 'detailResult',
 		    			text  	: 'Detail',
-		    			value 	: {xtype: 'detailResult'},
 		    			action 	: 'movePage',
 		    		},
 		        ],
