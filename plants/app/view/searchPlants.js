@@ -23,6 +23,7 @@ Ext.define('plants.view.searchPlants',{
 //		    	]
 		    	
 		    	xtype 	: 'img',
+		    	id 		: 'testimg',
 		    	itemId 	: 'resultInfo',
 		   	    width 	: '95%',
 		   	    height 	: '70%',

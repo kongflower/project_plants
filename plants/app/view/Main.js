@@ -5,7 +5,7 @@ Ext.define("plants.view.Main", {
     config: {
     	id 				: 'mainView',
         autoDestroy 	: true,
-        navigationBar 	: { ui:'dark', docked: 'top', hidden:true },
+        navigationBar 	: { ui:'dark', docked: 'top', hidden:false },
       
         items: [
              {
@@ -15,5 +15,5 @@ Ext.define("plants.view.Main", {
             	 xtype : 'overlay'
              }
         ]
-    }
+    },
 });
