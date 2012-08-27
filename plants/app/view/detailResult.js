@@ -10,7 +10,7 @@ Ext.define('plants.view.detailResult',{
 	config:{
 		title : 'detailResult',
 		fullscreen 	: true,
-		itemTpl 	:'{title}',
-		store 		:  'List',
+		itemTpl 	:'{name}',
+		store 		:  'searchData',
 	}
 });

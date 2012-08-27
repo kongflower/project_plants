@@ -1,11 +1,11 @@
 Ext.define('plants.view.searchPlants',{
 	extend 	: 'Ext.Panel',
 	xtype 	: 'searchPlants',
-	id 		: 'searchPlants',
 	
 	requires: ["Ext.Img"],
 	
 	config : {
+		id 		: 'searchPlants',
 		title   : 'searchPlants',
 		
 		layout 	: {type:'vbox',align:'middle'},
@@ -23,7 +23,6 @@ Ext.define('plants.view.searchPlants',{
 //		    	]
 		    	
 		    	xtype 	: 'img',
-		    	id 		: 'testimg',
 		    	itemId 	: 'resultInfo',
 		   	    width 	: '95%',
 		   	    height 	: '70%',

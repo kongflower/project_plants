@@ -3,17 +3,28 @@ Ext.define('plants.view.overlaySelect',{
 	xtype: 'overlay',
 	
 	config : {
-		modal : true ,
-		centered : true ,
-		hidden :true ,
+		modal 		  : true ,
+		centered 	  : true ,
+		hidden 		  :true ,
 		hideOnMaskTap :true ,
-		width : 260 , height : 130 ,
-		items :{
-			xtype : 'titlebar',
-			docked : 'top',
-			title : "Overlay"
-		} ,
-		html : 'shows this Component next to another Cornponen',
+		width 	 	  : '90%' , 
+		height 		  : '90%' ,
+		layout 		  : {type:'vbox'},
+		items :[
+		    {
+		    	xtype 	: 'titlebar',
+		    	docked 	: 'top',
+		    	title 	: "Overlay",
+		    	flex 	: 1,
+		    	items 	:[
+		    	    {
+		    	    	xtype 	:'button',
+		    	    	text 	:'close',
+		    	    	action :'closeOverlay',
+		    	    },
+		    	],
+		    },
+		] ,
 		scrollable : true ,
 	}
 });

@@ -19,7 +19,7 @@ Ext.Loader.setConfig({
 
 Ext.application({
     
-	stores: ['List'],
+	stores: ['searchData'],
 	
     views: [
         'Main',
@@ -34,7 +34,8 @@ Ext.application({
         'MyPage01',
         'overlaySelect',
         'testPage',
-        'boardInput' 
+        'boardInput',
+        'selectLeafPart'
     ],
     name: 'plants',
     controllers: [

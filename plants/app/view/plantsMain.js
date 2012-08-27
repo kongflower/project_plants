@@ -4,7 +4,7 @@ Ext.define('plants.view.plantsMain',{
 	
 	requires: [
        'Ext.Img'
-   ],
+    ],
 	
 	config : {
 		layout: {type:"vbox", align:'stretch'},

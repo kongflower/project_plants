@@ -1,20 +1,30 @@
 Ext.define('plants.controller.searchController', {
     extend: 'Ext.app.Controller',
+    requires: [
+           'plants.view.selectLeafPart'
+    ],
     config: {
+//    	stores: [
+//    	      'searchData'
+//    	],
     	refs: {
     		mainView: '#mainView',
     		searchPlants: '#searchPlants',
     		detailResult: 'detailResult',
     		overlay: 'overlay',
-    		test : '#test',
-    		testimg : '#testimg',
         },
         control: {
-        	"[action=movePage]": {
+        	'[action=movePage]': {
                 tap: 'onMovePage'
             },
-            "[action=showSelect]": {
+            '[action=showSelect]': {
             	tap: 'onShowSelect'
+            },
+            '[action=selectLeaf]': {
+            	tap: 'onSelectLeaf'
+            },
+            'overlay button[action=closeOverlay]':{
+            	tap: 'onCloseOverlay'
             },
             'detailResult':{
 				itemtap : 'resultListTap'
@@ -36,11 +46,6 @@ Ext.define('plants.controller.searchController', {
     	console.log('plants  :  ' + button.getItemId());
     },
    
-    onShowSelect: function(button, e, options){
-    	//this.getTestimg().setSrc('resources/images/img1.jpeg');
-    	this.getOverlay().show();
-    },
-    
     //////////////////////////////////////////////////////////////////////////////
     
     
@@ -75,6 +80,43 @@ Ext.define('plants.controller.searchController', {
     resultListTap:function(list, index, target,record, e, eOpts){
     	this.getMainView().push({xtype: 'resultInfo'});
     },
+    
+    //////////////////////////////////////////////////////////////////////////////
+    
+    
+    
+    //////////////////////// overlay /////////////////////////////////////////////
+    
+    onShowSelect: function(button, e, options){
+    	console.log('select: ' + button.getId());
+    	if(button.getId()=='buttonLeaf'){
+    		this.getOverlay().add([{
+    								xtype:'selectLeafPart',
+    								flex:10,
+    		}]);
+    	}
+    	this.getOverlay().show();
+    },
+    
+    onCloseOverlay : function(button, e, options){
+    	console.log('overlay : ');
+    	this.getOverlay().removeAll(true,false);
+    	this.getOverlay().hide();
+    },
+    
+    onSelectLeaf : function(button, e, options){
+    	console.log('onSelectLeaf : '  + Ext.getStore('searchData'));
+    	
+    	//스토어에 필터추가 후 로드 데이터  
+    	//Ext.getStore('searchData').clearFilter();
+    	Ext.getStore('searchData').setFilters([
+    	       {property: "leaf", value: button.getText()},
+    	]);
+    	Ext.getStore('searchData').getData();
+    	// 오버레이 숨기기 
+    	this.getOverlay().removeAll(true,false);
+    	this.getOverlay().hide();
+    }
     
     //////////////////////////////////////////////////////////////////////////////
 });
