@@ -11,7 +11,7 @@ Ext.define('plants.view.gonggi', {
 		
 		items: [
 		 {
-			 xtype: 'ms'
+			 xtype: 'gongisahang'
 		 }
 ]
 		 }}
