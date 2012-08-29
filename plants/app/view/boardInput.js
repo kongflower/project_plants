@@ -18,6 +18,7 @@ Ext.define('plants.view.boardInput', {
             {
                 xtype: 'fieldset',
                 title: '내용입력',
+                cls: 'TitleTest',
                 items: [
                     {
                         xtype: 'textfield',
@@ -40,57 +41,25 @@ Ext.define('plants.view.boardInput', {
                     align: 'center',
                     type: 'hbox',                                     	
                 },
-                defaults : {width: '75px', height: '52px',  margin  : '0 4 10 4'},
-                items:[
-  		    		{
-  		    		    xtype 	: 'img',
-  		    		    id  	: 'buttonLeaf',
-  		    		    src 	: './resources/images/btnLeaves.jpg',
-  		    		    //style 	: "background-image:url('./resources/images/btn1.jpg')",
-  		   			    //text  	: '잎',
-  		   			    action 	: 'showSelect'
-  		   		    },
-  		    		{
-  		   		        xtype 	: 'img',
-  		    		    id  	: 'buttonFlower',
-  		    		    src 	: './resources/images/btnFlowers.jpg',
-  		    		    //text  	: '꽃',
-  		    		    action 	: 'showSelect'
-  		    		},
-  		    	    {
-  		    			xtype 	: 'img',
-  		    			id  	: 'buttonFruit',
-  		    			src 	: './resources/images/btnFruits.jpg',
-  		    			//text 	: '열매',
-  		    			action: 'showSelect'
-  		    		},
-  		        ]
+                defaults : {width: '92px', height: '37px',  margin  : '0 4 10 4'},
                 
-//                {	
-//    		    	xtype 	: 'panel',
-//    		    	layout 	: {type:'hbox', align:'stretch',pack:'center'},
-//    		    	defaults: {flex:1, margin  : '0 4 10 4'},
-//    		    	width 	: '90%',
-//    		    	flex:1,
-//    		    	
-//    		    },
-                
-//                items: [
-//                    {
-//                        xtype: 'button',
-//                        text: '게시',
-//                        handler: function() {
-//                        	console.log('게시퍼튼 눌림');
-//                        	Ext.Msg.alert('Message', '입력을 취소하셨습니다.', 
-//                        		function(){
-//         							console.log('on ok button');
-//         							Ext.getCmp('mainView').pop(1);
-//                        	});                        	
-//                        },
-//                    },
-//                    {
-//                        xtype: 'button',
-//                        text: '취소',
+                items: [
+                    {
+                    	xtype 	: 'image',
+                    	itemId: 'btnPost',
+                    	id: 'btnPost',
+                    	action:'test',
+                    	//text: '게시',
+                    	cls: 'btnPost'
+		    		    //src 	: './resources/images/btnPost.jpg',
+//		    		    //style 	: "background-image:url('./resources/images/btn1.jpg')",
+                    },
+                    {
+                    	xtype 	: 'image',
+                    	itemId: 'btnCancle',
+                    	//text: '게시',
+                    	cls: 'btnCancel'
+		    		    //src 	: './resources/images/btnCancle.jpg',
 //                        handler: function() {
 //                        	console.log('a');
 //                        	Ext.Msg.alert('Message', '입력을 취소하셨습니다.', 
@@ -99,9 +68,38 @@ Ext.define('plants.view.boardInput', {
 //         							Ext.getCmp('mainView').pop(1);
 //                        	});                        	
 //                        },	            
-//                    }
-//                ]
+                    }
+                ],
+                listeners: [
+                    {
+                        fn: 'onBtnPostTap',
+                        event: 'tap',
+                        delegate: '#btnPost'
+                    },
+                    {
+                        fn: 'onBtnCancleTap',
+                        event: 'tap',
+                        delegate: '#btnCancle'
+                    }
+                ]
             }
         ]
+    },
+    onBtnPostTap: function(img, e, options) {
+    	console.log('게시');
+    	Ext.Msg.alert('Message', '게시하였습니다.', 
+    		function(){
+				console.log('on ok button');
+				Ext.getCmp('mainView').pop(1);
+    	});
+    },
+
+    onBtnCancleTap: function(img, e, options) {
+    	console.log('취소');
+    	Ext.Msg.alert('Message', '입력을 취소하셨습니다.', 
+    		function(){
+				console.log('on ok button');
+				Ext.getCmp('mainView').pop(1);
+    	});
     }
 });

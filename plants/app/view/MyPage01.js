@@ -1,49 +1,68 @@
 Ext.define('plants.view.MyPage01', {
     extend: 'Ext.Panel',
     xtype: 'mypage01',
+    cls: 'myPageBG',
     
     requires: ['Ext.SegmentedButton'],
 
     config: {
+    	style: 'text-align:center',
+    	type: 'vbox',
         items: [
             {
-                xtype: 'segmentedbutton',
+                xtype: 'panel',
                 layout: {
-                    align: 'stretchmax',
+                    //align: 'center',
                     type: 'hbox'
                 },
                 items: [
                     {
                         xtype: 'button',
-                        text: '내소식'
+                        cls: 'btnMyNews'
                     },
                     {
                         xtype: 'button',
-                        text: '즐겨찾기'
+                        cls: 'btnBookmark'
                     },
                     {
                         xtype: 'button',
-                        text: '최근찾기'
+                        cls: 'btnRecent'
                     }
                 ]
             },
+            
             {
-                xtype: 'list',
-                itemTpl: [
-                    '<div>List Item1 {string}</div>',
-                    '<div>List Item2 {string}</div>',
-                    '<div>List Item3 {string}</div>',
-                    '<div>List Item4 {string}</div>',
-                    '<div>List Item5 {string}</div>'
-                ]
-            },
-            {
-				xtype: 'button',
-				id : 'buttonboardInput',
-				text: '새글쓰기',
-				itemId 	: 'boardInput',
-				action: 'movePage'
-			}
+            	xtype: 'panel',
+            	layout: {
+            		type: 'vbox',
+            	},
+            	items: [
+					{
+						xtype: 'button',
+						//style: 'text-align:center',
+						cls: 'btnMyNews'
+						
+						//style: 'width: 132px, height: 32px',
+//						id : 'buttonboardInput',
+//						text: '새글쓰기',
+//						itemId 	: 'boardInput',
+//						action: 'movePage'
+					},
+					{
+						xtype: 'button',
+						cls: 'btnMyNews'						
+					},
+					{
+						xtype: 'button',
+						cls: 'btnMyNews'						
+					}
+					//{
+					//	xtype: 'button',
+					//	text: 'Test',
+					//	cls: 'buttonTest btnOrange'
+					//}
+            	]
+            }
         ]
     }
 
