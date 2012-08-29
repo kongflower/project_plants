@@ -18,6 +18,7 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+	
     
 	stores: ['searchData'],
 	
@@ -41,7 +42,8 @@ Ext.application({
         'alramSetting',
         'serviceHelp',
         'gonggi',
-        'programInform'
+        'programInform',
+        'ms'
         
     ],
     name: 'plants',

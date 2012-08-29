@@ -8,7 +8,9 @@ Ext.define('plants.view.idSetting',{
 		scrollable:true,
 		styleHtmlContent:true,
 		
-		items: [],
+		items: [
+		        
+		        ],
 		
 		html : [ '<h2>id설정</h2>' ].join("")
 	}

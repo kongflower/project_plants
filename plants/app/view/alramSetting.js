@@ -8,8 +8,20 @@ Ext.define('plants.view.alramSetting',{
 		scrollable:true,
 		styleHtmlContent:true,
 		
-		items: [],
+		items: [
+{
+	xtype: 'togglefield',
+	name: 'sound',
+	label: '소리알림'
+},
+
+{
+	xtype: 'togglefield',
+	name: 'jindong',
+	label: '진동알림'
+}
+		        ],
 		
-		html : [ '<h2>알림설정</h2>' ].join("")
+		html : [ '<h2></h2>' ].join("")
 	}
 });

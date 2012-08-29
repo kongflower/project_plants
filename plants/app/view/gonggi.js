@@ -1,6 +1,7 @@
-Ext.define('plants.view.gonggi',{
+Ext.define('plants.view.gonggi', {
 	extend : 'Ext.Panel',
 	xtype: 'gonggi',
+	
 	
 	config : {
 		title : '공지사항',
@@ -8,8 +9,9 @@ Ext.define('plants.view.gonggi',{
 		scrollable:true,
 		styleHtmlContent:true,
 		
-		items: [],
-		
-		html : [ '<h2>공지사항</h2>' ].join("")
-	}
-});
+		items: [
+		 {
+			 xtype: 'ms'
+		 }
+]
+		 }});
