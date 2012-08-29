@@ -14,4 +14,5 @@ Ext.define('plants.view.gonggi', {
 			 xtype: 'ms'
 		 }
 ]
-		 }});
+		 }}
+);
