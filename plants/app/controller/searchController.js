@@ -10,8 +10,10 @@ Ext.define('plants.controller.searchController', {
     	refs: {
     		mainView: '#mainView',
     		searchPlants: '#searchPlants',
+    		searchRerultPanel: '#searchRerultPanel',
     		detailResult: 'detailResult',
     		overlay: 'overlay',
+    		searchMainImg:'#searchMainImg',
         },
         control: {
         	'[action=movePage]': {
@@ -36,8 +38,7 @@ Ext.define('plants.controller.searchController', {
 				 pop 	 	: 'pagePop',
 			 	 push 	 	: 'pagePush',
 			 	 initialize : 'mainInit',
-			}
-			
+			},
         }
     },
     
@@ -118,11 +119,47 @@ Ext.define('plants.controller.searchController', {
     	Ext.getStore('searchData').setFilters([
     	       {property: "leaf", value: button.getText()},
     	]);
-    	Ext.getStore('searchData').getData();
+    	
+    	this.getSearchRerultPanel().removeAll(true,false);
+    	var filterData = Ext.getStore('searchData').getData();
+    	
+    	console.log(filterData.getCount());
+    	for(var i=0;i<filterData.getCount();i++){
+    		if(i==0){
+    			this.getSearchMainImg().setSrc(filterData.getAt(i).get('url'));
+    			console.log(filterData.getAt(i).get('url'));
+    		}
+    		this.getSearchRerultPanel().add([{
+    	    	xtype 	:'panel',
+		    	layout 	:'fit',
+		    	margin 	:'5 5 5 5',
+		    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
+				  'border:0;' +
+				  'background-color:transparent;' + 
+				  'background-repeat:no-repeat;' + 
+				  'background-size:100% 100%;',
+		    	items 	:{
+		    		xtype 	: 'img',
+	    	    	src 	: filterData.getAt(i).get('url'),
+	    	    	width 	: '100%',
+			   	    height 	: '100%',
+		        	mode 	: 'none',
+		        	padding : '5 5 5 5',
+		    	}
+    	    }]);
+    	}
+    	
     	// 오버레이 숨기기 
     	this.getOverlay().removeAll(true,false);
     	this.getOverlay().hide();
-    }
+    },
     
     //////////////////////////////////////////////////////////////////////////////
+    
+    
+    /////////////////////////// store ////////////////////////////////////////////
+    searchDataLoad : function(button, e, options){
+    	console.log('testtest');
+    },
+    /////////////////////////////////////////////////////////////////////////////
 });

@@ -8,6 +8,7 @@ Ext.define('plants.model.plantsModel', {
             {name: 'family', type: 'string'},
             {name: 'home', type: 'string'},
             {name: 'body', type: 'string'},
+            {name: 'url', type: 'string'},            
         ]
     }
 });

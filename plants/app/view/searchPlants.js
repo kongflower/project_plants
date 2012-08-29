@@ -27,6 +27,7 @@ Ext.define('plants.view.searchPlants',{
 		    	
 		    	items 	:{
 		    		xtype 	: 'img',
+		    		id 		: 'searchMainImg',
 			    	itemId 	: 'resultInfo',
 			   	    padding : '20 20 30 20',
 			   	    width 	: '100%',
@@ -95,6 +96,7 @@ Ext.define('plants.view.searchPlants',{
 		    },
 		    {
 		    	 xtype 		: 'panel',
+		    	 id 	    : 'searchRerultPanel',
 		    	 width 		: '90%',
 		    	 layout 	: {type:'hbox', align:'stretch',},
 		    	 flex       : 1,
@@ -106,115 +108,7 @@ Ext.define('plants.view.searchPlants',{
 		    	 },
 		    	 
 		    	 items:[
-			    	    {
-			    	    	xtype 	:'panel',
-					    	layout 	:'fit',
-					    	margin 	:'5 5 5 5',
-					    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-	    					  'border:0;' +
-	    					  'background-color:transparent;' + 
-	    					  'background-repeat:no-repeat;' + 
-	    					  'background-size:100% 100%;',
-					    	items 	:{
-					    		xtype 	: 'img',
-				    	    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-				    	    	width 	: '100%',
-						   	    height 	: '100%',
-					        	mode 	: 'none',
-					        	padding : '5 5 5 5',
-					    	}
-			    	    },
-			    	    {
-			    	    	xtype 	:'panel',
-			    	    	layout 	:'fit',
-			    	    	margin 	:'5 5 5 5',
-			    	    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-			    	    	'border:0;' +
-			    	    	'background-color:transparent;' + 
-			    	    	'background-repeat:no-repeat;' + 
-			    	    	'background-size:100% 100%;',
-			    	    	items 	:{
-			    	    		xtype 	: 'img',
-			    	    		src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-			    	    		width 	: '100%',
-			    	    		height 	: '100%',
-			    	    		mode 	: 'none',
-			    	    		padding : '5 5 5 5',
-			    	    	}
-			    	    },
-			    	    {
-			    	    	xtype 	:'panel',
-			    	    	layout 	:'fit',
-			    	    	margin 	:'5 5 5 5',
-			    	    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-			    	    	'border:0;' +
-			    	    	'background-color:transparent;' + 
-			    	    	'background-repeat:no-repeat;' + 
-			    	    	'background-size:100% 100%;',
-			    	    	items 	:{
-			    	    		xtype 	: 'img',
-			    	    		src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-			    	    		width 	: '100%',
-			    	    		height 	: '100%',
-			    	    		mode 	: 'none',
-			    	    		padding : '5 5 5 5',
-			    	    	}
-			    	    },
-			    	    {
-			    	    	xtype 	:'panel',
-			    	    	layout 	:'fit',
-			    	    	margin 	:'5 5 5 5',
-			    	    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-			    	    	'border:0;' +
-			    	    	'background-color:transparent;' + 
-			    	    	'background-repeat:no-repeat;' + 
-			    	    	'background-size:100% 100%;',
-			    	    	items 	:{
-			    	    		xtype 	: 'img',
-			    	    		src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-			    	    		width 	: '100%',
-			    	    		height 	: '100%',
-			    	    		mode 	: 'none',
-			    	    		padding : '5 5 5 5',
-			    	    	}
-			    	    },
-			    	    {
-			    	    	xtype 	:'panel',
-			    	    	layout 	:'fit',
-			    	    	margin 	:'5 5 5 5',
-			    	    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-			    	    	'border:0;' +
-			    	    	'background-color:transparent;' + 
-			    	    	'background-repeat:no-repeat;' + 
-			    	    	'background-size:100% 100%;',
-			    	    	items 	:{
-			    	    		xtype 	: 'img',
-			    	    		src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-			    	    		width 	: '100%',
-			    	    		height 	: '100%',
-			    	    		mode 	: 'none',
-			    	    		padding : '5 5 5 5',
-			    	    	}
-			    	    },
-			    	    {
-			    	    	xtype 	:'panel',
-			    	    	layout 	:'fit',
-			    	    	margin 	:'5 5 5 5',
-			    	    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-			    	    	'border:0;' +
-			    	    	'background-color:transparent;' + 
-			    	    	'background-repeat:no-repeat;' + 
-			    	    	'background-size:100% 100%;',
-			    	    	items 	:{
-			    	    		xtype 	: 'img',
-			    	    		src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-			    	    		width 	: '100%',
-			    	    		height 	: '100%',
-			    	    		mode 	: 'none',
-			    	    		padding : '5 5 5 5',
-			    	    	}
-			    	    },
-			    	],
+			     ],
 		    }
 		],
 	}
