@@ -37,6 +37,7 @@ Ext.application({
         'testPage',
         'boardInput',
         'selectLeafPart',
+<<<<<<< HEAD
         'set',
         'idSetting',
         'alramSetting',
@@ -45,6 +46,9 @@ Ext.application({
         'programInform',
         'ms'
         
+=======
+        'plantsTitlebar'
+>>>>>>> modify titlebar add ui
     ],
     name: 'plants',
     controllers: [

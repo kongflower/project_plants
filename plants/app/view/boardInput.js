@@ -1,5 +1,5 @@
 Ext.define('plants.view.boardInput', {
-	extend: 'Ext.form.Panel',
+	extend: 'Ext.Panel',
 	xtype: 'boardInput',
 	
 	requires: [
@@ -14,7 +14,12 @@ Ext.define('plants.view.boardInput', {
 		title: '새글쓰기',
 		
         items: [
-            
+            {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
             {
                 xtype: 'fieldset',
                 title: '내용입력',

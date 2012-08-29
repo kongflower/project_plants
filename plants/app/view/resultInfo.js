@@ -8,16 +8,19 @@ Ext.define('plants.view.resultInfo',{
 	       'Ext.field.Text'
 	],
 	
-	config : {
-		title : 'resultInfo',
-		
+	config : {	
 		layout 	: {type:'vbox',align:'middle'},
-		defaults: {flex:2},
 		
 		scrollable:true,
-		styleHtmlContent:true,
+		//styleHtmlContent:true,
 		
 		items: [
+		    {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
 		    {
 		    	xtype 	: 'label',
 		    	style 	: 'background-color:gray',
@@ -30,8 +33,8 @@ Ext.define('plants.view.resultInfo',{
 		    	xtype 	: 'img',
 		    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
 		    	width 	: '90%',
-		    	margin 	: 20,
-		    	margin  : '0 4 10 4'
+		    	margin  : '0 4 10 4',
+		    	flex:2
 		    },
 		    {	
 		    	xtype 	 : 'textfield',
@@ -39,7 +42,8 @@ Ext.define('plants.view.resultInfo',{
 				readOnly : true,
 		    	width 	 : '90%',
 		    	value 	 : '특성',
-		    	margin   : '5 0 5 0'
+		    	margin   : '5 0 5 0',
+		    	flex:2
 		    	
 		    },
 		    {

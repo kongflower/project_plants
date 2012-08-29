@@ -8,7 +8,14 @@ Ext.define('plants.view.galleryPreview',{
 		scrollable:true,
 		styleHtmlContent:true,
 		
-		items: [],
+		items: [
+		    {
+		    	xtype :'plantsTitlebar',
+		    	title : '식물찾기',
+		    	width : '100%',
+		    	height: 50,
+		    },
+		],
 		
 		html : [ '<h2>galleryPreView</h2>' ].join("")
 	}

@@ -17,6 +17,9 @@ Ext.define('plants.controller.searchController', {
         	'[action=movePage]': {
                 tap: 'onMovePage'
             },
+            '[action=actionBack]': {
+            	tap: 'onActionBack'
+            },            
             '[action=showSelect]': {
             	tap: 'onShowSelect'
             },
@@ -45,6 +48,9 @@ Ext.define('plants.controller.searchController', {
     	this.getMainView().push({xtype: button.getItemId()});
     	console.log('plants  :  ' + button.getItemId());
     },
+    onActionBack : function(button, e, options){
+    	this.getMainView().pop(1);
+    },
    
     //////////////////////////////////////////////////////////////////////////////
     
@@ -55,21 +61,21 @@ Ext.define('plants.controller.searchController', {
     pagePop: function(navi,view, eOpts){
     	console.log('pop : ' + navi.getActiveItem().getId());
     	
-    	if(navi.getActiveItem().getId() == 'plantsMain'){
-    		navi.getNavigationBar().setHidden(true);
-    	}
+//    	if(navi.getActiveItem().getId() == 'plantsMain'){
+//    		navi.getNavigationBar().setHidden(true);
+//    	}
     },
     
     pagePush: function(navi,view, eOpts){
     	console.log('push : ' + navi.getActiveItem().getId());
-    	if(navi.getActiveItem().getId() != 'plantsMain'){
-    		navi.getNavigationBar().setHidden(false);
-    	}
+//    	if(navi.getActiveItem().getId() != 'plantsMain'){
+//    		navi.getNavigationBar().setHidden(false);
+//    	}
     },
     
     mainInit: function(me){
     	console.log('init');
-    	me.getNavigationBar().setHidden(true);
+    	//me.getNavigationBar().setHidden(true);
     },
     //////////////////////////////////////////////////////////////////////////////
     
