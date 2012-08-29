@@ -37,6 +37,9 @@ Ext.application({
         'boardInput',
         'selectLeafPart'
     ],
+    
+    models: [ 'plantsModel' ],
+    
     name: 'plants',
     controllers: [
         'searchController',
