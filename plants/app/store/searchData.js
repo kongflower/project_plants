@@ -1,22 +1,3 @@
-Ext.define('plants.store.searchData', {
-    extend: 'Ext.data.Store',
-
-    config: {
-    	autoLoad: true,
-    	storeId : 'searchData',
-    	model: 'plants.model.plantsModel',
-    	data : data.plants,
-		   
-		proxy: {
-			type: 'memory',
-			reader: {
-				 type: 'json',
-				 root: 'plants',
-			}
-		},
-    }
-});
-
 var data = {
 		plants: [
 					{ 
@@ -70,4 +51,24 @@ var data = {
 					},					
 				]
 };
+
+
+Ext.define('plants.store.searchData', {
+    extend: 'Ext.data.Store',
+
+    config: {
+    	autoLoad: true,
+    	storeId : 'searchData',
+    	model: 'plants.model.plantsModel',
+    	data : data.plants,
+		   
+		proxy: {
+			type: 'memory',
+			reader: {
+				 type: 'json',
+				 root: 'plants',
+			}
+		},
+    }
+});
 

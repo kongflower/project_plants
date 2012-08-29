@@ -44,19 +44,22 @@ Ext.define('plants.view.searchPlants',{
 		    		    xtype 	: 'button',
 		    		    id  	: 'buttonLeaf',
 		   			    text  	: '잎',
-		   			    action 	: 'showSelect'
+		   			    action 	: 'showSelect',
+		   			    style 	: "background-image:url('./resources/images/pic01.jpg')",
 		   		    },
 		    		{
 		   		        xtype 	: 'button',
 		    		    id  	: 'buttonFlower',
 		    		    text  	: '꽃',
-		    		    action 	: 'showSelect'
+		    		    action 	: 'showSelect',
+		    		    style 	: "background-image:url('./resources/images/pic02.jpg')",
 		    		},
 		    	    {
 		    			xtype 	: 'button',
 		    			id  	: 'buttonFruit',
 		    			text 	: '열매',
-		    			action: 'showSelect'
+		    			action 	: 'showSelect',
+		    			style 	: "background-image:url('./resources/images/pic03.jpg')",
 		    		},
 		    		{
 		    			xtype 	: 'button',
@@ -64,6 +67,7 @@ Ext.define('plants.view.searchPlants',{
 		    			itemId 	: 'detailResult',
 		    			text  	: 'Detail',
 		    			action 	: 'movePage',
+		    			style 	: "background-image:url('./resources/images/pic04.jpg')",
 		    		},
 		        ],
 		    },
