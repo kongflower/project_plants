@@ -44,6 +44,9 @@ Ext.application({
         'programInform'
         
     ],
+    
+    models: [ 'plantsModel' ],
+    
     name: 'plants',
     controllers: [
         'searchController',
