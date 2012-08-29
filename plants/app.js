@@ -37,19 +37,16 @@ Ext.application({
         'testPage',
         'boardInput',
         'selectLeafPart',
-<<<<<<< HEAD
         'set',
         'idSetting',
         'alramSetting',
         'serviceHelp',
         'gonggi',
         'programInform',
-        'ms'
-        
-=======
+        'ms',
         'plantsTitlebar'
->>>>>>> modify titlebar add ui
     ],
+    models:['plantsModel'],
     name: 'plants',
     controllers: [
         'searchController',

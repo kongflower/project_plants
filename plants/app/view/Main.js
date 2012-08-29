@@ -5,15 +5,9 @@ Ext.define("plants.view.Main", {
     config: {
     	id 				: 'mainView',
         autoDestroy 	: true,
-<<<<<<< HEAD
-
-        navigationBar 	: { //ui:'dark', 
-        	docked: 'top', hidden:true, cls: 'tabBG' },
-
-=======
         navigationBar 	: {hidden:true},
         useTitleForBackButtonText: true,
->>>>>>> modify titlebar add ui
+
       
         items: [
              {

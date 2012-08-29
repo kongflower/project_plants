@@ -10,9 +10,7 @@ Ext.define('plants.view.MyPage01', {
     	type: 'vbox',
         items: [
             {
-<<<<<<< HEAD
                 xtype: 'panel',
-=======
 				xtype :'plantsTitlebar',
 				title : '식물찾기',
 				width : '100%',
@@ -20,7 +18,6 @@ Ext.define('plants.view.MyPage01', {
 			},	
             {
                 xtype: 'segmentedbutton',
->>>>>>> modify titlebar add ui
                 layout: {
                     //align: 'center',
                     type: 'hbox'

@@ -10,9 +10,15 @@ Ext.define('plants.view.gonggi', {
 		styleHtmlContent:true,
 		
 		items: [
-		 {
-			 xtype: 'gongisahang'
-		 }
-]
-		 }}
+		    {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
+		    {
+			    xtype: 'gongisahang'
+		    }
+		]
+	}}
 );

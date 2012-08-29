@@ -9,6 +9,12 @@ Ext.define('plants.view.set',{
 		    	layout: {type: 'vbox'},
 		    	items: [
 		    	    {
+		    	    	xtype :'plantsTitlebar',
+		    	    	title : '식물찾기',
+		    	    	width : '100%',
+		    	    	height: 50,
+		    	    },
+		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '아이디설정',
 		    	    	action:'movePage',

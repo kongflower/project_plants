@@ -9,18 +9,24 @@ Ext.define('plants.view.alramSetting',{
 		styleHtmlContent:true,
 		
 		items: [
-{
-	xtype: 'togglefield',
-	name: 'sound',
-	label: '소리알림'
-},
+		    {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
+		    {
+		    	xtype: 'togglefield',
+		    	name: 'sound',
+		    	label: '소리알림'
+		    },
 
-{
-	xtype: 'togglefield',
-	name: 'jindong',
-	label: '진동알림'
-}
-		        ],
+		    {
+		    	xtype: 'togglefield',
+		    	name: 'jindong',
+		    	label: '진동알림'
+		    }
+		 ],
 		
 		html : [ '<h2></h2>' ].join("")
 	}
