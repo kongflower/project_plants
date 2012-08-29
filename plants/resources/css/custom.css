@@ -1,0 +1,206 @@
+@CHARSET "UTF-8";
+
+
+/* Button Custom  */
+.btnAction {
+	display: inline-block;
+	background: url('../images/btnAction.png');
+	/* background-repeat:repeat-x;
+	background-repeat:repeat-y; */
+	width: 132px;
+	height: 32px;
+}
+
+.btnAction:active {
+	background: url('../images/btnAction.png');
+	width: 132px;
+	height: 32px;
+	position: relative;
+	top: 1px;
+}
+
+.btnPost {
+	background: url('../images/btnBlue01.png');
+	width: 92px;
+	height: 37px;
+}
+
+.btnPost:active {
+	background: url('../images/btnBlue01.png');
+	width: 92px;
+	height: 37px;
+	position: relative;
+	top: 1px;
+}
+
+.btnCancel {
+	background: url('../images/btnBlue02.png');
+	width: 92px;
+	height: 37px;
+}
+
+.btnCancel:active {
+	background: url('../images/btnBlue02.png ');
+	width: 92px;
+	height: 37px;
+	position: relative;
+	top: 1px;
+}
+
+.btnMyNews {
+	background: url('../images/btnMyNews.png');
+	width: 100px;
+	height: 32px;
+}
+
+.btnMyNews:active {
+	background: url('../images/btnMyNews.png ');
+	width: 100px;
+	height: 32px;
+	position: relative;
+	top: 1px;
+}
+.btnBookmark {
+	background: url('../images/btnBookmark.png');
+	width: 100px;
+	height: 32px;
+}
+
+.btnBookmark:active {
+	background: url('../images/btnBookmark.png ');
+	width: 100px;
+	height: 32px;
+	position: relative;
+	top: 1px;
+}
+.btnRecent {
+	background: url('../images/btnRecent.png');
+	width: 100px;
+	height: 32px;
+}
+
+.btnRecent:active {
+	background: url('../images/btnRecent.png ');
+	width: 100px;
+	height: 32px;
+	position: relative;
+	top: 1px;
+}
+
+.buttonTest {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	width: 132px;
+	height: 32px;
+	/* text-align: center; */
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+}
+.buttonTest:hover {
+	text-decoration: none;
+}
+.buttonTest:active {
+	position: relative;
+	top: 1px;
+}
+
+.btnOrange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+}
+.btnOrange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+}
+.btnOrange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	
+}
+
+.btnLeftArrow {
+	background: url('../images/btnLeftArrow.png');
+	width: 21px;
+	height: 26px;
+}
+
+.btnLeftArrow:active {
+	background: url('../images/btnLeftArrow.png ');
+	width: 21px;
+	height: 26px;
+	position: relative;
+	left: 1px;
+}
+.btnRightArrow {
+	background: url('../images/btnRightArrow.png');
+	width: 21px;
+	height: 26px;
+}
+
+.btnRightArrow:active {
+	background: url('../images/btnRightArrow.png ');
+	width: 21px;
+	height: 26px;
+	position: relative;
+	left: 1px;
+}
+
+
+/* 플랫폼 테스트 */
+.win .tester {
+	background: #ff5c36;
+}
+
+.mac .tester {
+	background: #357bff;
+}
+
+/* 브라우저 테스트 */
+.ie .tester {
+	background: #f28a2f;
+}
+
+.gecko .tester {
+	background: #68a5dd;
+}
+
+.safari .tester {
+	background: #5f75a2;
+}
+
+.chrome .tester {
+	background: #ff6600;
+}
+
+.opera .tester {
+	background: #449500;
+}
+
+/* Text Custom */
+.TitleTest {
+	color: #000000;
+	text-shadow: 2px 2px 2px #333333;
+}
+
+/* BG Images */
+.myPageBG {
+	background: url('../images/myPageBG.png');
+	background-repeat: no-repeat;
+}
+
+.tabBG {
+	background: url('../images/tabBG.png');
+	background-repeat: no-repeat;
+	height: 64px;
+}

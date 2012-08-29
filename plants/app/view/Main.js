@@ -5,7 +5,10 @@ Ext.define("plants.view.Main", {
     config: {
     	id 				: 'mainView',
         autoDestroy 	: true,
-        navigationBar 	: { ui:'dark', docked: 'top', hidden:false },
+
+        navigationBar 	: { //ui:'dark', 
+        	docked: 'top', hidden:true, cls: 'tabBG' },
+
       
         items: [
              {
