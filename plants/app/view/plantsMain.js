@@ -18,7 +18,6 @@ Ext.define('plants.view.plantsMain',{
 		        	id 		: 'buttonSearch',
 		        	itemId 	: 'searchPlants',
 		        	action 	: 'movePage',
-		        	flex 	: 10,
 		        },
 		        {
 		        	xtype 	: 'button',
@@ -26,14 +25,19 @@ Ext.define('plants.view.plantsMain',{
 		        	itemId 	: 'galleryBoard',
 		        	text 	: '갤러리',
 		        	action 	: 'movePage',
-		        	flex 	: 10,
 		        },
 		        {
 					xtype 	: 'button',
 					id  	: 'buttonMyPage01',
-					itemId 	: 'mypage01',
-					//cls: 'btnAction',
+					itemId 	: 'mypage01',	
 					text 	: '마이페이지',
+					action 	: 'movePage'
+				},
+		        {
+					xtype 	: 'button',
+					id  	: 'buttonSetting',
+					itemId 	: 'set',
+					text 	: '설정',
 					action 	: 'movePage'
 				}
 		]

@@ -35,7 +35,14 @@ Ext.application({
         'overlaySelect',
         'testPage',
         'boardInput',
-        'selectLeafPart'
+        'selectLeafPart',
+        'set',
+        'idSetting',
+        'alramSetting',
+        'serviceHelp',
+        'gonggi',
+        'programInform'
+        
     ],
     name: 'plants',
     controllers: [
