@@ -41,7 +41,8 @@ Ext.application({
         'idSetting',
         'alramSetting',
         'serviceHelp',
-        'gonggi',
+        'gongi',
+        'gongisahang',
         'programInform',
         'ms',
         'plantsTitlebar'

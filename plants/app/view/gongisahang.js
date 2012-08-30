@@ -1,25 +1,23 @@
-Ext.define('plants.view.ms', 
-		 {
+Ext.define('plants.view.gongisahang', {
 			 extend: 'Ext.tab.Panel',
 			 xtype: 'gongisahang',
 			 
-			 config:{
-				 
-				 activeItem: 2,
-				 tabBar: {
+			 config:{			 
+			    activeItem: 2,
+				tabBar: {
 					docked: 'top',
 					ui: 'netural',
 					layout: {
 						pack: 'center'
-					}
-			},
+				    }
+			    },
 			items: [
 			        {
 						title: 'simple',
 						layout: Ext.os.deviceType == 'phone' ? 'fit': {
 							type : 'vbox',
 							align: 'center',
-							pack: 'center'	
+							pack: 'center'
 						
 					},	
 			        cls: 'demo-list',

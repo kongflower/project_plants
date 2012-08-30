@@ -32,7 +32,7 @@ Ext.define('plants.view.set',{
 		    	    	xtype: 'button',
 		    	    	text: '공지사항',
 		    	    	action:'movePage',
-		    	    	itemId: 'gonggi',
+		    	    	itemId: 'gongi',
 		    	    	flex: 1
 		    	    },
 		    	    {
