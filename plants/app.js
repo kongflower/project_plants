@@ -18,37 +18,43 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
-	
+    name: 'plants',
     
 	stores: ['searchData'],
 	
     views: [
-        'Main',
-        'plantsMain',
-        'searchPlants',
-        'detailResult',
-        'resultInfo',
-        'galleryBoard',
-        'galleryPreview',
-        'galleryWrite',
-        'myPage',
-        'MyPage01',
-        'overlaySelect',
-        'testPage',
-        'boardInput',
-        'selectLeafPart',
-        'set',
-        'idSetting',
-        'alramSetting',
-        'serviceHelp',
-        'gongi',
-        'gongisahang',
-        'programInform',
-        'ms',
-        'plantsTitlebar'
+         //kongflower
+         'Main',
+         'plantsMain',
+         'searchPlants',
+         'detailResult',
+         'resultInfo',
+         'overlaySelect',
+         'plantsTitlebar',
+         'selectLeafPart',
+         //wooram
+         'gallery',
+         'galleryView',
+         'galleryWrite',
+         //sungphil
+         'favo',
+         //myungsung
+         'set',
+         'setId',
+         'setAlram',
+         'setHelp',
+         'setNotice',
+         'setNoticeItem',
+         'setInfo',
+         /*etc
+         'etcMs',
+         'etcMyPage',
+         'etcTestPage',
+         'etcBoardInput'*/
     ],
+    
     models:['plantsModel'],
-    name: 'plants',
+
     controllers: [
         'searchController',
         'galleryController',

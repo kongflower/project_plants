@@ -18,35 +18,35 @@ Ext.define('plants.view.set',{
 		    	    	xtype: 'button',
 		    	    	text: '아이디설정',
 		    	    	action:'movePage',
-		    	    	itemId:'idSetting',
+		    	    	itemId:'setId',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '알림설정',
 		    	    	action:'movePage',
-		    	    	itemId:'alramSetting',
+		    	    	itemId:'setAlram',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '공지사항',
 		    	    	action:'movePage',
-		    	    	itemId: 'gongi',
+		    	    	itemId: 'setNotice',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '서비스 도움말',
 		    	    	action:'movePage',
-		    	    	itemId: 'serviceHelp',
+		    	    	itemId: 'setHelp',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '프로그램 정보',
 		    	    	action:'movePage',
-		    	    	itemId: 'programInform',
+		    	    	itemId: 'setInfo',
 		    	    	flex: 1
 		    	    }
 		    	]
