@@ -1,6 +1,7 @@
 Ext.define('plants.view.boardInput', {
 	extend: 'Ext.form.Panel',
 	xtype: 'boardInput',
+	cls: 'myPageBG',
 	
 	requires: [
 	   'Ext.form.FieldSet',
@@ -12,16 +13,20 @@ Ext.define('plants.view.boardInput', {
 	
 	config: {
 		title: '새글쓰기',
+		cls: 'myPageBG',
 		
         items: [
             
             {
                 xtype: 'fieldset',
+                cls: 'myPageBG',
+                
                 title: '내용입력',
-                cls: 'TitleTest',
+                //cls: 'TitleTest',
                 items: [
                     {
                         xtype: 'textfield',
+                        cls: 'textBox_Act1',
                         label: '제목'
                     },
                     {
@@ -37,6 +42,8 @@ Ext.define('plants.view.boardInput', {
             {
                 //xtype: 'segmentedbutton',
                 xtype: 'panel',
+                cls: 'myPageBG',
+                
                 layout: {
                     align: 'center',
                     type: 'hbox',                                     	
@@ -48,7 +55,7 @@ Ext.define('plants.view.boardInput', {
                     	xtype 	: 'image',
                     	itemId: 'btnPost',
                     	id: 'btnPost',
-                    	action:'test',
+                    	action:'btnPostTap',
                     	//text: '게시',
                     	cls: 'btnPost'
 		    		    //src 	: './resources/images/btnPost.jpg',
@@ -57,6 +64,8 @@ Ext.define('plants.view.boardInput', {
                     {
                     	xtype 	: 'image',
                     	itemId: 'btnCancle',
+                    	id: 'btnCancle',
+                    	action:'btnCancleTap',
                     	//text: '게시',
                     	cls: 'btnCancel'
 		    		    //src 	: './resources/images/btnCancle.jpg',
@@ -85,21 +94,4 @@ Ext.define('plants.view.boardInput', {
             }
         ]
     },
-    onBtnPostTap: function(img, e, options) {
-    	console.log('게시');
-    	Ext.Msg.alert('Message', '게시하였습니다.', 
-    		function(){
-				console.log('on ok button');
-				Ext.getCmp('mainView').pop(1);
-    	});
-    },
-
-    onBtnCancleTap: function(img, e, options) {
-    	console.log('취소');
-    	Ext.Msg.alert('Message', '입력을 취소하셨습니다.', 
-    		function(){
-				console.log('on ok button');
-				Ext.getCmp('mainView').pop(1);
-    	});
-    }
 });

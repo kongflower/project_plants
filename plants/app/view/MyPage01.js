@@ -2,18 +2,21 @@ Ext.define('plants.view.MyPage01', {
     extend: 'Ext.Panel',
     xtype: 'mypage01',
     cls: 'myPageBG',
+    layout: {
+        align: 'center',
+        type: 'vbox'
+    },
     
     requires: ['Ext.SegmentedButton'],
 
-    config: {
-    	style: 'text-align:center',
-    	type: 'vbox',
+    config: {     	
+        
         items: [
             {
                 xtype: 'panel',
                 layout: {
-                    //align: 'center',
-                    type: 'hbox'
+                    align: 'center',
+                    type: 'vbox'
                 },
                 items: [
                     {
@@ -34,33 +37,21 @@ Ext.define('plants.view.MyPage01', {
             {
             	xtype: 'panel',
             	layout: {
+            		align: 'center',
             		type: 'vbox',
             	},
             	items: [
 					{
 						xtype: 'button',
 						//style: 'text-align:center',
-						cls: 'btnMyNews'
+						cls: 'buttonTest btnOrange',
 						
 						//style: 'width: 132px, height: 32px',
-//						id : 'buttonboardInput',
-//						text: '새글쓰기',
-//						itemId 	: 'boardInput',
-//						action: 'movePage'
-					},
-					{
-						xtype: 'button',
-						cls: 'btnMyNews'						
-					},
-					{
-						xtype: 'button',
-						cls: 'btnMyNews'						
+						id : 'buttonboardInput',
+						//text: '새글쓰기',
+						itemId 	: 'boardInput',
+						action: 'movePage'
 					}
-					//{
-					//	xtype: 'button',
-					//	text: 'Test',
-					//	cls: 'buttonTest btnOrange'
-					//}
             	]
             }
         ]

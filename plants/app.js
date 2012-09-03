@@ -41,9 +41,9 @@ Ext.application({
         'alramSetting',
         'serviceHelp',
         'gonggi',
-        'programInform'
-        
+        'programInform'   
     ],
+    models: ['plantsModel'],
     name: 'plants',
     controllers: [
         'searchController',

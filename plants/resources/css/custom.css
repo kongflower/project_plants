@@ -3,7 +3,7 @@
 
 /* Button Custom  */
 .btnAction {
-	display: inline-block;
+	display: block;
 	background: url('../images/btnAction.png');
 	/* background-repeat:repeat-x;
 	background-repeat:repeat-y; */
@@ -48,6 +48,7 @@
 }
 
 .btnMyNews {
+	display: block;
 	background: url('../images/btnMyNews.png');
 	width: 100px;
 	height: 32px;
@@ -61,6 +62,7 @@
 	top: 1px;
 }
 .btnBookmark {
+	display: block;
 	background: url('../images/btnBookmark.png');
 	width: 100px;
 	height: 32px;
@@ -74,6 +76,7 @@
 	top: 1px;
 }
 .btnRecent {
+	display: block;
 	background: url('../images/btnRecent.png');
 	width: 100px;
 	height: 32px;
@@ -86,9 +89,23 @@
 	position: relative;
 	top: 1px;
 }
+.btnNewContent {
+	display: block;
+	background: url('../images/btnNewContent.png');
+	width: 100px;
+	height: 32px;
+}
+
+.btnNewContent:active {
+	background: url('../images/btnNewContent.png ');
+	width: 100px;
+	height: 32px;
+	position: relative;
+	top: 1px;
+}
 
 .buttonTest {
-	display: inline-block;
+	display: block;
 	outline: none;
 	cursor: pointer;
 	width: 132px;
@@ -196,11 +213,35 @@
 /* BG Images */
 .myPageBG {
 	background: url('../images/myPageBG.png');
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 }
 
 .tabBG {
 	background: url('../images/tabBG.png');
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 	height: 64px;
 }
+
+/* Text Field Cusstom */
+.textBox_GD {
+	width: 221px;
+	background: transparent url('../images/textBox_bg1.jpg') no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:0px;
+}
+
+.textBox_Act1{	
+	border: 1px solid #999999;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 11px #000000;
+	-webkit-box-shadow: 0px 0px 11px #000000;
+	box-shadow: 0px 0px 11px #000000;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+}
+
