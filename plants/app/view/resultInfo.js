@@ -34,7 +34,8 @@ Ext.define('plants.view.resultInfo',{
 		    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
 		    	width 	: '90%',
 		    	margin  : '0 4 10 4',
-		    	flex:2
+		    	flex 	: 2,
+		    	mode 	:'none'
 		    },
 		    {	
 		    	xtype 	 : 'textfield',
@@ -47,7 +48,8 @@ Ext.define('plants.view.resultInfo',{
 		    	
 		    },
 		    {
-		    	xtype 	 : 'textfield',
+		    	xtype 	 : 'textareafield',
+		    	id 		 : 'explane',
 				name 	 : '설명',
 				readOnly : true,
 		    	width 	 : '90%',

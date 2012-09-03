@@ -14,6 +14,7 @@ Ext.define('plants.controller.searchController', {
     		detailResult: 'detailResult',
     		overlay: 'overlay',
     		searchMainImg:'#searchMainImg',
+    		explane:'#explane',
         },
         control: {
         	'[action=movePage]': {
@@ -86,6 +87,8 @@ Ext.define('plants.controller.searchController', {
     
     resultListTap:function(list, index, target,record, e, eOpts){
     	this.getMainView().push({xtype: 'resultInfo'});
+    	console.log('log : ' + record.get('body') + ' ' + this.getExplane());
+    	this.getExplane().setValue(record.get('body'));
     },
     
     //////////////////////////////////////////////////////////////////////////////

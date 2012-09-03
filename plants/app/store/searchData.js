@@ -6,7 +6,7 @@ var data = {
 						family: '장미목. 범의귀과',
 						home  : '한국',
 						body  : '잎은 손바닥 모양으로 3~5갈래로 갈라지고 길이와 너비 모두 5~10cm의 달걀모양이며, 가장자리에 톱니가 있다. 꽃은 3~4월에 녹황색으로 피며, 열매는 차로 어린 잎을 사용한다. 한방에서는 허리통증과 장출혈등에 처방한다.',
-						url   : 'http://postfiles6.naver.net/20120511_69/hjy11186_13366689437781n8Sh_JPEG/32.jpg%3Ftype%3Dw1'
+						url   : './resources/images/aroow_Left.png'
 					},
 					{ 
 						name  : '개머루',
