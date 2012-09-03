@@ -28,12 +28,12 @@ Ext.define('plants.view.searchPlants',{
 		    	items 	:{
 		    		xtype 	: 'img',
 		    		id 		: 'searchMainImg',
-			    	itemId 	: 'resultInfo',
+		    		action  : 'tapMainImg',
+			    	itemId 	: -1,
 			   	    padding : '20 20 30 20',
 			   	    width 	: '100%',
 			   	    height  : '100%',
 			   	   	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		    	   	action 	: 'movePage',
 		        	mode 	: 'none',
 		        	style 	: "background-image:url('./resources/images/frame_Large.png');" +
 					  'border:0;' +
