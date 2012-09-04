@@ -20,7 +20,7 @@ Ext.Loader.setConfig({
 Ext.application({
     name: 'plants',
     
-	stores: ['searchData'],
+	stores: ['searchData', 'bookmarkData'],
 	
     views: [
          //kongflower

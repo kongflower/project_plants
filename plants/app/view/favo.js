@@ -2,15 +2,14 @@ Ext.define('plants.view.favo', {
     extend: 'Ext.Panel',
     xtype: 'favo',
     cls: 'myPageBG',
-    layout: {
-        align: 'center',
-        type: 'vbox'
-    },
     
     requires: [
        'Ext.form.FieldSet',
        'Ext.field.Text',
-       'Ext.Img'
+       'Ext.Img',
+       'Ext.dataview.List',
+       'Ext.data.proxy.JsonP',
+       'Ext.data.Store'
     ],
 
     config: {     	
@@ -48,34 +47,35 @@ Ext.define('plants.view.favo', {
             
             {
             	xtype: 'panel',
-            	layout: {
-            		//align: 'center',
-            		type: 'vbox',
-            	},
+            	
             	items: [
+            	    {
+            	    	xtype: 'tmpList',
+            	    	width: '400px',
+            	    	height: '150px',
+            	    	//flex: 1
+            	    },
+//					{
+//						xtype: 'fieldset',
+//						title: '즐겨찾기',
+//						
+//						items: [
+//						    {
+//						    	xtype: 'img',
+//						    },
+//						    {
+//						    	
+//						    }
+//						]
+//					},
 					{
-						xtype: 'fieldset',
-						title: '최근찾기',
-						items: [
-						    {
-						    	//xtype: 'tmpList',
-						    },
-						    {
-						    	
-						    }
-						]
-					},
-					{
-						xtype: 'fieldset',
-						title: '즐겨찾기',
-						items: [
-						    {
-						    	xtype: 'img',
-						    },
-						    {
-						    	
-						    }
-						]
+						xtype: 'button',
+						cls: 'btnTest btnOrange',
+						text: '테스트 페이지',
+						style: 'width: 132px, height: 32px',
+						id : 'btnTestPage',						
+						itemId 	: 'tmpList',
+						action: 'movePage'
 					}
             	]
             }

@@ -49,7 +49,7 @@ Ext.define('plants.view.MyPage01', {
 						//style: 'width: 132px, height: 32px',
 						id : 'buttonboardInput',
 						//text: '새글쓰기',
-						itemId 	: 'boardInput',
+						itemId 	: 'tmpList',
 						action: 'movePage'
 					}
             	]
