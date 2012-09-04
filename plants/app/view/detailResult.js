@@ -10,8 +10,17 @@ Ext.define('plants.view.detailResult',{
 	config:{
 		title : 'detailResult',
 		fullscreen 	: true,
-		itemTpl 	:'{name}',
 		store 		: 'searchData',
+		itemTpl 	:[
+		       '<div style="height: 60px;">',
+		        '<div style="float:left; width: 60px; height: 60px;">',
+		        	'<img src="{url}" style="width: 100%; height: 100%;">',
+		        '</div>',
+		        '<div style="margin-left: 70px; padding-top: 18px;">',
+		        	'{name}',
+		        '</div>',
+		       '</div>'
+		],
 		items 		:[
 		      	{
 		      		xtype :'plantsTitlebar',

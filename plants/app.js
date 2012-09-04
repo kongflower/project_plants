@@ -47,6 +47,7 @@ Ext.application({
          'setNotice',
          'setNoticeItem',
          'setInfo',
+         'test',
          /*etc
          'etcMs',
          'etcMyPage',

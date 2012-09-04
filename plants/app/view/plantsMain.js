@@ -39,7 +39,7 @@ Ext.define('plants.view.plantsMain',{
 					itemId 	: 'set',
 					text 	: '설정',
 					action 	: 'movePage'
-				}
+				},
 		]
 	}
 });

@@ -58,7 +58,7 @@ Ext.define('plants.controller.searchController', {
     ///////////////////  common  /////////////////////////////////////////////////
     
     onMovePage : function(button, e, options){
-    	this.getMainView().push({xtype: button.getItemId()});
+    	this.getMainView().push({xtype: 'test'});
     	console.log('plants  :  ' + button.getItemId());
     },
     onActionBack : function(button, e, options){

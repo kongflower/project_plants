@@ -22,9 +22,9 @@ Ext.define('plants.view.searchPlants',{
 		    {
 		    	xtype 	:'panel',
 		    	layout 	:'fit',
-		    	margin 	:'5 5 5 5',
-		    	width 	:280,
-		    	height 	:280,
+		    	margin 	:'20 5 10 5',
+		    	width 	:300,
+		    	height 	:300,
 		    	
 		    	items 	:{
 		    		xtype 	: 'img',
@@ -47,10 +47,11 @@ Ext.define('plants.view.searchPlants',{
 		    {	
 		    	xtype 	: 'panel',
 		    	layout 	: {type:'hbox', align:'stretch',pack:'center'},
-		    	defaults: {flex:1, margin  : '0 4 10 4'},
+		    	defaults: {width: '50px', height: '50px', margin  : '0 4 10 4'},
 		    	margin 	: '10 0 0 0',
 		    	width 	: '90%',
 		    	flex:1,
+		    	
 		    	items:[
 		    		{
 		    		    xtype 	: 'button',
@@ -110,7 +111,7 @@ Ext.define('plants.view.searchPlants',{
 		    	 
 		    	 items:[
 			     ],
-		    }
+		    },
 		],
 	}
 });
