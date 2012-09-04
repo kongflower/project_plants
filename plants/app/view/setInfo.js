@@ -1,8 +1,6 @@
-
-
-Ext.define('plants.view.programInform',{
+Ext.define('plants.view.setInfo',{
 	extend : 'Ext.Panel',
-	xtype: 'programInform',
+	xtype: 'setInfo',
 	
 	config : {
 		title : '프로그램정보',
@@ -10,7 +8,14 @@ Ext.define('plants.view.programInform',{
 		scrollable:true,
 		styleHtmlContent:true,
 		
-		items: [],
+		items: [
+		    {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
+		],
 		
 		html : [ '<h2>프로그램정보</h2>' ].join("")
 	}

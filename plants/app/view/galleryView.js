@@ -1,9 +1,9 @@
-Ext.define('plants.view.galleryWrite',{
+Ext.define('plants.view.galleryView',{
 	extend : 'Ext.Panel',
-	xtype: 'galleryWrite',
+	xtype: 'galleryView',
 	
 	config : {
-		title : 'galleryWrite',
+		title : 'galleryview',
 		
 		scrollable:true,
 		styleHtmlContent:true,
@@ -11,12 +11,12 @@ Ext.define('plants.view.galleryWrite',{
 		items: [
 		    {
 		    	xtype :'plantsTitlebar',
-		    	title : '식물	찾기',
+		    	title : '식물찾기',
 		    	width : '100%',
 		    	height: 50,
 		    },
 		],
 		
-		html : [ '<h2>galleryWrite</h2>' ].join("")
+		html : [ '<h2>galleryView</h2>' ].join("")
 	}
 });

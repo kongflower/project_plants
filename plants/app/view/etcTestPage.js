@@ -9,6 +9,12 @@ Ext.define('plants.view.testPage',{
 		styleHtmlContent:true,
 		
 		items: [
+		    {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
 			{
 			    xtype: 'image',
 			    src: '../resources/images/img1.jpeg',

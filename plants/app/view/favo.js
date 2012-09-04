@@ -1,17 +1,29 @@
-Ext.define('plants.view.MyPage01', {
+Ext.define('plants.view.favo', {
     extend: 'Ext.Panel',
-    xtype: 'mypage01',
+    xtype: 'favo',
     cls: 'myPageBG',
     layout: {
         align: 'center',
         type: 'vbox'
     },
     
-    requires: ['Ext.SegmentedButton'],
+    requires: [
+       'Ext.form.FieldSet',
+       'Ext.field.Text',
+       'Ext.Img'
+    ],
 
     config: {     	
         
         items: [
+            {
+                xtype: 'panel',
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				cls: 'tabBG',
+				width : '100%',
+				height: 50,
+			},	
             {
                 xtype: 'panel',
                 layout: {
@@ -37,20 +49,33 @@ Ext.define('plants.view.MyPage01', {
             {
             	xtype: 'panel',
             	layout: {
-            		align: 'center',
+            		//align: 'center',
             		type: 'vbox',
             	},
             	items: [
 					{
-						xtype: 'button',
-						//style: 'text-align:center',
-						cls: 'buttonTest btnOrange',
-						
-						//style: 'width: 132px, height: 32px',
-						id : 'buttonboardInput',
-						//text: '새글쓰기',
-						itemId 	: 'boardInput',
-						action: 'movePage'
+						xtype: 'fieldset',
+						title: '최근찾기',
+						items: [
+						    {
+						    	//xtype: 'tmpList',
+						    },
+						    {
+						    	
+						    }
+						]
+					},
+					{
+						xtype: 'fieldset',
+						title: '즐겨찾기',
+						items: [
+						    {
+						    	xtype: 'img',
+						    },
+						    {
+						    	
+						    }
+						]
 					}
             	]
             }

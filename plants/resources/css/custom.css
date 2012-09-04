@@ -216,9 +216,15 @@
 	/* background-repeat: no-repeat; */
 }
 
+.customBG {
+	background: url('../images/BG02.png');
+	/* background-repeat: no-repeat; */
+}
+
 .tabBG {
 	background: url('../images/tabBG.png');
 	/* background-repeat: no-repeat; */
+	opacity:0.4;
 	height: 64px;
 }
 

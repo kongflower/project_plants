@@ -9,38 +9,44 @@ Ext.define('plants.view.set',{
 		    	layout: {type: 'vbox'},
 		    	items: [
 		    	    {
+		    	    	xtype :'plantsTitlebar',
+		    	    	title : '식물찾기',
+		    	    	width : '100%',
+		    	    	height: 50,
+		    	    },
+		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '아이디설정',
 		    	    	action:'movePage',
-		    	    	itemId:'idSetting',
+		    	    	itemId:'setId',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '알림설정',
 		    	    	action:'movePage',
-		    	    	itemId:'alramSetting',
+		    	    	itemId:'setAlram',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '공지사항',
 		    	    	action:'movePage',
-		    	    	itemId: 'gonggi',
+		    	    	itemId: 'setNotice',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '서비스 도움말',
 		    	    	action:'movePage',
-		    	    	itemId: 'serviceHelp',
+		    	    	itemId: 'setHelp',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
 		    	    	text: '프로그램 정보',
 		    	    	action:'movePage',
-		    	    	itemId: 'programInform',
+		    	    	itemId: 'setInfo',
 		    	    	flex: 1
 		    	    }
 		    	]

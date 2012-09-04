@@ -8,49 +8,60 @@ Ext.define('plants.view.resultInfo',{
 	       'Ext.field.Text'
 	],
 	
-	config : {
-		title : 'resultInfo',
-		
+	config : {	
 		layout 	: {type:'vbox',align:'middle'},
-		defaults: {flex:2},
 		
 		scrollable:true,
-		styleHtmlContent:true,
+		//styleHtmlContent:true,
+		style 	: 'background:#ffffff;',
 		
 		items: [
 		    {
-		    	xtype 	: 'label',
-		    	style 	: 'background-color:gray',
-		    	html 	: 'label',
-		    	flex 	: 0.3,
-		    	width 	: '90%',
-		    	margin  : '5 0 5 0'
-		    },
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
 		    {
-		    	xtype 	: 'img',
-		    	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		    	width 	: '90%',
-		    	margin 	: 20,
-		    	margin  : '0 4 10 4'
-		    },
-		    {	
-		    	xtype 	 : 'textfield',
-				name 	 : '특성',
-				readOnly : true,
-		    	width 	 : '90%',
-		    	value 	 : '특성',
-		    	margin   : '5 0 5 0'
+		    	xtype 	:'panel',
+		    	layout 	:'fit',
+		    	margin 	:'20 5 5 5',
+		    	width 	:280,
+		    	height 	:280,
 		    	
+		    	items 	:{
+		    		xtype 	: 'img',
+		    		id 		: 'resultImg',
+			    	//itemId 	: 'resultInfo',
+			   	    padding : '20 20 30 20',
+			   	    width 	: '100%',
+			   	    height  : '100%',
+			   	   	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
+		        	mode 	: 'none',
+		        	style 	: "background-image:url('./resources/images/frame_Large.png');" +
+					  'border:0;' +
+					  'background-color:transparent;' + 
+					  'background-repeat:no-repeat;' + 
+					  'background-size:100% 100%;' + 
+					  'align:center'
+		    	}
 		    },
-		    {
-		    	xtype 	 : 'textfield',
-				name 	 : '설명',
-				readOnly : true,
-		    	width 	 : '90%',
-		    	value 	 : '설명',
-		    	margin   : '5 0 5 0',
-		    	flex 	 : 1,
-		    },
+//		    {
+//		    	xtype 	:'panel',
+//		    	margin 	:'5 5 5 5',
+//		    	width   :'90%',
+//		    	flex  	: 1,
+//		    	
+//		    	items 	:{
+//		    		xtype 	 : 'textareafield',
+//		    		id 		 : 'explane',
+//		    		name 	 : '설명',
+//		    		readOnly : true,
+//		    		width 	 : '100%',
+//		    		height   : '100%',
+//		    		margin   : '5 0 5 0',
+//		    	}
+//		    },
 		],
 	}
 });

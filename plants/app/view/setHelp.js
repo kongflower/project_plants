@@ -1,6 +1,6 @@
-Ext.define('plants.view.serviceHelp',{
+Ext.define('plants.view.setHelp',{
 	extend : 'Ext.Panel',
-	xtype: 'serviceHelp',
+	xtype: 'setHelp',
 	
 	config : {
 		title : '서비스도움말',
@@ -8,7 +8,14 @@ Ext.define('plants.view.serviceHelp',{
 		scrollable:true,
 		styleHtmlContent:true,
 		
-		items: [],
+		items: [
+		    {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
+		],
 		
 		html : [ '<h2>서비스도움말</h2>' ].join("")
 	}

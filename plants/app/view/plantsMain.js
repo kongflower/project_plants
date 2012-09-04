@@ -14,28 +14,28 @@ Ext.define('plants.view.plantsMain',{
 		items 	: [
 		        {
 		        	xtype  	: 'button',
-		        	text 	: '식물찾기',
 		        	id 		: 'buttonSearch',
 		        	itemId 	: 'searchPlants',
+		        	text 	: '식물찾기',
 		        	action 	: 'movePage',
 		        },
 		        {
 		        	xtype 	: 'button',
 		        	id  	: 'buttonGallery',
-		        	itemId 	: 'galleryBoard',
+		        	itemId 	: 'gallery',
 		        	text 	: '갤러리',
 		        	action 	: 'movePage',
 		        },
 		        {
 					xtype 	: 'button',
-					id  	: 'buttonMyPage01',
-					itemId 	: 'mypage01',	
+					id  	: 'buttonfave',
+					itemId 	: 'favo',	
 					text 	: '마이페이지',
 					action 	: 'movePage'
 				},
 		        {
 					xtype 	: 'button',
-					id  	: 'buttonSetting',
+					id  	: 'buttonSet',
 					itemId 	: 'set',
 					text 	: '설정',
 					action 	: 'movePage'

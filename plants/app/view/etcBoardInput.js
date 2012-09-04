@@ -1,5 +1,5 @@
 Ext.define('plants.view.boardInput', {
-	extend: 'Ext.form.Panel',
+	extend: 'Ext.Panel',
 	xtype: 'boardInput',
 	cls: 'myPageBG',
 	
@@ -13,9 +13,15 @@ Ext.define('plants.view.boardInput', {
 	
 	config: {
 		title: '새글쓰기',
+		cls: 'myPageBG',
 		
         items: [
-            
+            {
+				xtype :'plantsTitlebar',
+				title : '식물찾기',
+				width : '100%',
+				height: 50,
+			},
             {
                 xtype: 'fieldset',
                 cls: 'myPageBG',
