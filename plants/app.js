@@ -20,7 +20,7 @@ Ext.Loader.setConfig({
 Ext.application({
     name: 'plants',
     
-	stores: ['searchData', 'bookmarkData'],
+	stores: ['searchData', 'bookmarkData', 'recentSearchData'],
 	
     views: [
          //kongflower
@@ -38,7 +38,8 @@ Ext.application({
          'galleryWrite',
          //sungphil
          'favo',
-         'tmpList',
+         'favoBookmarkList',
+         'recentSearchList',
          //myungsung
          'set',
          'setId',
@@ -55,7 +56,7 @@ Ext.application({
          'etcBoardInput'*/
     ],
     
-    models:['plantsModel', 'bookmarkModel'],
+    models:['plantsModel', 'bookmarkModel', 'recentSearchModel'],
     controllers: [
         'searchController',
         'galleryController',

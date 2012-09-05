@@ -9,14 +9,14 @@ Ext.define('plants.view.favo', {
        'Ext.Img',
        'Ext.dataview.List',
        'Ext.data.proxy.JsonP',
-       'Ext.data.Store'
+       'Ext.data.Store',
+       'Ext.Label'
     ],
 
     config: {     	
         
         items: [
             {
-                xtype: 'panel',
 				xtype :'plantsTitlebar',
 				title : '식물찾기',
 				cls: 'tabBG',
@@ -25,6 +25,7 @@ Ext.define('plants.view.favo', {
 			},	
             {
                 xtype: 'panel',
+                flex: 1,
                 layout: {
                     align: 'center',
                     type: 'hbox'
@@ -32,54 +33,63 @@ Ext.define('plants.view.favo', {
                 items: [
                     {
                         xtype: 'button',
-                        cls: 'btnMyNews'
+                        cls: 'btnMyNews',
+                        //width:30,                        
                     },
                     {
                         xtype: 'button',
-                        cls: 'btnBookmark'
+                        cls: 'btnBookmark',
+                        //width:30,                        
                     },
                     {
                         xtype: 'button',
-                        cls: 'btnRecent'
+                        cls: 'btnRecent',
+                        //width:30,                        
                     }
                 ]
             },
             
-            {
-            	xtype: 'panel',
-            	
+            {            	
+                //xtype: 'fieldset',
+                //cls: 'myPageBG',
+            	xtype: 'panel',  
+            	flex: 1,
+            	layout: {
+            		type: 'vbox',
+            		align: 'center'
+            	},
             	items: [
             	    {
-            	    	xtype: 'tmpList',
-            	    	width: '400px',
-            	    	height: '150px',
-            	    	//flex: 1
+            	    	xtype: 'label',
+            	        html: '즐겨찾기'
+            	    	
             	    },
+            	    {
+            	    	xtype: 'favoBookmarkList',
+            	    	width: '400px',
+            	    	height: '255px',
+            	    },
+            	    {
+            	    	xtype: 'label',
+            	        html: '최근찾기'
+            	    	
+            	    },
+            	    {
+            	    	xtype: 'recentSearchList',
+            	    	width: '400px',
+            	    	height: '255px',
+            	    }
 //					{
-//						xtype: 'fieldset',
-//						title: '즐겨찾기',
-//						
-//						items: [
-//						    {
-//						    	xtype: 'img',
-//						    },
-//						    {
-//						    	
-//						    }
-//						]
-//					},
-					{
-						xtype: 'button',
-						cls: 'btnTest btnOrange',
-						text: '테스트 페이지',
-						style: 'width: 132px, height: 32px',
-						id : 'btnTestPage',						
-						itemId 	: 'tmpList',
-						action: 'movePage'
-					}
+//						xtype: 'button',
+//						cls: 'btnTest btnOrange',
+//						text: '테스트 페이지',
+//						style: 'width: 132px, height: 32px',
+//						id : 'btnTestPage',						
+//						itemId 	: 'favoBookmarkList',
+//						action: 'movePage'
+//					}
             	]
             }
         ]
     }
-
 });

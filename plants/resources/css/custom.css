@@ -108,8 +108,8 @@
 	display: block;
 	outline: none;
 	cursor: pointer;
-	width: 132px;
-	height: 32px;
+	/* width: 132px;
+	height: 32px; */
 	/* text-align: center; */
 	text-decoration: none;
 	font: 14px/100% Arial, Helvetica, sans-serif;
@@ -213,12 +213,12 @@
 /* BG Images */
 .myPageBG {
 	background: url('../images/myPageBG.png');
-	/* background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 }
 
 .customBG {
 	background: url('../images/BG02.png');
-	/* background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 }
 
 .tabBG {

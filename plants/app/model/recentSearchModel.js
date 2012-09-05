@@ -1,4 +1,4 @@
-Ext.define('plants.model.bookmarkModel', {
+Ext.define('plants.model.recentSearchModel', {
    extend: 'Ext.data.Model',
    
    config: {
