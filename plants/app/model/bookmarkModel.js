@@ -5,7 +5,8 @@ Ext.define('plants.model.bookmarkModel', {
        fields: [
            {name: 'thumbs',  type: 'string'},
            {name: 'firstName',  type: 'string'},
-           {name: 'lastName',  type: 'string'},           
+           {name: 'lastName',  type: 'string'}, 
+           {name: 'content',  type: 'string'},
        ]
    }
 });

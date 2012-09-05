@@ -2,7 +2,10 @@ Ext.define('plants.controller.myPageController', {
     extend: 'Ext.app.Controller',
     config: {
     	refs: {
-            
+    		mainView 		 : '#mainView',
+    		favoBookmarkInfo : 'favoBookmarkInfo',
+    		favoBookmarkList: 'favoBookmarkList',
+    		recentSearchList: 'recentSearchList'
         },
         control: {
         	"[action=btnPostTap]": {
@@ -10,10 +13,13 @@ Ext.define('plants.controller.myPageController', {
             },
             "[action=btnCancleTap]": {
                 tap: 'onBtnCancleTap'
-            }
+            },
 //        	'boardInput button#btnPost': {
 //        		tap: 'onBtnPostTap2'
 //        	}
+            'favoBookmarkList':{
+				itemtap : 'favoBookmarkListTap'
+			}
         }
     },
     
@@ -33,5 +39,17 @@ Ext.define('plants.controller.myPageController', {
 				Ext.getCmp('mainView').pop(1);
     	});
     },
-
+    
+    favoBookmarkListTap: function(list, index, target,record, e, eOpts){
+    	this.getMainView().push({xtype: 'favoBookmarkInfo'});
+    
+    	this.getFavoBookmarkInfo().setHtml(
+    			"<div style='margin:5%; width:90%;'>" + 
+    				record.get('content') +
+    		    "</div>"
+    	);
+    	
+    	this.getResultImg().setSrc(record.get('thumbs'));
+    	console.log("탭 되었슴.");
+    }
 });

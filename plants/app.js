@@ -39,6 +39,7 @@ Ext.application({
          //sungphil
          'favo',
          'favoBookmarkList',
+         'favoBookmarkInfo',
          'recentSearchList',
          //myungsung
          'set',
