@@ -41,6 +41,7 @@ Ext.application({
          'favoBookmarkList',
          'favoBookmarkInfo',
          'recentSearchList',
+         'recentSearchInfo',
          //myungsung
          'set',
          'setId',

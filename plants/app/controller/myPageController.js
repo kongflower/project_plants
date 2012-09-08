@@ -5,7 +5,10 @@ Ext.define('plants.controller.myPageController', {
     		mainView 		 : '#mainView',
     		favoBookmarkInfo : 'favoBookmarkInfo',
     		favoBookmarkList: 'favoBookmarkList',
-    		recentSearchList: 'recentSearchList'
+    		favoBookmarkImg: '#favoBookmarkImg',
+    		recentSearchInfo: 'recentSearchInfo',
+    		recentSearchList: 'recentSearchList',
+    		recentSearchImg: '#recentSearchImg'
         },
         control: {
         	"[action=btnPostTap]": {
@@ -19,6 +22,9 @@ Ext.define('plants.controller.myPageController', {
 //        	}
             'favoBookmarkList':{
 				itemtap : 'favoBookmarkListTap'
+			},
+			'recentSearchList':{
+				itemtap : 'recentSearchListTap'
 			}
         }
     },
@@ -49,7 +55,22 @@ Ext.define('plants.controller.myPageController', {
     		    "</div>"
     	);
     	
-    	this.getResultImg().setSrc(record.get('thumbs'));
+    	this.getFavoBookmarkImg().setSrc(record.get('thumbs'));
+    	this.getContacts().deselectAll();
+    	console.log("탭 되었슴.");
+    },
+    recentSearchListTap: function(list, index, target,record, e, eOpts){
+    	this.getMainView().push({xtype: 'recentSearchInfo'});
+    
+    	this.getRecentSearchInfo().setHtml(
+    			"<div style='margin:5%; width:90%;'>" + 
+    				record.get('content') +
+    		    "</div>"
+    	);
+    	
+    	this.getRecentSearchImg().setSrc(record.get('thumbs'));
+    	this.getContacts().deselectAll();
     	console.log("탭 되었슴.");
     }
+    
 });

@@ -1,6 +1,6 @@
-Ext.define('plants.view.favoBookmarkInfo',{
+Ext.define('plants.view.recentSearchInfo',{
 	extend : 'Ext.Panel',
-	xtype: 'favoBookmarkInfo',
+	xtype: 'recentSearchInfo',
 	
 	requires: [
 	       'Ext.Img',
@@ -31,7 +31,7 @@ Ext.define('plants.view.favoBookmarkInfo',{
 		    	
 		    	items 	:{
 		    		xtype 	: 'img',
-		    		id 		: 'favoBookmarkImg',
+		    		id 		: 'recentSearchImg',
 			    	//itemId 	: 'resultInfo',
 			   	    padding : '20 20 30 20',
 			   	    width 	: '100%',

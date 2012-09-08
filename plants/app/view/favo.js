@@ -23,35 +23,6 @@ Ext.define('plants.view.favo', {
 				width : '100%',
 				height: 50,
 			},	
-//            {
-//                xtype: 'panel',
-//                flex: 1,
-//                layout: {
-//                    align: 'center',
-//                    type: 'hbox'
-//                },
-//                items: [
-//                    {
-//                        xtype: 'button',
-//                        cls: 'btnMyNews',
-//                        //width:30,                        
-//                    },
-//                    {
-//                        xtype: 'button',
-//                        cls: 'btnBookmark',
-//    		        	id  	: 'btnBookmarkList',
-//    		        	itemId 	: 'favoBookmarkList',
-//    		        	action 	: 'movePage',
-//                        //width:30,                        
-//                    },
-//                    {
-//                        xtype: 'button',
-//                        cls: 'btnRecent',
-//                        //width:30,                        
-//                    }
-//                ]
-//            },
-            
             {            	
                 //xtype: 'fieldset',
                 //cls: 'myPageBG',
@@ -74,7 +45,7 @@ Ext.define('plants.view.favo', {
             	    {
             	    	xtype: 'favoBookmarkList',
             	    	
-            	    	width: '80%',
+            	    	width: '90%',
             	    	height: '255px',
             	    	style:{border:1}
             	    },
@@ -89,18 +60,10 @@ Ext.define('plants.view.favo', {
             	    },
             	    {
             	    	xtype: 'recentSearchList',
-            	    	width: '80%',
+            	    	width: '90%',
             	    	height: '255px',
             	    }
-//					{
-//						xtype: 'button',
-//						cls: 'btnTest btnOrange',
-//						text: '테스트 페이지',
-//						style: 'width: 132px, height: 32px',
-//						id : 'btnTestPage',						
-//						itemId 	: 'favoBookmarkList',
-//						action: 'movePage'
-//					}
+
             	]
             }
         ]
