@@ -1,22 +1,40 @@
 Ext.define('plants.view.setId',{
-	extend : 'Ext.Panel',
+	extend : 'Ext.form.Panel',
 	xtype: 'setId',
 	
-	config : {
-		title : '아이디설정',
+	requires : [
+		  	      'Ext.form.FieldSet',
+		  	      'Ext.field.Email'
+		],
 		
-		scrollable:true,
-		styleHtmlContent:true,
+	config:{
+			
 		
-		items: [
+		items:[
 		    {
-		    	xtype :'plantsTitlebar',
-				title : '식물찾기',
-				width : '100%',
-				height: 50,
-		     },
+		    	xtype:'fieldset',
+		    	title: '아이디입력',
+
+	 
+		    	items: [
+		    	    {
+		    	    	xtype: 'textfield',
+		    	    	name: 'id',
+		    	    	label: '아이디',
+		    	    },
+		    	    {
+		    	    	xtype: 'passwordfield',
+		    	    	name: 'pass',
+		    	    	label: '암호',
+		    	    }
+		    	],
+		    },
+		    {
+		    	xtype:'button',
+		    	text:'보내기',
+		    	ui: 'confirm',
+	 
+		    }
 		 ],
-		
-		html : [ '<h2>id설정</h2>' ].join("")
-	}
+	},
 });

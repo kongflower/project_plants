@@ -1,7 +1,6 @@
 Ext.define('plants.view.searchPlants',{
 	extend 	: 'Ext.Panel',
 	xtype 	: 'searchPlants',
-	cls: 'myPageBG',
 	
 	requires: ["Ext.Img"],
 	
@@ -10,7 +9,8 @@ Ext.define('plants.view.searchPlants',{
 		title   : 'searchPlants',
 		fullscreen : true,
 		layout 	: {type:'vbox',align:'middle'},
-		style 	: 'background-color:#ffffff',
+		cls: 'myPageBG',
+//		style 	: 'background-color:#ffffff',
 		
 		items: [
 		    {
@@ -57,7 +57,7 @@ Ext.define('plants.view.searchPlants',{
 		    		    xtype 	: 'button',
 		    		    id  	: 'buttonLeaf',
 		   			    action 	: 'showSelect',
-		   			    style 	: "background-image:url('./resources/images/pic01.png');" +
+		   			    style 	: "background-image:url('./resources/images/btn_leaf.png');" +
 		   			    		  'border:0;' +
 		   			    		  'background-color:transparent;' + 
 		   			    		  'background-repeat:no-repeat;' + 
@@ -67,7 +67,7 @@ Ext.define('plants.view.searchPlants',{
 		   		        xtype 	: 'button',
 		    		    id  	: 'buttonFlower',
 		    		    action 	: 'showSelect',
-		    		    style 	: "background-image:url('./resources/images/pic02.png');" +
+		    		    style 	: "background-image:url('./resources/images/btn_flower.png');" +
   					  		 	  'border:0;' +
   					  		 	  'background-color:transparent;' + 
   					  		 	  'background-repeat:no-repeat;' + 
@@ -77,7 +77,7 @@ Ext.define('plants.view.searchPlants',{
 		    			xtype 	: 'button',
 		    			id  	: 'buttonFruit',
 		    			action 	: 'showSelect',
-		    			style 	: "background-image:url('./resources/images/pic03.png');" +
+		    			style 	: "background-image:url('./resources/images/btn_fruit.png');" +
 		    					  'border:0;' +
 		    					  'background-color:transparent;' + 
 		    					  'background-repeat:no-repeat;' + 

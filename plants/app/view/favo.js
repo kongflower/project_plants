@@ -18,7 +18,7 @@ Ext.define('plants.view.favo', {
         items: [
             {
 				xtype :'plantsTitlebar',
-				title : '식물찾기',
+				title : '식물도',
 				cls: 'tabBG',
 				width : '100%',
 				height: 50,
@@ -39,7 +39,7 @@ Ext.define('plants.view.favo', {
 					},
             	    {
             	    	xtype: 'label',
-            	        html: '즐겨찾기'
+            	        html: '즐겨찾'
             	    	
             	    },
             	    {
@@ -55,7 +55,7 @@ Ext.define('plants.view.favo', {
                     },
             	    {
             	    	xtype: 'label',
-            	        html: '최근찾기'
+            	        html: '최근찾'
             	    	
             	    },
             	    {

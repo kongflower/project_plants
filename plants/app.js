@@ -32,6 +32,8 @@ Ext.application({
          'overlaySelect',
          'plantsTitlebar',
          'selectLeafPart',
+         'selectFlowerPart',
+         'selectFruitPart',
          //wooram
          'gallery',
          'galleryView',
@@ -50,7 +52,6 @@ Ext.application({
          'setNotice',
          'setNoticeItem',
          'setInfo',
-         'test',
          /*etc
          'etcMs',
          'etcMyPage',

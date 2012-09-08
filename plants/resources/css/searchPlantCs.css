@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+.#buttonLeaf {
+	background-image:url('./resources/images/btn_leaf.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
+
+.#buttonLeaf:active {
+	background-image:url('./resources/images/btn_leaf_on.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
