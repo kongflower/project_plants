@@ -1,15 +1,63 @@
 @CHARSET "UTF-8";
 
-.#buttonLeaf {
-	background-image:url('./resources/images/btn_leaf.png');
+#buttonFlower {
+	background-image:url('../images/btn_flower.png');
     border:0;
 	background-color:transparent; 
     background-repeat:no-repeat; 
 	background-size:100% 100%
 }
 
-.#buttonLeaf:active {
-	background-image:url('./resources/images/btn_leaf_on.png');
+#buttonFlower:active {
+	background-image:url('../images/btn_flower_on.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
+
+#buttonLeaf {
+	background-image:url('../images/btn_leaf.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
+
+#buttonLeaf:active {
+	background-image:url('../images/btn_leaf_on.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
+
+#buttonFruit {
+	background-image:url('../images/btn_fruit.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
+
+#buttonFruit:active {
+	background-image:url('../images/btn_fruit_on.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
+
+#buttonGoDetail {
+	background-image:url('../images/btn_list.png');
+    border:0;
+	background-color:transparent; 
+    background-repeat:no-repeat; 
+	background-size:100% 100%
+}
+
+#buttonGoDetail:active {
+	background-image:url('../images/btn_list_on.png');
     border:0;
 	background-color:transparent; 
     background-repeat:no-repeat; 

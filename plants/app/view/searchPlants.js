@@ -5,12 +5,11 @@ Ext.define('plants.view.searchPlants',{
 	requires: ["Ext.Img"],
 	
 	config : {
-		id 		: 'searchPlants',
-		title   : 'searchPlants',
-		fullscreen : true,
-		layout 	: {type:'vbox',align:'middle'},
-		cls: 'myPageBG',
-//		style 	: 'background-color:#ffffff',
+		id 			: 'searchPlants',
+		title   	: 'searchPlants',
+		fullscreen 	: true,
+		layout 		: {type:'vbox',align:'middle'},
+//		cls 		: 'myPageBG',
 		
 		items: [
 		    {
@@ -21,95 +20,288 @@ Ext.define('plants.view.searchPlants',{
 		    },
 		    {
 		    	xtype 	:'panel',
-		    	layout 	:'fit',
-		    	margin 	:'20 5 10 5',
-		    	width 	:300,
-		    	height 	:300,
-		    	
-		    	items 	:{
-		    		xtype 	: 'img',
-		    		id 		: 'searchMainImg',
-		    		action  : 'tapMainImg',
-			    	itemId 	: -1,
-			   	    padding : '20 20 30 20',
-			   	    width 	: '100%',
-			   	    height  : '100%',
-			   	   	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		        	mode 	: 'none',
-		        	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-					  'border:0;' +
-					  'background-color:transparent;' + 
-					  'background-repeat:no-repeat;' + 
-					  'background-size:100% 100%;' + 
-					  'align:center'
-		    	}
+		    	width   :'96%',
+		    	flex 	: 4.5,
+		    	layout 	: {type:'vbox',align: 'center'},
+		    	items 	:[
+		    	    {
+		    	    	xtype 	:'container',
+		    	    	width 	:'100%',
+		    	    	height 	:'100%',
+		    	    	left    :0,
+		    	    	top     :0,
+		    	    	zIndex  :0,
+		    	    	margin 	:'25 0 0 0',
+		    	    	style 	: "background-image:url('./resources/images/searchBG01.png');" +
+		    			   		  'border:0;' +
+		    			          'background-color:transparent;' + 
+		    			          'background-repeat:no-repeat;' + 
+		    			          'background-size:100% 100%;' + 
+		    			          'align:center' + 
+		    			          'background-color:transparent;',
+		    	    },
+		    	    {
+			    		xtype 	:'panel',
+				    	layout 	:'fit',
+				    	margin 	:'10 5 10 5',
+				    	width 	:300,
+				    	height 	:300,
+				    	zIndex  :1,
+				    	items 	:{
+				    		xtype 	: 'img',
+				    		id 		: 'searchMainImg',
+				    		action  : 'tapMainImg',
+					    	itemId 	: -1,
+					   	    padding : '20 20 30 20',
+					   	    width 	: '100%',
+					   	    height  : '100%',
+					   	   	src 	: './resources/images/noResult.png',
+				        	mode 	: 'none',
+				        	style 	: "background-image:url('./resources/images/mainImageFrame.png');" +
+							  		  'border:0;' +
+							  		  'background-color:transparent;' + 
+							  		  'background-repeat:no-repeat;' + 
+							  		  'background-size:100% 100%;' + 
+							  		  'align:center'
+							  		  
+				    	},
+		    	    }
+		    	],  		  
 		    },
 		    {	
 		    	xtype 	: 'panel',
 		    	layout 	: {type:'hbox', align:'stretch',pack:'center'},
-		    	defaults: {width: '50px', height: '50px', margin  : '0 4 10 4'},
-		    	margin 	: '10 0 0 0',
-		    	width 	: '90%',
+		    	defaults: {width: '60px', height: '51px', margin  : '0 4 10 4'},
+		    	width 	: '96%',
 		    	flex:1,
+		    	style 	: "background-image:url('./resources/images/searchBG02.png');" +
+		    			  'border:0;' +
+		    			  'background-color:transparent;' + 
+		    			  'background-repeat:no-repeat;' + 
+		    			  'background-size:100% 100%;' + 
+		    			  'align:center' + 
+		    			  'background-color:transparent;',
 		    	
 		    	items:[
-		    		{
-		    		    xtype 	: 'button',
-		    		    id  	: 'buttonLeaf',
-		   			    action 	: 'showSelect',
-		   			    style 	: "background-image:url('./resources/images/btn_leaf.png');" +
-		   			    		  'border:0;' +
-		   			    		  'background-color:transparent;' + 
-		   			    		  'background-repeat:no-repeat;' + 
-		   			    		  'background-size:100% 100%;'
-		   		    },
 		    		{
 		   		        xtype 	: 'button',
 		    		    id  	: 'buttonFlower',
 		    		    action 	: 'showSelect',
-		    		    style 	: "background-image:url('./resources/images/btn_flower.png');" +
-  					  		 	  'border:0;' +
-  					  		 	  'background-color:transparent;' + 
-  					  		 	  'background-repeat:no-repeat;' + 
-  					  		 	  'background-size:100% 100%;'
+		    		    
 		    		},
+		    		{
+		    		    xtype 	: 'button',
+		    		    id  	: 'buttonLeaf',
+		   			    action 	: 'showSelect',
+		   			    
+		   		    },
 		    	    {
 		    			xtype 	: 'button',
 		    			id  	: 'buttonFruit',
 		    			action 	: 'showSelect',
-		    			style 	: "background-image:url('./resources/images/btn_fruit.png');" +
-		    					  'border:0;' +
-		    					  'background-color:transparent;' + 
-		    					  'background-repeat:no-repeat;' + 
-		    					  'background-size:100% 100%;'
+		    			
 		    		},
 		    		{
 		    			xtype 	: 'button',
 		    			id  	: 'buttonGoDetail',
 		    			itemId 	: 'detailResult',
 		    			action 	: 'movePage',
-		    			style 	: "background-image:url('./resources/images/pic04.png');" +
-		    					  'border:0;' +
-		    					  'background-color:transparent;' + 
-		    					  'background-repeat:no-repeat;' + 
-		    					  'background-size:100% 100%;'
+		    			
 		    		},
 		        ],
 		    },
 		    {
 		    	 xtype 		: 'panel',
 		    	 id 	    : 'searchRerultPanel',
-		    	 width 		: '90%',
+		    	 width 		: '96%',
 		    	 layout 	: {type:'hbox', align:'stretch',},
 		    	 flex       : 1,
-		    	 margin 	: '15 5 5 5',
-			     defaults 	: {width: '70px', height: '70px',margin  : '0 4 10 4'},
+			     defaults 	: {width: '70px', height: '60px',margin  : '0 4 10 4'},
 		    	 scrollable : {
 		    		 direction: 'horizontal',
 		    		 directionLock: true
 		    	 },
+		    	 margin  :'0 0 5 0',
+		    	 style 	: "background-image:url('./resources/images/searchBG03.png');" +
+   			   			  'border:0;' +
+   			   			  'background-color:transparent;' + 
+   			   			  'background-repeat:no-repeat;' + 
+   			   			  'background-size:100% 100%;' + 
+   			   			  'align:center' + 
+   			   			  'background-color:transparent;',
 		    	 
 		    	 items:[
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						  'border:0;' +
+						  'background-color:transparent;' + 
+						  'background-repeat:no-repeat;' + 
+						  'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+					    	src 	: './resources/images/searchBG03.png',
+					    	width 	: '100%',
+					   	    height 	: '100%',
+					    	mode 	: 'none',
+					    	padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/searchBG03.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
 			     ],
 		    },
 		],
