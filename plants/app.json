@@ -63,6 +63,10 @@
         {
             "path": "resources/css/custom.css",
             "update": "delta"
+        },
+        {
+            "path": "resources/css/searchPlantCs.css",
+            "update": "delta"
         }
     ],
 
