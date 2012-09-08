@@ -12,13 +12,13 @@ Ext.define('plants.view.selectLeafPart',{
 		    	items: [
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '갈래잎',
+		    	    	text: '갈래',
 		    	    	action:'selectLeaf',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '안갈래잎',
+		    	    	text: '안갈래',
 		    	    	action:'selectLeaf',
 		    	    	flex: 1
 		    	    }
@@ -31,13 +31,13 @@ Ext.define('plants.view.selectLeafPart',{
 		    	items: [
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '바늘잎',
+		    	    	text: '바늘',
 		    	    	action:'selectLeaf',
 		    	    	flex: 1
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '비늘잎',
+		    	    	text: '비늘',
 		    	    	action:'selectLeaf',
 		    	    	flex: 1
 		    	    }

@@ -17,6 +17,9 @@ Ext.define('plants.controller.searchController', {
     		overlay 		 : 'overlay',
     		searchMainImg 	 : '#searchMainImg',
     		explane 		 : '#explane',
+    		selectFlower 	 : '#selectFlower',
+    		timeSlider 		 : '#timeSlider',
+    		selectFlowerPart : 'selectFlowerPart',
         },
         control: {
         	'[action=movePage]': {
@@ -31,6 +34,12 @@ Ext.define('plants.controller.searchController', {
             '[action=selectLeaf]': {
             	tap: 'onSelectLeaf'
             },
+            '[action=selectColor]': {
+            	tap: 'onSelectColor'
+            },
+            '[action=selectFruit]': {
+            	tap: 'onSelectFruit'
+            },
             '[action=clickResultImage]': {
             	tap: 'onClickResultImage'
             },
@@ -39,6 +48,9 @@ Ext.define('plants.controller.searchController', {
             },
             'overlay button[action=closeOverlay]':{
             	tap: 'onCloseOverlay'
+            },
+            'overlay':{
+            	hide:'onOverlayHide'
             },
             'detailResult':{
 				itemtap : 'resultListTap'
@@ -50,7 +62,13 @@ Ext.define('plants.controller.searchController', {
 			},
 			'searchMainImg':{
 				//tap : 'tapSearchMainImg'
-			}
+			},
+			'[action=clickFlower]' : {
+				tap : 'onSelectFlower'
+			},
+			'selectFlowerPart sliderfield':{
+				change : 'changeTimeSlider'
+			},
         }
     },
     
@@ -71,7 +89,8 @@ Ext.define('plants.controller.searchController', {
     	Ext.getStore('searchData').clearFilter();
     	leafCondition = 'none';
     	fruitCondition = 'none';
-    	flowerCondition = 'none';
+    	colorCondition = 'none';
+    	timeCondition = 'none';
     },
     
     //////////////////// main ////////////////////////////////////////////////////
@@ -147,29 +166,116 @@ Ext.define('plants.controller.searchController', {
     								flex:10,
     		}]);
     	}
+    	else if(button.getId()=='buttonFlower'){
+    		this.getOverlay().add([{
+    								xtype:'selectFlowerPart',
+    								flex:10,
+    		}]);
+    	}
+    	else if(button.getId()=='buttonFruit'){
+    		this.getOverlay().add([{
+    								xtype:'selectFruitPart',
+    								flex:10,
+    		}]);
+    	}
     	this.getOverlay().show();
     },
     
     onCloseOverlay : function(button, e, options){
-    	this.getOverlay().removeAll(true,false);
+    	//this.getOverlay().removeAll(true,false);
     	this.getOverlay().hide();
+    },
+    
+    onOverlayHide : function(myOverlay, eOpts){
+    	myOverlay.removeAll(true,false);
     },
     
     onSelectLeaf : function(button, e, options){
   
     	leafCondition = button.getText();
+    	this.setConditionFilter();
+    	// 오버레이 숨기기 
+    	
+    	this.getOverlay().hide();
+    },
+    
+    onSelectColor:function(button, e, options){
+    	colorCondition = button.getText();
+    },
+    
+    onSelectFruit:function(button, e, options){
+    	fruitCondition = button.getText();
+    	
+    	//this.setConditionFilter();
+    	// 오버레이 숨기기 
+    	this.getOverlay().hide();
+    },
+    
+    onSelectFlower:function(button, e, options){
+    	this.setConditionFilter();
+    	// 오버레이 숨기기 
+    	this.getOverlay().hide();
+    },
+    
+    changeTimeSlider:function(me, mySlider,thumb, newValue, oldValue, eOpts){
+    	var mon = '개화기';
+    	if(newValue != 0){
+    		mon = '' + newValue + '월';
+    	}
+    	this.getTimeSlider().setLabel(mon);
+    	timeCondition = ''+newValue;
+    },
+    
+    setConditionFilter:function(){
+    	console.log('filter');
     	//스토어에 필터추가 후 로드 데이터  
     	Ext.getStore('searchData').clearFilter();
-    	Ext.getStore('searchData').setFilters([
-    	       {property: "leaf", value: leafCondition},
-    	]);
+//    	Ext.getStore('searchData').setFilters([
+//    	       {property: "leaf", value: leafCondition},
+//    	]);
     	
-    	if(fruitCondition == 'none'){
-    		console.log('none : fru');
-    	}
-    	if(flowerCondition == 'none'){
-    		console.log('none : flo');
-    	}
+    	Ext.getStore('searchData').filterBy(function(record){
+    		
+            console.log('test : ' + record.get('name'));
+            
+            if(leafCondition != 'none'){
+            	console.log('leaf: ' + record.get('leaf') + 'save: ' + leafCondition);
+            	if(record.get('leaf') != leafCondition){
+            		return false;
+            	}
+            }
+            if(timeCondition != 'none'){
+            	var time = record.get('time');
+            	var timearray = time.split(',');
+            	var returnValue = false;
+            	
+            	for(var i=0;i<timearray.length;i++)
+            	{
+            		console.log('time ' + timearray[i] + ' ' + timeCondition);
+            		if(timearray[i] == timeCondition)
+            		{
+            			returnValue = true;
+            		}
+            	}
+            	
+            	if(returnValue == false){
+        			console.log('asdf');
+        			return false;
+        		}
+            }
+            if(colorCondition != 'none'){
+            	if(record.get('color') != colorCondition){
+            		return false;
+            	}
+            }
+            if(fruitCondition != 'none'){
+            	if(record.get('fruit') != fruitCondition){
+            		return false;
+            	}
+            }
+            console.log('last');
+            return true;
+        });
     	
     	
     	this.getSearchRerultPanel().removeAll(true,true);
@@ -203,10 +309,6 @@ Ext.define('plants.controller.searchController', {
 		    	}
     	    }]);
     	}
-    	
-    	// 오버레이 숨기기 
-    	this.getOverlay().removeAll(true,false);
-    	this.getOverlay().hide();
     },
     
     //////////////////////////////////////////////////////////////////////////////
@@ -221,4 +323,5 @@ Ext.define('plants.controller.searchController', {
 
 var leafCondition = 'none';
 var fruitCondition = 'none';
-var flowerCondition = 'none';
+var colorCondition = 'none';
+var timeCondition = 'none';

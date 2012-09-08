@@ -5,8 +5,9 @@ Ext.define('plants.model.plantsModel', {
         fields: [
             {name: 'name',  type: 'string'},
             {name: 'leaf',  type: 'string'},
-            {name: 'family', type: 'string'},
-            {name: 'home', type: 'string'},
+            {name: 'color',  type: 'string'},
+            {name: 'time',  type: 'string'},            
+            {name: 'fruit', type: 'string'},
             {name: 'body', type: 'string'},
             {name: 'url', type: 'string'},            
         ]

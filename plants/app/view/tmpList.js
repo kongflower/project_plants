@@ -9,7 +9,6 @@ Ext.define('plants.view.tmpList',{
 	],
 	config:{
 		title : '즐겨찾기',
-		fullscreen 	: true,
 		itemTpl 	:'{firstName}',
 		store 		: 'bookmarkData',
 	}

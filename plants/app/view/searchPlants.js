@@ -1,7 +1,6 @@
 Ext.define('plants.view.searchPlants',{
 	extend 	: 'Ext.Panel',
 	xtype 	: 'searchPlants',
-	cls: 'myPageBG',
 	
 	requires: ["Ext.Img"],
 	
@@ -10,7 +9,8 @@ Ext.define('plants.view.searchPlants',{
 		title   : 'searchPlants',
 		fullscreen : true,
 		layout 	: {type:'vbox',align:'middle'},
-		style 	: 'background-color:#ffffff',
+		cls: 'myPageBG',
+//		style 	: 'background-color:#ffffff',
 		
 		items: [
 		    {
