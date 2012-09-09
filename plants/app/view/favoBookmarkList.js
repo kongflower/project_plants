@@ -13,10 +13,10 @@ Ext.define('plants.view.favoBookmarkList',{
 		itemTpl 	:[
 			'<div style="height: 60px;">',
 			'<div style="float:left; width: 60px; height: 60px;">',
-				'<img src="{thumbs}" style="width: 100%; height: 100%;">',
+				'<img src="{url}" style="width: 100%; height: 100%;">',
 			'</div>',
 			'<div style="margin-left: 70px; padding-top: 18px;">',
-				'{firstName}',
+				'{name}',
 			'</div>',
 			'</div>'
 		],

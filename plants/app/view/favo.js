@@ -39,14 +39,14 @@ Ext.define('plants.view.favo', {
 					},
             	    {
             	    	xtype: 'label',
-            	        html: '즐겨찾'
+            	        html: '즐겨찾기'
             	    	
             	    },
             	    {
             	    	xtype: 'favoBookmarkList',
             	    	
             	    	width: '90%',
-            	    	height: '255px',
+            	    	height: '160px',
             	    	style:{border:1}
             	    },
             	    {
@@ -55,13 +55,13 @@ Ext.define('plants.view.favo', {
                     },
             	    {
             	    	xtype: 'label',
-            	        html: '최근찾'
+            	        html: '최근찾기'
             	    	
             	    },
             	    {
             	    	xtype: 'recentSearchList',
             	    	width: '90%',
-            	    	height: '255px',
+            	    	height: '160px',
             	    }
 
             	]

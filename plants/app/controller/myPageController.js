@@ -51,11 +51,11 @@ Ext.define('plants.controller.myPageController', {
     
     	this.getFavoBookmarkInfo().setHtml(
     			"<div style='margin:5%; width:90%;'>" + 
-    				record.get('content') +
+    				record.get('name') +
     		    "</div>"
     	);
     	
-    	this.getFavoBookmarkImg().setSrc(record.get('thumbs'));
+    	this.getFavoBookmarkImg().setSrc(record.get('url'));
     	this.getContacts().deselectAll();
     	console.log("탭 되었슴.");
     },
@@ -64,11 +64,11 @@ Ext.define('plants.controller.myPageController', {
     
     	this.getRecentSearchInfo().setHtml(
     			"<div style='margin:5%; width:90%;'>" + 
-    				record.get('content') +
+    				record.get('name') +
     		    "</div>"
     	);
     	
-    	this.getRecentSearchImg().setSrc(record.get('thumbs'));
+    	this.getRecentSearchImg().setSrc(record.get('url'));
     	this.getContacts().deselectAll();
     	console.log("탭 되었슴.");
     }
