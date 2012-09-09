@@ -46,7 +46,7 @@ Ext.define('plants.view.favo', {
             	    	xtype: 'favoBookmarkList',
             	    	
             	    	width: '90%',
-            	    	height: '160px',
+            	    	height: '170px',
             	    	style:{border:1}
             	    },
             	    {
@@ -61,7 +61,7 @@ Ext.define('plants.view.favo', {
             	    {
             	    	xtype: 'recentSearchList',
             	    	width: '90%',
-            	    	height: '160px',
+            	    	height: '170px',
             	    }
 
             	]
