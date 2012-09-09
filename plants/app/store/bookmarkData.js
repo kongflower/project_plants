@@ -2,32 +2,16 @@ var data = {
 	names: [
 		{ 
 			url : './resources/images/lee01.jpeg',
-			name  : 'first01'	
+			name  : '개망초'	
 		},
 		{ 
 			url : './resources/images/lee01.jpeg',
-			name  : 'first02'		
+			name  : '민들레'		
 		},
 		{ 
 			url : './resources/images/lee01.jpeg',
-			name  : 'first03'
-		},
-		{ 
-			url : './resources/images/lee01.jpeg',
-			name  : 'first04'
-		},
-		{ 
-			url : './resources/images/lee01.jpeg',
-			name  : 'first05'
-		},
-		{ 
-			url : './resources/images/lee01.jpeg',
-			name  : 'first06'
-		},
-		{ 
-			url : './resources/images/lee01.jpeg',
-			name  : 'first07'
-		}						
+			name  : '도라지'
+		}					
 	]
 };
 

@@ -18,8 +18,8 @@ Ext.define('plants.view.favo', {
         items: [
             {
 				xtype :'plantsTitlebar',
-				title : '식물도',
-				cls: 'tabBG',
+				title : '<font color="#24303c">마이페이</font>',
+				//cls: 'tabBG',
 				width : '100%',
 				height: 50,
 			},	

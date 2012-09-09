@@ -9,7 +9,7 @@ Ext.define('plants.view.resultInfo',{
 	],
 	
 	config : {	
-		layout 	: {type:'vbox',align:'middle'},
+		layout 	: {type:'vbox',align:'center'},
 		
 		scrollable:true,
 		//styleHtmlContent:true,
@@ -18,49 +18,103 @@ Ext.define('plants.view.resultInfo',{
 		items: [
 		    {
 				xtype :'plantsTitlebar',
-				title : '식물찾기',
+				title : '<font color="#24303c">상세정보</font>',
 				width : '100%',
 				height: 50,
 			},
-		    {
+			{
 		    	xtype 	:'panel',
-		    	layout 	:'fit',
-		    	margin 	:'20 5 5 5',
-		    	width 	:280,
-		    	height 	:280,
-		    	
-		    	items 	:{
-		    		xtype 	: 'img',
-		    		id 		: 'resultImg',
-			    	//itemId 	: 'resultInfo',
-			   	    padding : '20 20 30 20',
-			   	    width 	: '100%',
-			   	    height  : '100%',
-			   	   	src 	: 'http://cfile24.uf.tistory.com/image/133E6D484EDD020E048345',
-		        	mode 	: 'none',
-		        	style 	: "background-image:url('./resources/images/frame_Large.png');" +
-					  'border:0;' +
-					  'background-color:transparent;' + 
-					  'background-repeat:no-repeat;' + 
-					  'background-size:100% 100%;' + 
-					  'align:center'
-		    	}
+		    	width   :'96%',
+		    	height  : 230,
+		    	layout 	: {type:'vbox',align: 'center'},
+		    	zIndex  :-1,
+		    	items 	:[
+		    	    {
+		    	    	xtype 	:'container',
+		    	    	width 	:'100%',
+		    	    	height 	:'100%',
+		    	    	left    :0,
+		    	    	top     :0,
+		    	    	zIndex  :0,
+		    	    	margin 	:'25 0 0 0',
+		    	    	style 	: "background-image:url('./resources/images/searchBG01.png');" +
+		    			   		  'border:0;' +
+		    			          'background-color:transparent;' + 
+		    			          'background-repeat:no-repeat;' + 
+		    			          'background-size:100% 100%;' + 
+		    			          'align:center'
+		    	    },
+		    	    {
+		    	    	xtype:'panel',
+		    	    	width:300,
+		    	    	height:240,
+		    	    	margin :'10 0 0 0',
+		    	    	layout : {type:'vbox',align: 'center'},
+		    	    	items:[
+							{
+								xtype 	:'container',
+								layout 	:'fit',
+								width 	:265,
+								height 	:182,
+								zIndex  :1,
+								items 	:{
+									xtype 	: 'img',
+									id 		: 'resultImg',
+							   	    width 	: '100%',
+							   	    height  : '100%',
+							   	    padding : '17 21 0 20',
+							   	   	src 	: './resources/images/searchBG01.png',
+							    	mode 	: 'none',
+								},
+								style 	: 'border:none;' +
+										  'background-color:transparent;'
+				  		   		  		  
+							},
+							{	
+								xtype 	: 'label',
+								id 		: 'infoName',
+								margin  : '5 0 0 0',
+								style  	: 'color : #4b7490; font-weight:bold; font-size:150%;',
+							    html 	: 'My label!'
+							}
+		    	    	],
+		    	    	style 	: "background-image:url('./resources/images/frame_02.png');" +
+				  		   		  'border:0;' +
+				  		   		  'background-color:transparent;' + 
+				  		   		  'background-repeat:no-repeat;' + 
+				  		   		  'background-size:100% 100%;' + 
+				  		   		  'align:center'
+		    	    	
+		    	    }
+		    	],  		  
+		    },
+		    {
+		    	xtype 	:'container',
+    	    	width 	:'100%',
+    	    	height 	:'71px',
+    	    	zIndex  :2,
+    	    	margin 	:'8 0 0 0',
+    	    	style 	: "background-image:url('./resources/images/title_character.png');" +
+    			   		  'border:0;' +
+    			          'background-color:transparent;' + 
+    			          'background-repeat:no-repeat;' + 
+    			          'background-size:100% 100%;' + 
+    			          'align:center' + 
+    			          'background-color:transparent;',
 		    },
 //		    {
-//		    	xtype 	:'panel',
-//		    	margin 	:'5 5 5 5',
-//		    	width   :'90%',
-//		    	flex  	: 1,
-//		    	
-//		    	items 	:{
-//		    		xtype 	 : 'textareafield',
-//		    		id 		 : 'explane',
-//		    		name 	 : '설명',
-//		    		readOnly : true,
-//		    		width 	 : '100%',
-//		    		height   : '100%',
-//		    		margin   : '5 0 5 0',
-//		    	}
+//		    	xtype 	:'container',
+//    	    	width 	:'95%',
+//    	    	height 	:'25px',
+//    	    	zIndex  :2,
+//    	    	margin 	:'-25 0 0 0',
+//    	    	style 	: "background-image:url('./resources/images/bg.png');" +
+//    			   		  'border:0;' +
+//    			          'background-color:transparent;' + 
+//    			          'background-repeat:no-repeat;' + 
+//    			          'background-size:100% 100%;' + 
+//    			          'align:center' + 
+//    			          'background-color:transparent;',
 //		    },
 		],
 	}

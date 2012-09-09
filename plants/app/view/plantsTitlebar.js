@@ -3,17 +3,15 @@ Ext.define("plants.view.plantsTitlebar", {
 	xtype : 'plantsTitlebar',
 
     config: {
-    	id 		: 'plantsTitlebar',
     	title 	: 'main',
-    	
-    	style 	: "background-image:url('./resources/images/title_Bra.png');",
+    	style 	: "background-image:url('./resources/images/action_bar.png');",
         items 	: [
              {
             	 xtype 	: 'button',
 	   			 action : 'actionBack',
-	   			 width 	: '21px',
+	   			 width 	: '60px',
 	   			 height : '26px',
-	   			 style 	: "background-image:url('./resources/images/aroow_Left.png');" +
+	   			 style 	: "background-image:url('./resources/images/btn_back.png');" +
 	   			    	  'border:0;' +
 	   			    	  'background-color:transparent;' + 
 	   			    	  'background-repeat:no-repeat;' + 
