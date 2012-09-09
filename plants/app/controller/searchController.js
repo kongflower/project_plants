@@ -105,6 +105,9 @@ Ext.define('plants.controller.searchController', {
     	//	navi.getNavigationBar().setHidden(true);
     		this.initStoreFilter();
     	}
+    	if(navi.getActiveItem().getId() == 'detailResult'){
+    		this.getDetailResult().deselectAll();
+    	}
     },
     
     pagePush: function(navi,view, eOpts){
@@ -177,18 +180,21 @@ Ext.define('plants.controller.searchController', {
     								xtype:'selectLeafPart',
     								flex:10,
     		}]);
+    		Ext.getCmp('overlayTitlebar').setTitle('잎 선택');
     	}
     	else if(button.getId()=='buttonFlower'){
     		this.getOverlay().add([{
     								xtype:'selectFlowerPart',
     								flex:10,
     		}]);
+    		Ext.getCmp('overlayTitlebar').setTitle('꽃 선택');
     	}
     	else if(button.getId()=='buttonFruit'){
     		this.getOverlay().add([{
     								xtype:'selectFruitPart',
     								flex:10,
     		}]);
+    		Ext.getCmp('overlayTitlebar').setTitle('열 선택');
     	}
     	this.getOverlay().show();
     },
@@ -204,7 +210,7 @@ Ext.define('plants.controller.searchController', {
     
     onSelectLeaf : function(button, e, options){
   
-    	leafCondition = button.getText();
+    	leafCondition = button.getItemId();
     	this.setConditionFilter();
     	// 오버레이 숨기기 
     	
@@ -212,13 +218,13 @@ Ext.define('plants.controller.searchController', {
     },
     
     onSelectColor:function(button, e, options){
-    	colorCondition = button.getText();
+    	colorCondition = button.getItemId();
     },
     
     onSelectFruit:function(button, e, options){
-    	fruitCondition = button.getText();
+    	fruitCondition = button.getItemId();
     	
-    	//this.setConditionFilter();
+    	this.setConditionFilter();
     	// 오버레이 숨기기 
     	this.getOverlay().hide();
     },
@@ -230,7 +236,7 @@ Ext.define('plants.controller.searchController', {
     },
     
     changeTimeSlider:function(me, mySlider,thumb, newValue, oldValue, eOpts){
-    	var mon = '개화기';
+    	var mon = 'no';
     	if(newValue != 0){
     		mon = '' + newValue + '월';
     	}

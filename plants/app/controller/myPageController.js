@@ -47,30 +47,55 @@ Ext.define('plants.controller.myPageController', {
     },
     
     favoBookmarkListTap: function(list, index, target,record, e, eOpts){
+//    	console.log("탭 되었슴.");
+    	var localStore = Ext.getStore('searchData');
+    	localStore.clearFilter();
+    	Ext.getStore('searchData').setFilters([
+    	    {property: "name", value: record.get('name')},
+		]);
+    	
+    	var filterData = Ext.getStore('searchData').getData();
     	this.getMainView().push({xtype: 'favoBookmarkInfo'});
-    
+        
+    	//var bd = filterData.getAt(0).get('body');
+    	//var ur = filterData.getAt(0).get('url');
+    	
     	this.getFavoBookmarkInfo().setHtml(
-    			"<div style='margin:5%; width:90%;'>" + 
-    				record.get('name') +
-    		    "</div>"
+		'<div style="width:92%;  margin-left:4%"' + 
+			filterData.getAt(0).get('body') +
+	    "</div>"
     	);
+    	  
+    	Ext.getCmp('infoName').setHtml(record.get('name'));
+    	this.getFavoBookmarkImg().setSrc(filterData.getAt(0).get('url'));
+    	//this.getFavoBookmarkImg().setSrc(record.get('url'));
     	
-    	this.getFavoBookmarkImg().setSrc(record.get('url'));
     	this.getContacts().deselectAll();
-    	console.log("탭 되었슴.");
     },
-    recentSearchListTap: function(list, index, target,record, e, eOpts){
-    	this.getMainView().push({xtype: 'recentSearchInfo'});
-    
-    	this.getRecentSearchInfo().setHtml(
-    			"<div style='margin:5%; width:90%;'>" + 
-    				record.get('name') +
-    		    "</div>"
-    	);
+    recentSearchListTap: function(list, index, target,record, e, eOpts){	
+    	var localStore = Ext.getStore('searchData');
+    	localStore.clearFilter();
+    	Ext.getStore('searchData').setFilters([
+    	    {property: "name", value: record.get('name')},
+		]);
     	
-    	this.getRecentSearchImg().setSrc(record.get('url'));
+    	var filterData = Ext.getStore('searchData').getData();
+    	this.getMainView().push({xtype: 'recentSearchInfo'});
+        
+    	//var bd = filterData.getAt(0).get('body');
+    	//var ur = filterData.getAt(0).get('url');
+    	
+    	this.getRecentSearchInfo().setHtml(
+		'<div style="width:92%;  margin-left:4%"' + 
+			filterData.getAt(0).get('body') +
+	    "</div>"
+    	);
+    	  
+    	Ext.getCmp('infoName').setHtml(record.get('name'));
+    	this.getRecentSearchImg().setSrc(filterData.getAt(0).get('url'));
+    	//this.getFavoBookmarkImg().setSrc(record.get('url'));
+    	
     	this.getContacts().deselectAll();
-    	console.log("탭 되었슴.");
     }
     
 });

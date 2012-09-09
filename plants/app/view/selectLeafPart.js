@@ -6,43 +6,71 @@ Ext.define('plants.view.selectLeafPart',{
 		layout: {type: 'vbox'},
 		items :[
 		    {
+		    	xtype:'spacer',
+		    	flex : 1,
+		    },
+		    {
 		    	xtype: 'panel',
 		    	layout: {type: 'hbox'},
-		    	flex: 1,
+		    	flex: 2,
 		    	items: [
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '갈래',
+		    	    	itemId: '갈래',
 		    	    	action:'selectLeaf',
-		    	    	flex: 1
+		    	    	flex: 1,
+		    	    	style 	: "background-image:url('./resources/images/leaf_03.png');" +
+	   			    	  'border:0;' +
+	   			    	  'background-color:transparent;' + 
+	   			    	  'background-repeat:no-repeat;' + 
+	   			    	  'background-size:100% 100%;',
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '안갈래',
+		    	    	itemId: '안갈래',
 		    	    	action:'selectLeaf',
-		    	    	flex: 1
+		    	    	flex: 1,
+		    	    	style 	: "background-image:url('./resources/images/leaf_04.png');" +
+	   			    	  'border:0;' +
+	   			    	  'background-color:transparent;' + 
+	   			    	  'background-repeat:no-repeat;' + 
+	   			    	  'background-size:100% 100%;',
 		    	    }
 		    	]
 		    },
 		    {
 		    	xtype: 'panel',
 		    	layout: { type: 'hbox'},
-		    	flex: 1,
+		    	flex: 2,
 		    	items: [
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '바늘',
+		    	    	itemId: '바늘',
 		    	    	action:'selectLeaf',
-		    	    	flex: 1
+		    	    	flex: 1,
+		    	    	style 	: "background-image:url('./resources/images/leaf_02.png');" +
+	   			    	  'border:0;' +
+	   			    	  'background-color:transparent;' + 
+	   			    	  'background-repeat:no-repeat;' + 
+	   			    	  'background-size:100% 100%;',
 		    	    },
 		    	    {
 		    	    	xtype: 'button',
-		    	    	text: '비늘',
+		    	    	itemId: '비늘',
 		    	    	action:'selectLeaf',
-		    	    	flex: 1
+		    	    	flex: 1,
+		    	    	style 	: "background-image:url('./resources/images/leaf_01.png');" +
+	   			    	  'border:0;' +
+	   			    	  'background-color:transparent;' + 
+	   			    	  'background-repeat:no-repeat;' + 
+	   			    	  'background-size:100% 100%;',
 		    	    }
 		    	]
-		    }
+		    },
+		    {
+		    	xtype:'spacer',
+		    	flex : 1,
+		    },
 		] ,
 	}
 });

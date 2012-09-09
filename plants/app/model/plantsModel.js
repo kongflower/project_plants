@@ -3,6 +3,7 @@ Ext.define('plants.model.plantsModel', {
     
     config: {
         fields: [
+            {name: 'number', type:'string'},
             {name: 'name',  type: 'string'},
             {name: 'leaf',  type: 'string'},
             {name: 'color',  type: 'string'},

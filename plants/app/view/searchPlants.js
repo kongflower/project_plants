@@ -27,6 +27,17 @@ Ext.define('plants.view.searchPlants',{
 		            	 iconCls : 'arrow_left',
 		            	 iconMask: 'true',
 		            	 ui      : 'plain',
+//		            	 xtype 	: 'button',
+//			   			 action : 'actionBack',
+//			   			 align 	: 'left',
+//			   			 width 	: '60px',
+//			   			 height : '26px',
+//			   			 style 	: "background-image:url('./resources/images/btn_back.png');" +
+//			   			    	  'border:0;' +
+//			   			    	  'background-color:transparent;' + 
+//			   			    	  'background-repeat:no-repeat;' + 
+//			   			    	  'background-size:100% 100%;',
+//			   			 margin : '0 0 0 5',
 		             },
 		             {
 		            	 xtype 	 : 'button',

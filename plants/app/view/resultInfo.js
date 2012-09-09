@@ -20,6 +20,7 @@ Ext.define('plants.view.resultInfo',{
 				xtype :'plantsTitlebar',
 				title : '상세정보',
 				width : '100%',
+				docked: 'top',
 				height: 50,
 			},
 			{

@@ -13,6 +13,7 @@ Ext.define('plants.view.overlaySelect',{
 		items :[
 		    {
 		    	xtype 	: 'titlebar',
+		    	id  	: 'overlayTitlebar', 
 		    	docked 	: 'top',
 		    	title 	: "Overlay",
 		    	flex 	: 1,
@@ -27,6 +28,5 @@ Ext.define('plants.view.overlaySelect',{
 		    	],
 		    },
 		] ,
-		scrollable : true ,
 	}
 });
