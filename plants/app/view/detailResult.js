@@ -8,6 +8,7 @@ Ext.define('plants.view.detailResult',{
 	  	      'Ext.data.Store'
 	],
 	config:{
+		id:'detailResult',
 		title : 'detailResult',
 		fullscreen 	: true,
 		store 		: 'searchData',
