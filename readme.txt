@@ -3,6 +3,6 @@ this is an illustrated plant book
 ---------------------------------
 
 prefixs
-wooram    : gallery
+wooram    : community
 sungphil  : favo
 myungsung : set

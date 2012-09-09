@@ -18,7 +18,7 @@ Ext.define('plants.view.resultInfo',{
 		items: [
 		    {
 				xtype :'plantsTitlebar',
-				title : '<font color="#24303c">상세정보</font>',
+				title : '상세정보',
 				width : '100%',
 				height: 50,
 			},

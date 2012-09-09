@@ -1,5 +1,49 @@
 @CHARSET "UTF-8";
 
+/* wooram */
+.headshot {
+	float:left;
+	height:50px;
+	width:50px;
+	margin-right:10px;
+	background-size:cover;
+	background-position:center center;
+	background:#ddd;
+	-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:inset 0 0 2px rgba(0, 0, 0, 0.6)
+}
+.name {
+	width:195px;
+	padding-top:0;
+	font-size:22px;
+	font-weight:bold
+}
+.name span {
+	display:block;
+	font-size:14px;
+	font-weight:normal;
+	color:#666
+}
+
+/*Main Button Custom*/
+/* #buttonSearch { */
+/* 	background:url(../images/bg_intro_001.png) no-repeat; */
+/* 	-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;border:0; */
+/* } */
+/* #buttonSearch:active { */
+/* 	background:url(../images/bg_intro_001_on.png) no-repeat; */
+/* } */
+/* #buttonCommunity { */
+/* 	background:url(../images/bg_intro_002.png) no-repeat; */
+/* 	-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;border:0; */
+/* } */
+/* #buttonCommunity:active { */
+/* 	background:url(../images/bg_intro_002_on.png) no-repeat; */
+/* } */
+/* #buttonfave { */
+/* 	background:url(../images/btn_mypage.png) no-repeat 5px 5px, #25313b; */
+/* 	-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;border:0; */
+/* } */
+
 
 /* Button Custom  */
 .btnAction {

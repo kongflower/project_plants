@@ -18,8 +18,7 @@ Ext.define('plants.view.favo', {
         items: [
             {
 				xtype :'plantsTitlebar',
-				title : '식물도',
-				cls: 'tabBG',
+				title : '식물도감',
 				width : '100%',
 				height: 50,
 			},	

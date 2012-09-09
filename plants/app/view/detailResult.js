@@ -25,7 +25,7 @@ Ext.define('plants.view.detailResult',{
 		items 		:[
 		      	{
 		      		xtype :'plantsTitlebar',
-		      		title : '<font color="#24303c">검색결과</font>',
+		      		title : '검색결과',
 		      		width : '100%',
 		      		height: 50,
 		      	},  		  

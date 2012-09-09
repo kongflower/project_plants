@@ -8,9 +8,15 @@ Ext.define('plants.view.setId',{
 		],
 		
 	config:{
-			
+		layout: {type:"vbox", align:"stretch"},
 		
 		items:[
+		    {
+				xtype :'plantsTitlebar',
+				title : 'community',
+				width : '100%',
+				height: 50,
+		    },
 		    {
 		    	xtype:'fieldset',
 		    	title: '아이디입력',

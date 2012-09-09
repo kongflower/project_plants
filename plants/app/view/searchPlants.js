@@ -14,36 +14,34 @@ Ext.define('plants.view.searchPlants',{
 		items: [
 		    {
 		    	xtype :'titlebar',
-		    	title : '<font color="#24303c">식물검색</font>',
+		    	title : '식물검색',
 		    	width : '100%',
 		    	height: 50,
-		    	style 	: "background-image:url('./resources/images/action_bar.png');",
+		    	style 	: "background-image:url('./resources/images/action_bar_v2.png');background-size:100% 100%;border:0;" +
+						  "-moz-border-top-left-radius:7px;-webkit-border-top-left-radius:7px;border-top-left-radius:7px;" +
+						  "-moz-border-top-right-radius:7px;-webkit-border-top-right-radius:7px;border-top-right-radius:7px;",
 		        items 	: [
 		             {
-		            	 xtype 	: 'button',
-			   			 action : 'actionBack',
-			   			 align: 'left',
-			   			 width 	: '60px',
-			   			 height : '26px',
-			   			 style 	: "background-image:url('./resources/images/btn_back.png');" +
-			   			    	  'border:0;' +
-			   			    	  'background-color:transparent;' + 
-			   			    	  'background-repeat:no-repeat;' + 
-			   			    	  'background-size:100% 100%;',
-			   			 margin : '0 0 0 5',
+		            	 xtype 	 : 'button',
+			   			 action  : 'actionBack',
+		            	 iconCls : 'arrow_left',
+		            	 iconMask: 'true',
+		            	 ui      : 'plain',
 		             },
 		             {
-		            	 xtype 	: 'button',
-		            	 action : 'initCondition',
-		            	 width 	: '30px',
-		            	 height : '26px',
+		            	 xtype 	 : 'button',
+		            	 action  : 'initCondition',
+		            	 iconCls : 'refresh',
+		            	 iconMask: 'true',
+		            	 ui      : 'plain',
+//		            	 width 	: '30px',
+//		            	 height : '26px',
 		            	 align  : 'right',
-		            	 style 	: "background-image:url('./resources/images/btn_reFresh.png');" +
-		            	 'border:0;' +
-		            	 'background-color:transparent;' + 
-		            	 'background-repeat:no-repeat;' + 
-		            	 'background-size:100% 100%;',
-		            	
+//		            	 style 	: "background-image:url('./resources/images/btn_reFresh.png');" +
+//		            	 'border:0;' +
+//		            	 'background-color:transparent;' + 
+//		            	 'background-repeat:no-repeat;' + 
+//		            	 'background-size:100% 100%;',
 		             },
 		             
 		        ]
