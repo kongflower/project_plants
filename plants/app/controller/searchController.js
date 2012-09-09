@@ -125,11 +125,11 @@ Ext.define('plants.controller.searchController', {
     	this.getMainView().push({xtype: 'resultInfo'});
     
     	this.getResultInfo().setHtml(
-    			"<div style='margin:5%; width:90%;'>" + 
-    				record.get('body') +
-    		    "</div>"
+		'<div style="width:92%;  margin-left:4%"' + 
+			record.get('body') +
+	    "</div>"
     	);
-    	
+    	   
     	this.getResultImg().setSrc(record.get('url'));
     },
     

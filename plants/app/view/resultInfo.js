@@ -27,6 +27,7 @@ Ext.define('plants.view.resultInfo',{
 		    	width   :'96%',
 		    	height  : 230,
 		    	layout 	: {type:'vbox',align: 'center'},
+		    	zIndex  :-1,
 		    	items 	:[
 		    	    {
 		    	    	xtype 	:'container',
@@ -41,8 +42,7 @@ Ext.define('plants.view.resultInfo',{
 		    			          'background-color:transparent;' + 
 		    			          'background-repeat:no-repeat;' + 
 		    			          'background-size:100% 100%;' + 
-		    			          'align:center' + 
-		    			          'background-color:transparent;',
+		    			          'align:center'
 		    	    },
 		    	    {
 		    	    	xtype:'panel',
@@ -53,15 +53,15 @@ Ext.define('plants.view.resultInfo',{
 							{
 								xtype 	:'container',
 								layout 	:'fit',
-								width 	:260,
-								height 	:180,
+								width 	:265,
+								height 	:182,
 								zIndex  :1,
 								items 	:{
 									xtype 	: 'img',
 									id 		: 'resultImg',
 							   	    width 	: '100%',
 							   	    height  : '100%',
-							   	    padding : '20 0 0 40',
+							   	    padding : '17 0 0 36',
 							   	   	src 	: './resources/images/searchBG01.png',
 							    	mode 	: 'none',
 								},
@@ -80,6 +80,34 @@ Ext.define('plants.view.resultInfo',{
 		    	    }
 		    	],  		  
 		    },
+		    {
+		    	xtype 	:'container',
+    	    	width 	:'100%',
+    	    	height 	:'71px',
+    	    	zIndex  :2,
+    	    	margin 	:'8 0 0 0',
+    	    	style 	: "background-image:url('./resources/images/title_character.png');" +
+    			   		  'border:0;' +
+    			          'background-color:transparent;' + 
+    			          'background-repeat:no-repeat;' + 
+    			          'background-size:100% 100%;' + 
+    			          'align:center' + 
+    			          'background-color:transparent;',
+		    },
+//		    {
+//		    	xtype 	:'container',
+//    	    	width 	:'95%',
+//    	    	height 	:'25px',
+//    	    	zIndex  :2,
+//    	    	margin 	:'-25 0 0 0',
+//    	    	style 	: "background-image:url('./resources/images/bg.png');" +
+//    			   		  'border:0;' +
+//    			          'background-color:transparent;' + 
+//    			          'background-repeat:no-repeat;' + 
+//    			          'background-size:100% 100%;' + 
+//    			          'align:center' + 
+//    			          'background-color:transparent;',
+//		    },
 		],
 	}
 });
