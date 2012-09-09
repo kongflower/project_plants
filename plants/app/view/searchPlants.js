@@ -13,10 +13,40 @@ Ext.define('plants.view.searchPlants',{
 		
 		items: [
 		    {
-		    	xtype :'plantsTitlebar',
-		    	title : '식물찾기',
+		    	xtype :'titlebar',
+		    	title : '<font color="#24303c">식물검색</font>',
 		    	width : '100%',
 		    	height: 50,
+		    	style 	: "background-image:url('./resources/images/action_bar.png');",
+		        items 	: [
+		             {
+		            	 xtype 	: 'button',
+			   			 action : 'actionBack',
+			   			 align: 'left',
+			   			 width 	: '60px',
+			   			 height : '26px',
+			   			 style 	: "background-image:url('./resources/images/btn_back.png');" +
+			   			    	  'border:0;' +
+			   			    	  'background-color:transparent;' + 
+			   			    	  'background-repeat:no-repeat;' + 
+			   			    	  'background-size:100% 100%;',
+			   			 margin : '0 0 0 5',
+		             },
+		             {
+		            	 xtype 	: 'button',
+		            	 action : 'initCondition',
+		            	 width 	: '30px',
+		            	 height : '26px',
+		            	 align  : 'right',
+		            	 style 	: "background-image:url('./resources/images/btn_reFresh.png');" +
+		            	 'border:0;' +
+		            	 'background-color:transparent;' + 
+		            	 'background-repeat:no-repeat;' + 
+		            	 'background-size:100% 100%;',
+		            	
+		             },
+		             
+		        ]
 		    },
 		    {
 		    	xtype 	:'panel',
@@ -135,7 +165,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						  'border:0;' +
 						  'background-color:transparent;' + 
 						  'background-repeat:no-repeat;' + 
@@ -143,7 +173,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-					    	src 	: './resources/images/searchBG03.png',
+					    	src 	: './resources/images/noResult.png',
 					    	width 	: '100%',
 					   	    height 	: '100%',
 					    	mode 	: 'none',
@@ -154,7 +184,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -162,7 +192,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',
@@ -173,7 +203,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -181,7 +211,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',
@@ -192,7 +222,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -200,7 +230,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',
@@ -211,7 +241,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -219,7 +249,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',
@@ -230,7 +260,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -238,7 +268,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',
@@ -249,7 +279,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -257,7 +287,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',
@@ -268,7 +298,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -276,7 +306,7 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',
@@ -287,7 +317,7 @@ Ext.define('plants.view.searchPlants',{
 						xtype 	:'panel',
 						layout 	:'fit',
 						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_Large.png');" +
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
 						'border:0;' +
 						'background-color:transparent;' + 
 						'background-repeat:no-repeat;' + 
@@ -295,7 +325,26 @@ Ext.define('plants.view.searchPlants',{
 						items 	:{
 							xtype 	: 'img',
 							action 	: 'clickResultImage', 
-							src 	: './resources/images/searchBG03.png',
+							src 	: './resources/images/noResult.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img',
+							action 	: 'clickResultImage', 
+							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
 							mode 	: 'none',

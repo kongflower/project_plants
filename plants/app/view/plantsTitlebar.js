@@ -3,9 +3,7 @@ Ext.define("plants.view.plantsTitlebar", {
 	xtype : 'plantsTitlebar',
 
     config: {
-    	id 		: 'plantsTitlebar',
     	title 	: 'main',
-    	
     	style 	: "background-image:url('./resources/images/action_bar.png');",
         items 	: [
              {

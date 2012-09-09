@@ -49,6 +49,9 @@ Ext.define('plants.controller.searchController', {
             'overlay button[action=closeOverlay]':{
             	tap: 'onCloseOverlay'
             },
+            '[action=initCondition]':{
+            	tap: 'onInitCondition'
+            },
             'overlay':{
             	hide:'onOverlayHide'
             },
@@ -115,6 +118,13 @@ Ext.define('plants.controller.searchController', {
     	console.log('init');
     	//me.getNavigationBar().setHidden(true);
     },
+    
+    onInitCondition:function(){
+    	this.initStoreFilter();
+    	this.getSearchMainImg().setSrc('./resources/images/noResult.png');
+		this.getSearchMainImg().setItemId(-1);
+		this.getSearchRerultPanel().removeAll(true,true);
+    },
     //////////////////////////////////////////////////////////////////////////////
     
     
@@ -129,7 +139,8 @@ Ext.define('plants.controller.searchController', {
 			record.get('body') +
 	    "</div>"
     	);
-    	   
+    	  
+    	Ext.getCmp('infoName').setHtml(record.get('name'));
     	this.getResultImg().setSrc(record.get('url'));
     },
     
@@ -154,6 +165,7 @@ Ext.define('plants.controller.searchController', {
     	);
     	
     	this.getResultImg().setSrc(selectRecord.get('url'));
+    	Ext.getCmp('infoName').setHtml(selectRecord.get('name'));
     },
     
     //////////////////////// overlay /////////////////////////////////////////////
@@ -292,7 +304,7 @@ Ext.define('plants.controller.searchController', {
     	    	xtype 	:'panel',
 		    	layout 	:'fit',
 		    	margin 	:'5 5 5 5',
-		    	style 	: "background-image:url('./resources/images/frame_Large.png');" +
+		    	style 	: "background-image:url('./resources/images/frame_snall.png');" +
 				  'border:0;' +
 				  'background-color:transparent;' + 
 				  'background-repeat:no-repeat;' + 

@@ -9,7 +9,7 @@ Ext.define('plants.view.resultInfo',{
 	],
 	
 	config : {	
-		layout 	: {type:'vbox',align:'middle'},
+		layout 	: {type:'vbox',align:'center'},
 		
 		scrollable:true,
 		//styleHtmlContent:true,
@@ -18,7 +18,7 @@ Ext.define('plants.view.resultInfo',{
 		items: [
 		    {
 				xtype :'plantsTitlebar',
-				title : '식물찾기',
+				title : '<font color="#24303c">상세정보</font>',
 				width : '100%',
 				height: 50,
 			},
@@ -49,6 +49,7 @@ Ext.define('plants.view.resultInfo',{
 		    	    	width:300,
 		    	    	height:240,
 		    	    	margin :'10 0 0 0',
+		    	    	layout : {type:'vbox',align: 'center'},
 		    	    	items:[
 							{
 								xtype 	:'container',
@@ -61,13 +62,20 @@ Ext.define('plants.view.resultInfo',{
 									id 		: 'resultImg',
 							   	    width 	: '100%',
 							   	    height  : '100%',
-							   	    padding : '17 0 0 36',
+							   	    padding : '17 21 0 20',
 							   	   	src 	: './resources/images/searchBG01.png',
 							    	mode 	: 'none',
 								},
 								style 	: 'border:none;' +
 										  'background-color:transparent;'
 				  		   		  		  
+							},
+							{	
+								xtype 	: 'label',
+								id 		: 'infoName',
+								margin  : '5 0 0 0',
+								style  	: 'color : #4b7490; font-weight:bold; font-size:150%;',
+							    html 	: 'My label!'
 							}
 		    	    	],
 		    	    	style 	: "background-image:url('./resources/images/frame_02.png');" +
