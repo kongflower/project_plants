@@ -22,7 +22,7 @@ Ext.define('plants.view.searchPlants',{
 		             {
 		            	 xtype 	: 'button',
 			   			 action : 'actionBack',
-			   			 align: 'left',
+			   			 align 	: 'left',
 			   			 width 	: '60px',
 			   			 height : '26px',
 			   			 style 	: "background-image:url('./resources/images/btn_back.png');" +
