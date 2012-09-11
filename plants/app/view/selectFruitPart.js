@@ -224,11 +224,11 @@ Ext.define('plants.view.selectFruitPart',{
 						items:[	
 				    	    {
 				    	    	xtype: 'button',
-				    	    	itemId: '8',//딸기형
+				    	    	itemId: '8',//핵과 
 				    	    	action:'selectFruit',
 				    	    	margin:'7 10 7 10',
 				    	    	flex: 1,
-				    	    	style 	: "background-image:url('./resources/images/fruit_07.png');" +
+				    	    	style 	: "background-image:url('./resources/images/fruit_08.png');" +
 			   			    	  'border:0;' +
 			   			    	  'background-color:transparent;' + 
 			   			    	  'background-repeat:no-repeat;' + 
