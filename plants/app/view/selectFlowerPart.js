@@ -12,7 +12,7 @@ Ext.define('plants.view.selectFlowerPart',{
 		    {
 		    	xtype : 'panel',
 		    	layout: {type: 'vbox'},
-		    	flex  : 5,
+		    	flex  : 6,
 		    	width : '100%',
 		    	style 	: "background-image:url('./resources/images/woodBG.png');" +
 						  'border:1;' +
@@ -244,7 +244,7 @@ Ext.define('plants.view.selectFlowerPart',{
 		    {
 		    	xtype : 'panel',
 		    	layout: {type: 'vbox', align:'center'},
-		    	flex  : 1,
+		    	flex  : 2,
 		    	width : '100%',
 		    	items:[
 		    	    {
