@@ -4,6 +4,11 @@ Ext.define('plants.view.selectLeafPart',{
 	
 	config : {
 		layout: {type: 'vbox'},
+		style 	: "background-image:url('./resources/images/woodBG.png');" +
+				  'border:1;' +
+				  'background-color:transparent;' + 
+				  'background-repeat:no-repeat;' + 
+				  'background-size:100% 100%;',
 		items :[
 		    {
 		    	xtype:'spacer',
@@ -12,6 +17,7 @@ Ext.define('plants.view.selectLeafPart',{
 		    {
 		    	xtype: 'panel',
 		    	layout: {type: 'hbox'},
+		    	defaults:{margin : 5},
 		    	flex: 2,
 		    	items: [
 		    	    {
@@ -69,6 +75,7 @@ Ext.define('plants.view.selectLeafPart',{
 		    {
 		    	xtype: 'panel',
 		    	layout: { type: 'hbox'},
+		    	defaults:{margin : 5},
 		    	flex: 2,
 		    	items: [
 		    	    {

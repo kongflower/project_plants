@@ -14,6 +14,11 @@ Ext.define('plants.view.selectFlowerPart',{
 		    	layout: {type: 'vbox'},
 		    	flex  : 5,
 		    	width : '100%',
+		    	style 	: "background-image:url('./resources/images/woodBG.png');" +
+						  'border:1;' +
+						  'background-color:transparent;' + 
+						  'background-repeat:no-repeat;' + 
+						  'background-size:100% 100%;',
 		    	items :[
 		    	    {
 		    	    	xtype : 'panel',
@@ -23,6 +28,7 @@ Ext.define('plants.view.selectFlowerPart',{
 		    	    	    {
 		    	    	    	xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color1',
 				    	    	items:[
@@ -31,19 +37,16 @@ Ext.define('plants.view.selectFlowerPart',{
 				    	    	    	itemId: '1',//흰 
 				    	    	    	action:'selectColor',
 				    	    	    	style:'background:#ffffff',
-				    	    	    	margin:'8 9 9 9',
+				    	    	    	margin:'7 8 8 8',
 				    	    	    	flex: 1
 				    	    	    },
 					    	    ],
-				    	    	style 	: "background-image:url('./resources/images/frame_list.png');" +
-										  'border:1;' +
-										  'background-color:transparent;' + 
-										  'background-repeat:no-repeat;' + 
-										  'background-size:100% 100%;',
+					    	    style:'background:#ffffff',
 		    	    	    },
 		    	    	    {
 		    	    	    	xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color2',
 				    	    	items:[
@@ -52,7 +55,7 @@ Ext.define('plants.view.selectFlowerPart',{
 				    	    	    	itemId: '2', //노랑 
 				    	    	    	action:'selectColor',
 				    	    	    	style:'background:#ffff00',
-				    	    	    	margin:'8 11 9 9',
+				    	    	    	margin:'7 8 8 8',
 				    	    	    	flex: 1
 				    	    	    },
 					    	    ],
@@ -65,6 +68,7 @@ Ext.define('plants.view.selectFlowerPart',{
 		    	    	    {
 		    	    	    	xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color3',
 				    	    	items:[
@@ -73,7 +77,7 @@ Ext.define('plants.view.selectFlowerPart',{
 				    	    	    	itemId: '3',//보라 
 				    	    	    	action:'selectColor',
 				    	    	    	style:'background:#660099',
-				    	    	    	margin:'8 9 9 9',
+				    	    	    	margin:'7 8 8 8',
 				    	    	    	flex: 1
 				    	    	    },
 					    	    ],
@@ -93,6 +97,7 @@ Ext.define('plants.view.selectFlowerPart',{
 		    	    	     {
 		    	    	    	xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color4',
 				    	    	items:[
@@ -101,7 +106,7 @@ Ext.define('plants.view.selectFlowerPart',{
 				    	    	    	 itemId: '4',//분홍 
 				    	    	    	 action:'selectColor',
 				    	    	    	 style:'background:#ff00cc',
-				    	    	    	 margin:'8 9 9 9',
+				    	    	    	 margin:'7 8 8 8',
 				    	    	    	 flex: 1
 				    	    	    },
 					    	    ],
@@ -114,6 +119,7 @@ Ext.define('plants.view.selectFlowerPart',{
 		    	    	     {
 		    	    	    	xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color5',
 				    	    	items:[
@@ -122,7 +128,7 @@ Ext.define('plants.view.selectFlowerPart',{
 				    	    	    	 itemId: '5',//빨강 
 				    	    	    	 action:'selectColor',
 				    	    	    	 style:'background:#ff0000',
-				    	    	    	 margin:'8 9 9 9',
+				    	    	    	 margin:'7 8 8 8',
 				    	    	    	 flex: 1
 				    	    	    },
 					    	    ],
@@ -135,6 +141,7 @@ Ext.define('plants.view.selectFlowerPart',{
 		    	    	     {
 		    	    	    	xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color6',
 				    	    	items:[
@@ -143,7 +150,7 @@ Ext.define('plants.view.selectFlowerPart',{
 				    	    	    	itemId: '6', // 자주 
 				    	    	    	action:'selectColor',
 				    	    	    	style:'background:#990033',
-				    	    	    	margin:'8 9 9 9',
+				    	    	    	margin:'7 8 8 8',
 				    	    	    	flex: 1
 				    	    	    },
 					    	    ],
@@ -163,6 +170,7 @@ Ext.define('plants.view.selectFlowerPart',{
 	    		           {
 	    		        	    xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color7',
 				    	    	items:[
@@ -171,7 +179,7 @@ Ext.define('plants.view.selectFlowerPart',{
 			    		        	   itemId: '7',//갈 
 			    		        	   action:'selectColor',
 			    		        	   style:'background:#633131',
-			    		        	   margin:'8 9 9 9',
+			    		        	   margin:'7 8 8 8',
 			    		        	   flex: 1
 					    	    	 },
 							    ],
@@ -184,6 +192,7 @@ Ext.define('plants.view.selectFlowerPart',{
 	    		           {
 	    		        	    xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color8',
 				    	    	items:[
@@ -192,7 +201,7 @@ Ext.define('plants.view.selectFlowerPart',{
 			    		        	   itemId: '8', //주황 
 			    		        	   action:'selectColor',
 			    		        	   style:'background:#ff6600',
-			    		        	   margin:'8 9 9 9',
+			    		        	   margin:'7 8 8 8',
 			    		        	   flex: 1
 				    	    	    },
 							    ],
@@ -205,6 +214,7 @@ Ext.define('plants.view.selectFlowerPart',{
 	    		           {
 	    		        	    xtype:'panel',
 				    	    	layout:{type:'vbox'},
+				    	    	margin:'15 5 15 5',
 				    	    	flex :1,
 				    	    	id:'color9',
 				    	    	items:[
@@ -213,7 +223,7 @@ Ext.define('plants.view.selectFlowerPart',{
 			    		        	   itemId: '9', //녹 
 			    		        	   action:'selectColor',
 			    		        	   style:'background:#00ff00',
-			    		        	   margin:'8 9 9 9',
+			    		        	   margin:'7 8 8 8',
 			    		        	   flex: 1
 				    	    	    },
 							    ],

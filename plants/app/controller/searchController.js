@@ -105,9 +105,6 @@ Ext.define('plants.controller.searchController', {
     	//	navi.getNavigationBar().setHidden(true);
     		this.initStoreFilter();
     	}
-    	if(navi.getActiveItem().getId() == 'detailResult'){
-    		this.getDetailResult().deselectAll();
-    	}
     },
     
     pagePush: function(navi,view, eOpts){
