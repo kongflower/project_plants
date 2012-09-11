@@ -4,11 +4,17 @@ Ext.define('plants.view.selectFruitPart',{
 	
 	config : {
 		layout: {type: 'vbox'},
+		style 	: "background-image:url('./resources/images/woodBG.png');" +
+				  'border:1;' +
+				  'background-color:transparent;' + 
+				  'background-repeat:no-repeat;' + 
+				  'background-size:100% 100%;',
 		items :[
 		    {
 		    	
 		    	xtype: 'panel',
 		    	layout: {type: 'hbox'},
+		    	defaults:{margin : 3},
 		    	flex: 1,
 		    	items: [
 		    	    {
@@ -66,6 +72,7 @@ Ext.define('plants.view.selectFruitPart',{
 		    {
 		    	xtype: 'panel',
 		    	layout: { type: 'hbox'},
+		    	defaults:{margin : 3},
 		    	flex: 1,
 		    	items: [
 		    	    {
@@ -123,6 +130,7 @@ Ext.define('plants.view.selectFruitPart',{
 		    {
 		    	xtype: 'panel',
 		    	layout: { type: 'hbox'},
+		    	defaults:{margin : 3},
 		    	flex: 1,
 		    	items: [
 		    	    {
@@ -180,6 +188,7 @@ Ext.define('plants.view.selectFruitPart',{
 		    {
 		    	xtype: 'panel',
 		    	layout: { type: 'hbox'},
+		    	defaults:{margin : 3},
 		    	flex: 1,
 		    	items: [
 		    	    {

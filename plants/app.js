@@ -15,6 +15,8 @@ Ext.application({
          'overlaySelect',
          'plantsTitlebar',
          'selectLeafPart',
+         'selectFlowerPart',
+         'selectFruitPart',
          //wooram
          'community',
          'communityShow',
