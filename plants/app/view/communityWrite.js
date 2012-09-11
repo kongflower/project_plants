@@ -4,7 +4,7 @@ Ext.define('plants.view.communityWrite',{
 	
 	config : {
 		title: 'communityWrite',
-		layout: 'vbox',
+		layout: 'fit',
 		
 //		scrollable:true,
 //		styleHtmlContent:true,
@@ -12,7 +12,7 @@ Ext.define('plants.view.communityWrite',{
 		items: [
 		    {
 				xtype :'plantsTitlebar',
-				title : 'community',
+				title : '커뮤니티',
 				width : '100%',
 				height: 50,
 		    },
@@ -25,8 +25,6 @@ Ext.define('plants.view.communityWrite',{
 //                    '</div>'
 //                ].join('')
 //		    }
-		],
-		
-		html : [ '<h2>communityWrite</h2>' ].join("")
+		]
 	}
 });

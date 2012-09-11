@@ -5,25 +5,25 @@
 	float:left;
 	height:50px;
 	width:50px;
-	margin-right:10px;
+	margin:0 10px 10px 0;
 	background-size:cover;
 	background-position:center center;
 	background:#ddd;
-	-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:inset 0 0 2px rgba(0, 0, 0, 0.6)
+	-webkit-border-radius:3px;border-radius:3px;
+	-webkit-box-shadow:inset 0 0 2px rgba(0, 0, 0, 0.6)
 }
 .name {
-	width:195px;
-	padding-top:0;
+	width:250px;
+	padding-top:4px;
 	font-size:22px;
-	font-weight:bold
 }
-.name span {
+.name>span {
 	display:block;
 	font-size:14px;
 	font-weight:normal;
-	color:#666
+	margin: 1px 0 2px;	
+	color:#a1a1a1;
 }
-
 /*Main Button Custom*/
 /* #buttonSearch { */
 /* 	background:url(../images/bg_intro_001.png) no-repeat; */

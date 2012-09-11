@@ -20,6 +20,7 @@ Ext.define('plants.controller.searchController', {
     		selectFlower 	 : '#selectFlower',
     		timeSlider 		 : '#timeSlider',
     		selectFlowerPart : 'selectFlowerPart',
+    		communityList    : '#communityList',
         },
         control: {
         	'[action=movePage]': {
@@ -90,6 +91,7 @@ Ext.define('plants.controller.searchController', {
     
     initStoreFilter : function(){
     	Ext.getStore('searchData').clearFilter();
+    	Ext.getStore('communityStore').clearFilter();
     	leafCondition = 'none';
     	fruitCondition = 'none';
     	colorCondition = 'none';
@@ -108,6 +110,9 @@ Ext.define('plants.controller.searchController', {
     	if(navi.getActiveItem().getId() == 'detailResult'){
     		this.getDetailResult().deselectAll();
     	}
+//    	if(navi.getActiveItem().getId() == 'community'){
+//    		this.getCommunityList().deselectAll();
+//    	}
     },
     
     pagePush: function(navi,view, eOpts){
@@ -134,7 +139,7 @@ Ext.define('plants.controller.searchController', {
     
     /////////////////////////  resultInfo   //////////////////////////////////////
     
-    resultListTap:function(list, index, target,record, e, eOpts){
+    resultListTap:function(list, index, target, record, e, eOpts){
     	this.getMainView().push({xtype: 'resultInfo'});
     
     	this.getResultInfo().setHtml(

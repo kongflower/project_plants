@@ -56,7 +56,7 @@ Ext.define('plants.view.plantsMain',{
 				border  : "0",
 				action 	: 'movePage',
 	        	flex    : '1',
-	        	style 	: "background:url(resources/images/btn_mypage.png) 5px 5px no-repeat, #25313b;background-size:40%;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;"
+	        	style 	: "background:url(resources/images/btn_mypage.png) 5px 5px no-repeat, #25313b;background-size:35%;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;"
 			}
 		]
 	}

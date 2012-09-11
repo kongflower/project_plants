@@ -9,6 +9,7 @@ Ext.define('plants.view.favoBookmarkList',{
 	],
 	config:{
 		title : '상세정보',
+        disableSelection: true,
 		//fullscreen 	: true,
 		
 		store 		: 'bookmarkData',

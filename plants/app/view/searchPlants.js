@@ -13,13 +13,11 @@ Ext.define('plants.view.searchPlants',{
 		
 		items: [
 		    {
-		    	xtype :'titlebar',
+		    	xtype : 'titlebar',
 		    	title : '식물검색',
 		    	width : '100%',
 		    	height: 50,
-		    	style 	: "background-image:url('./resources/images/action_bar_v2.png');background-size:100% 100%;border:0;" +
-						  "-moz-border-top-left-radius:7px;-webkit-border-top-left-radius:7px;border-top-left-radius:7px;" +
-						  "-moz-border-top-right-radius:7px;-webkit-border-top-right-radius:7px;border-top-right-radius:7px;",
+		    	style 	: "background-image:url('./resources/images/action_bar_v2.png');background-size:100% 100%;border:0;",
 		        items 	: [
 		             {
 		            	 xtype 	 : 'button',

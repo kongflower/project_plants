@@ -8,8 +8,8 @@ Ext.define('plants.view.recentSearchList',{
       'Ext.data.Store'
 	],
 	config:{
-		
 		title : '<font color="#24303c">최근찾기</font>',
+        disableSelection: true,
 		//fullscreen 	: true,
 		
 		store 		: 'recentSearchData',
