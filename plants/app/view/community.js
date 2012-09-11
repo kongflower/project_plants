@@ -30,14 +30,14 @@ Ext.define('plants.view.community',{
 		            	 iconMask: 'true',
 		            	 ui      : 'plain',
 		             },
-		             {
-		            	 xtype 	 : 'button',
-		            	 action  : 'posting',
-		            	 iconCls : 'compose',
-		            	 iconMask: 'true',
-		            	 ui      : 'plain',
-		            	 align   : 'right',
-		             },
+//		             {
+//		            	 xtype 	 : 'button',
+//		            	 action  : 'posting',
+//		            	 iconCls : 'compose',
+//		            	 iconMask: 'true',
+//		            	 ui      : 'plain',
+//		            	 align   : 'right',
+//		             },
 		             {
 		            	 xtype 	 : 'button',
 		            	 action  : 'communityRefreshing',

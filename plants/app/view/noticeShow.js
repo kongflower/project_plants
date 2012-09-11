@@ -28,14 +28,14 @@ Ext.define('plants.view.noticeShow',{
 		            	 iconMask: 'true',
 		            	 ui      : 'plain',
 		             },
-		             {
-		            	 xtype 	 : 'button',
-		            	 action  : 'noticing',
-		            	 iconCls : 'compose',
-		            	 iconMask: 'true',
-		            	 ui      : 'plain',
-		            	 align   : 'right',
-		             },
+//		             {
+//		            	 xtype 	 : 'button',
+//		            	 action  : 'noticing',
+//		            	 iconCls : 'compose',
+//		            	 iconMask: 'true',
+//		            	 ui      : 'plain',
+//		            	 align   : 'right',
+//		             },
 		             
 		        ]
 			},

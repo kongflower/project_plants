@@ -179,7 +179,6 @@ Ext.define('plants.view.searchPlants',{
 						  'background-size:100% 100%;',
 						items 	:{
 							xtype 	: 'img',
-							action 	: 'clickResultImage', 
 					    	src 	: './resources/images/noResult.png',
 					    	width 	: '100%',
 					   	    height 	: '100%',
@@ -197,8 +196,7 @@ Ext.define('plants.view.searchPlants',{
 						'background-repeat:no-repeat;' + 
 						'background-size:100% 100%;',
 						items 	:{
-							xtype 	: 'img',
-							action 	: 'clickResultImage', 
+							xtype 	: 'img', 
 							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
@@ -217,7 +215,6 @@ Ext.define('plants.view.searchPlants',{
 						'background-size:100% 100%;',
 						items 	:{
 							xtype 	: 'img',
-							action 	: 'clickResultImage', 
 							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
@@ -236,7 +233,42 @@ Ext.define('plants.view.searchPlants',{
 						'background-size:100% 100%;',
 						items 	:{
 							xtype 	: 'img',
-							action 	: 'clickResultImage', 
+							src 	: './resources/images/noResult.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img', 
+							src 	: './resources/images/noResult.png',
+							width 	: '100%',
+							height 	: '100%',
+							mode 	: 'none',
+							padding : '5 5 5 5',
+						}
+					},
+					{
+						xtype 	:'panel',
+						layout 	:'fit',
+						margin 	:'5 5 5 5',
+						style 	: "background-image:url('./resources/images/frame_snall.png');" +
+						'border:0;' +
+						'background-color:transparent;' + 
+						'background-repeat:no-repeat;' + 
+						'background-size:100% 100%;',
+						items 	:{
+							xtype 	: 'img', 
 							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
@@ -255,7 +287,6 @@ Ext.define('plants.view.searchPlants',{
 						'background-size:100% 100%;',
 						items 	:{
 							xtype 	: 'img',
-							action 	: 'clickResultImage', 
 							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
@@ -273,8 +304,7 @@ Ext.define('plants.view.searchPlants',{
 						'background-repeat:no-repeat;' + 
 						'background-size:100% 100%;',
 						items 	:{
-							xtype 	: 'img',
-							action 	: 'clickResultImage', 
+							xtype 	: 'img', 
 							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
@@ -292,8 +322,7 @@ Ext.define('plants.view.searchPlants',{
 						'background-repeat:no-repeat;' + 
 						'background-size:100% 100%;',
 						items 	:{
-							xtype 	: 'img',
-							action 	: 'clickResultImage', 
+							xtype 	: 'img', 
 							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',
@@ -311,46 +340,7 @@ Ext.define('plants.view.searchPlants',{
 						'background-repeat:no-repeat;' + 
 						'background-size:100% 100%;',
 						items 	:{
-							xtype 	: 'img',
-							action 	: 'clickResultImage', 
-							src 	: './resources/images/noResult.png',
-							width 	: '100%',
-							height 	: '100%',
-							mode 	: 'none',
-							padding : '5 5 5 5',
-						}
-					},
-					{
-						xtype 	:'panel',
-						layout 	:'fit',
-						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_snall.png');" +
-						'border:0;' +
-						'background-color:transparent;' + 
-						'background-repeat:no-repeat;' + 
-						'background-size:100% 100%;',
-						items 	:{
-							xtype 	: 'img',
-							action 	: 'clickResultImage', 
-							src 	: './resources/images/noResult.png',
-							width 	: '100%',
-							height 	: '100%',
-							mode 	: 'none',
-							padding : '5 5 5 5',
-						}
-					},
-					{
-						xtype 	:'panel',
-						layout 	:'fit',
-						margin 	:'5 5 5 5',
-						style 	: "background-image:url('./resources/images/frame_snall.png');" +
-						'border:0;' +
-						'background-color:transparent;' + 
-						'background-repeat:no-repeat;' + 
-						'background-size:100% 100%;',
-						items 	:{
-							xtype 	: 'img',
-							action 	: 'clickResultImage', 
+							xtype 	: 'img', 
 							src 	: './resources/images/noResult.png',
 							width 	: '100%',
 							height 	: '100%',

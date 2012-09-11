@@ -3,8 +3,6 @@ Ext.define('plants.store.noticeStore', {
 	requires: ['plants.model.noticeModel'],
 	
 	config: {
-		pageSize: 5,
-		currentPage: 1,
         autoLoad: true,
         clearOnPageLoad: true,
         
@@ -29,7 +27,6 @@ Ext.define('plants.store.noticeStore', {
             
             reader: {
                 type: 'json',
-                totalProperty : 'total'
             }
         }
     }

@@ -32,22 +32,22 @@ Ext.define('plants.view.favo', {
             		align: 'center'
             	},
             	items: [
-					{
-					    xtype: 'spacer',
-					    height: 20
-					},
-            	    {
-            	    	xtype: 'label',
-            	        html: '즐겨찾기'
-            	    	
-            	    },
-            	    {
-            	    	xtype: 'favoBookmarkList',
-            	    	
-            	    	width: '90%',
-            	    	height: '170px',
-            	    	style:{border:1}
-            	    },
+//					{
+//					    xtype: 'spacer',
+//					    height: 20
+//					},
+//            	    {
+//            	    	xtype: 'label',
+//            	        html: '즐겨찾기'
+//            	    	
+//            	    },
+//            	    {
+//            	    	xtype: 'favoBookmarkList',
+//            	    	
+//            	    	width: '90%',
+//            	    	height: '170px',
+//            	    	style:{border:1}
+//            	    },
             	    {
                         xtype: 'spacer',
                         height: 20
@@ -60,7 +60,7 @@ Ext.define('plants.view.favo', {
             	    {
             	    	xtype: 'recentSearchList',
             	    	width: '90%',
-            	    	height: '170px',
+            	    	height: '300px',
             	    }
 
             	]

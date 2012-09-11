@@ -20,6 +20,7 @@ Ext.define('plants.controller.searchController', {
     		selectFlower 	 : '#selectFlower',
     		timeSlider 		 : '#timeSlider',
     		selectFlowerPart : 'selectFlowerPart',
+    		Notice           : 'Notice'
         },
         control: {
         	'[action=movePage]': {
@@ -175,6 +176,11 @@ Ext.define('plants.controller.searchController', {
     
     saveRecentLocalStore:function(saveurl,savename){
     	var now = new Date();
+    	var findIndex = Ext.getStore('recentSearchData').find('name',savename);
+    	
+    	if(findIndex != -1)
+    		Ext.getStore('recentSearchData').removeAt(findIndex);
+    		
     	Ext.getStore('recentSearchData').add({
 			url : saveurl, 
 			name: savename,

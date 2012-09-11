@@ -15,8 +15,20 @@ Ext.define('plants.view.setInfo',{
 				width : '100%',
 				height: 50,
 			},
+			{
+				xtype 	:'container',
+    	    	width 	:'100%',
+    	    	height 	:'100%',
+    	    	left    :0,
+    	    	top     :0,
+    	    	style 	: "background-image:url('./resources/images/app_info.png');" +
+    			   		  'border:0;' +
+    			          'background-color:transparent;' + 
+    			          'background-repeat:no-repeat;' + 
+    			          'background-size:100% 100%;' + 
+    			          'align:center' + 
+    			          'background-color:transparent;',
+			}
 		],
-		
-		html : [ '<h2>프로그램정보</h2>' ].join("")
 	}
 });

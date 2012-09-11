@@ -21,12 +21,12 @@ Ext.define('plants.controller.communityController', {
 //        		pop: 'communityPagePop',
 //			 	push: 'communityPagePush',
 //        	},
-        	'[action=posting]': {
-                tap: 'onPosting'
-            },
-            '[action=noticing]': {
-                tap: 'onNoticing'
-            },
+//        	'[action=posting]': {
+//                tap: 'onPosting'
+//            },
+//            '[action=noticing]': {
+//                tap: 'onNoticing'
+//            },
             '[action=communityRefreshing]' : {
             	tap: 'onCommunityRefreshing'
             },
@@ -85,9 +85,9 @@ Ext.define('plants.controller.communityController', {
 //    	this.getUserImg().setSrc(record.get('file_name1'));
     },
     
-    onCommunity: function(list, index, target, record) {
+    onNotice: function(list, index, target, record) {
     	this.getMainView().push({xtype: 'noticeShow'});
-    	this.getCommunityImg().setSrc('http://14.63.218.122/' + record.get('file_name1'));
+    	this.getNoticeImg().setSrc('http://14.63.218.122/' + record.get('file_name1'));
     	Ext.getCmp('noticeSubject').setHtml(record.get('subject'));
     	Ext.getCmp('noticeMemo').setHtml(record.get('memo'));
     }

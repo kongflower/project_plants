@@ -43,7 +43,6 @@ Ext.define('plants.view.notice',{
             {	
                 xtype: 'list',
                 id: 'noticeList',
-                limit: 5,
                 disableSelection: true,
                 
 //                plugins: [
@@ -51,8 +50,7 @@ Ext.define('plants.view.notice',{
 //                    { xclass: 'Ext.plugin.PullRefresh' },
 //                ],
                 
-//                emptyText: '<p class="no-searches">등록된 새글이 없습니다.</p>',
-                emptyText: '등록된 새글이 없습니다.',    
+//                emptyText: '<p class="no-searches">등록된 새글이 없습니다.</p>', 
                 itemTpl: [
                    '<div class="headshot" style="background-image:url(http://14.63.218.122/{file_name1});"></div>',
                    '<div class="name">{subject}<span>{name} | {writetime2} | 조회 {count}</span></div>',

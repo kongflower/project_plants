@@ -19,9 +19,11 @@ Ext.application({
          'selectFruitPart',
          //wooram
          'community',
-         'communityLogin',
+//         'communityLogin',
          'communityShow',
-         'communityWrite',
+//         'communityWrite',
+         'notice',
+         'noticeShow',       
          //sungphil
          'favo',
          'favoBookmarkList',
@@ -30,11 +32,6 @@ Ext.application({
          'recentSearchInfo',
          //myungsung
          'set',
-         'setId',
-         'setAlram',
-         'setHelp',
-         'setNotice',
-         'setNoticeItem',
          'setInfo'
          /*etc
          'etcMs',
@@ -43,8 +40,8 @@ Ext.application({
          'etcBoardInput'*/
     ],
     
-    models:['plantsModel', 'bookmarkModel', 'recentSearchModel', 'communityModel'],
-    stores: ['searchData', 'bookmarkData', 'recentSearchData', 'communityStore'],
+    models:['plantsModel', 'bookmarkModel', 'recentSearchModel', 'communityModel', 'noticeModel'],
+    stores: ['searchData', 'bookmarkData', 'recentSearchData', 'communityStore', 'noticeStore'],
     controllers: ['searchController', 'myPageController', 'communityController'],
 
     launch: function() {
