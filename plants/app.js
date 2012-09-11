@@ -19,6 +19,7 @@ Ext.application({
          'selectFruitPart',
          //wooram
          'community',
+         'communityLogin',
          'communityShow',
          'communityWrite',
          //sungphil

@@ -1,6 +1,6 @@
-Ext.define('plants.view.community',{
+Ext.define('plants.view.notice',{
 	extend : 'Ext.Panel',
-	xtype: 'community',
+	xtype: 'notice',
 	
     requires: [
 //               'Ext.plugin.ListPaging',
@@ -11,13 +11,13 @@ Ext.define('plants.view.community',{
            ],
            
     config: {
-        title: 'community',
+        title: 'notice',
         layout: 'fit',
-        id: 'community',
+        id: 'notice',
         items: [
 			{
 				xtype : 'titlebar',
-				title : '커뮤니티',
+				title : '공지사항',
 				width : '100%',
 				height: 50,
 		    	docked  : 'top',
@@ -32,15 +32,7 @@ Ext.define('plants.view.community',{
 		             },
 		             {
 		            	 xtype 	 : 'button',
-		            	 action  : 'posting',
-		            	 iconCls : 'compose',
-		            	 iconMask: 'true',
-		            	 ui      : 'plain',
-		            	 align   : 'right',
-		             },
-		             {
-		            	 xtype 	 : 'button',
-		            	 action  : 'communityRefreshing',
+		            	 action  : 'noticeRefreshing',
 		            	 iconCls : 'refresh',
 		            	 iconMask: 'true',
 		            	 ui      : 'plain',
@@ -50,7 +42,7 @@ Ext.define('plants.view.community',{
 			},
             {	
                 xtype: 'list',
-                id: 'communityList',
+                id: 'noticeList',
                 limit: 5,
                 disableSelection: true,
                 
@@ -65,7 +57,7 @@ Ext.define('plants.view.community',{
                    '<div class="headshot" style="background-image:url(http://14.63.218.122/{file_name1});"></div>',
                    '<div class="name">{subject}<span>{name} | {writetime2} | 조회 {count}</span></div>',
                 ],
-                store: 'communityStore'
+                store: 'noticeStore'
             }
         ]
     }

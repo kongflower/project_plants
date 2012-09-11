@@ -1,6 +1,6 @@
-Ext.define('plants.view.communityLogin', {
+Ext.define('plants.view.noticeLogin', {
 	extend : 'Ext.form.Panel',
-	xtype : 'communityLogin',
+	xtype : 'noticeLogin',
 
 	config : {
 		layout : {

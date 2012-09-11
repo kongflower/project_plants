@@ -25,7 +25,7 @@ Ext.define('plants.view.set',{
 		    	    	xtype: 'button',
 		    	    	text: '알림설정',
 		    	    	action:'movePage',
-		    	    	itemId:'setAlram',
+		    	    	itemId:'communityLogin',
 		    	    	flex: 1
 		    	    },
 		    	    {

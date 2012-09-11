@@ -1,4 +1,4 @@
-Ext.define('plants.model.communityModel', {
+Ext.define('plants.model.noticeModel', {
 	extend: 'Ext.data.Model',
 	
 	config: {

@@ -1,21 +1,21 @@
-Ext.define('plants.view.communityShow',{
+Ext.define('plants.view.noticeShow',{
 	extend : 'Ext.Panel',
-	xtype: 'communityShow',
+	xtype: 'noticeShow',
 	
 	requires: [
 	    'Ext.Img',
 	],
 	
 	config : {
-		title: 'communityShow',
+		title: 'noticeShow',
 		layout 	: {type:'vbox',align:'center'},
-		id: 'communityShow',
+		id: 'noticeShow',
 		scrollable:true,
 		
 		items: [
 			{
 				xtype :'titlebar',
-				title : '커뮤니티',
+				title : '공지사항',
 				width : '100%',
 				height: 50,
 		    	docked  : 'top',
@@ -30,7 +30,7 @@ Ext.define('plants.view.communityShow',{
 		             },
 		             {
 		            	 xtype 	 : 'button',
-		            	 action  : 'posting',
+		            	 action  : 'noticing',
 		            	 iconCls : 'compose',
 		            	 iconMask: 'true',
 		            	 ui      : 'plain',
@@ -75,7 +75,7 @@ Ext.define('plants.view.communityShow',{
 		    	    	items:[
 							{	
 								xtype 	: 'label',
-								id 		: 'communitySubject',
+								id 		: 'noticeSubject',
 								margin  : '-40px 0 0 15px',
 								style  	: 'color:#263B49;font-size:140%;',
 							    html 	: 'My label!'
@@ -90,7 +90,7 @@ Ext.define('plants.view.communityShow',{
 								items 	: [							
 								{
 									xtype 	: 'img',
-									id 		: 'communityImg',
+									id 		: 'noticeImg',
 									zIndex  : 2,
 									src     : '',
 							   	    width 	: '238px',
@@ -103,7 +103,7 @@ Ext.define('plants.view.communityShow',{
 							},
 							{	
 								xtype 	: 'label',
-								id 		: 'communityMemo',
+								id 		: 'noticeMemo',
 								style  	: 'color:#263B49;font-size:100%;',
 								top 	: 245,
 								left    : 25,

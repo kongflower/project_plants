@@ -90,6 +90,7 @@ Ext.define('plants.controller.searchController', {
     
     initStoreFilter : function(){
     	Ext.getStore('searchData').clearFilter();
+    	Ext.getStore('communityStore').clearFilter();
     	leafCondition = 'none';
     	fruitCondition = 'none';
     	colorCondition = 'none';

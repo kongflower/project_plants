@@ -1,6 +1,6 @@
-Ext.define('plants.store.communityStore', {
+Ext.define('plants.store.noticeStore', {
 	extend: 'Ext.data.Store',
-	requires: ['plants.model.communityModel'],
+	requires: ['plants.model.noticeModel'],
 	
 	config: {
 		pageSize: 5,
@@ -8,8 +8,8 @@ Ext.define('plants.store.communityStore', {
         autoLoad: true,
         clearOnPageLoad: true,
         
-        model: 'plants.model.communityModel',
-        storeId: 'communityStore',
+        model: 'plants.model.noticeModel',
+        storeId: 'noticeStore',
 
         sorters: [{
             property: 'number',
@@ -18,7 +18,7 @@ Ext.define('plants.store.communityStore', {
         
         proxy: {
             type: 'jsonp',
-            url: 'http://14.63.218.122/gallery.json.php',
+            url: 'http://14.63.218.122/notice.json.php',
             
 //            pageParam: 'page',
 //            limitParam: 'rpp',

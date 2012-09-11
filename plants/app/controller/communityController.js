@@ -3,11 +3,18 @@ Ext.define('plants.controller.communityController', {
     
     config: {
         refs: {
-        	mainView: '#mainView',
-        	community: 'community',
+        	mainView       : '#mainView',
+        	community      : 'community',
         	communityWrite : 'communityWrite',
         	communityShow  : 'communityShow',
         	userImage      : '#userImage',
+        	communityImg   : '#communityImg',
+        	communityMemo  : '#communityMemo',
+        	notice         : 'notice',
+            noticeWrite    : 'noticeWrite',
+            noticeShow     : 'noticeShow',
+            noticeImg      : '#noticeImg',
+            noticeMemo     : '#noticeMemo',
         },
         control: {            
 //        	'community' : {
@@ -17,8 +24,20 @@ Ext.define('plants.controller.communityController', {
         	'[action=posting]': {
                 tap: 'onPosting'
             },
+            '[action=noticing]': {
+                tap: 'onNoticing'
+            },
+            '[action=communityRefreshing]' : {
+            	tap: 'onCommunityRefreshing'
+            },
+            '[action=noticeRefreshing]' : {
+            	tap: 'onCommunityRefreshing'
+            },
     		'community list' : {
             	itemtap: 'onCommunity'
+            },
+    		'notice list' : {
+            	itemtap: 'onNotice'
             }
         }
     },
@@ -26,21 +45,52 @@ Ext.define('plants.controller.communityController', {
 //    communityPagePush: function(navi,view, eOpts){
 //    	this.getActiveItem().deselectAll();
 //    },
+    
+    onCommunityRefreshing: function(button, e, options) {
+//    	store.proxy.url = 'http://14.63.218.122/gallery.json.php';
+//    	store.read();
+    	var store = Ext.StoreMgr.get('communityStore');
+    	// store.getProxy().url = 'item2.json';
+    	store.getProxy().setUrl('http://14.63.218.122/gallery.json.php');
+    	store.load();
+    },
+    onNoticeRefreshing: function(button, e, options) {
+//    	store.proxy.url = 'http://14.63.218.122/gallery.json.php';
+//    	store.read();
+    	var store = Ext.StoreMgr.get('noticeStore');
+    	// store.getProxy().url = 'item2.json';
+    	store.getProxy().setUrl('http://14.63.218.122/notice.json.php');
+    	store.load();
+    },
+    
     onPosting : function(button, e, options){
     	this.getMainView().push({xtype: 'communityWrite'});
+    },
+    onNoticing : function(button, e, options){
+    	this.getMainView().push({xtype: 'noticeWrite'});
     },
     
     onCommunity: function(list, index, target, record) {
     	this.getMainView().push({xtype: 'communityShow'});
-    	
+    	this.getCommunityImg().setSrc('http://14.63.218.122/' + record.get('file_name1'));
+    	Ext.getCmp('communitySubject').setHtml(record.get('subject'));
+    	Ext.getCmp('communityMemo').setHtml(record.get('memo'));
+    
 //    	this.getCommunityShow().setHtml(
 //			'<div>' + 
-//				record.get('subject') +
-//		    "</div>"			
+//				record.get('memo') +
+//		    '</div>'			
 //    	);
     	
 //    	this.getUserImg().setSrc(record.get('file_name1'));
     },
+    
+    onCommunity: function(list, index, target, record) {
+    	this.getMainView().push({xtype: 'noticeShow'});
+    	this.getCommunityImg().setSrc('http://14.63.218.122/' + record.get('file_name1'));
+    	Ext.getCmp('noticeSubject').setHtml(record.get('subject'));
+    	Ext.getCmp('noticeMemo').setHtml(record.get('memo'));
+    }
 });
 
 //if (!this.showCommunities) {
