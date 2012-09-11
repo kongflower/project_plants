@@ -4,7 +4,8 @@ Ext.define('plants.view.setId',{
 	
 	requires : [
 		  	      'Ext.form.FieldSet',
-		  	      'Ext.field.Email'
+		  	      'Ext.field.Email',
+		  	      'Ext.field.Password'
 		],
 		
 	config:{

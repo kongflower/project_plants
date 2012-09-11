@@ -69,6 +69,8 @@ Ext.define('plants.controller.myPageController', {
     	Ext.getCmp('infoName').setHtml(record.get('name'));
     	this.getFavoBookmarkImg().setSrc(filterData.getAt(0).get('url'));
     	//this.getFavoBookmarkImg().setSrc(record.get('url'));
+    	
+    	//this.getContacts().deselectAll();
     },
     recentSearchListTap: function(list, index, target,record, e, eOpts){	
     	var localStore = Ext.getStore('searchData');
@@ -90,8 +92,9 @@ Ext.define('plants.controller.myPageController', {
     	);
     	  
     	Ext.getCmp('infoName').setHtml(record.get('name'));
-    	this.getRecentSearchImg().setSrc(filterData.getAt(0).get('url'));
+    	this.getRecentSearchImg().setSrc('http://14.63.218.122/plantsImage/img' + filterData.getAt(0).get('number') + '.jpg');
     	//this.getFavoBookmarkImg().setSrc(record.get('url'));
-    }
-    
+    	
+    	//this.getContacts().deselectAll();
+    }    
 });

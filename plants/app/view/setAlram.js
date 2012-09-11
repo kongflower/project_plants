@@ -2,6 +2,10 @@ Ext.define('plants.view.setAlram',{
 	extend : 'Ext.Panel',
 	xtype: 'setAlram',
 	
+	requires : [
+		  	      'Ext.field.Toggle',
+		],
+	
 	config : {
 		title : '알람설정',
 		
