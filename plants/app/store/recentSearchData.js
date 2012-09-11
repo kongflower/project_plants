@@ -33,16 +33,23 @@ Ext.define('plants.store.recentSearchData', {
 
     config: {
     	autoLoad: true,
+    	autoSync: true,
     	storeId : 'recentSearchData',
     	model: 'plants.model.recentSearchModel',
-    	data : data.names,
+    	sorters: [
+    	          {
+    	            property: 'date',
+    	            direction: 'DESC'
+    	          }
+    	       ]
+    //	data : data.names,
 		   
-		proxy: {
-			type: 'memory',
-			reader: {
-				 type: 'json',
-				 root: 'names',
-			}
-		},
+//		proxy: {
+//			type: 'memory',
+//			reader: {
+//				 type: 'json',
+//				 root: 'names',
+//			}
+//		},
     }
 });

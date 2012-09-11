@@ -17,7 +17,7 @@ Ext.define('plants.view.overlaySelect',{
 		    	docked 	: 'top',
 		    	title 	: "Overlay",
 		    	flex 	: 1,
-		    	style 	: "background-image:url('./resources/images/title_Bra.png');",
+		    	style 	: "background-image:url('./resources/images/action_bar.png');",
 		    	items 	:[
 		    	    {
 		    	    	xtype 	:'button',
