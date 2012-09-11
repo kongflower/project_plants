@@ -41,7 +41,11 @@ Ext.define('plants.view.selectFlowerPart',{
 				    	    	    	flex: 1
 				    	    	    },
 					    	    ],
-					    	    style:'background:#ffffff',
+					    	    style 	: "background-image:url('./resources/images/frame_list.png');" +
+										  'border:1;' +
+										  'background-color:transparent;' + 
+										  'background-repeat:no-repeat;' + 
+										  'background-size:100% 100%;',
 		    	    	    },
 		    	    	    {
 		    	    	    	xtype:'panel',
@@ -239,26 +243,25 @@ Ext.define('plants.view.selectFlowerPart',{
 		    },
 		    {
 		    	xtype : 'panel',
-		    	layout: {type: 'hbox'},
+		    	layout: {type: 'vbox', align:'center'},
 		    	flex  : 1,
 		    	width : '100%',
 		    	items:[
 		    	    {
+		    	    	xtype : 'label',
+		    	    	html  : '개화시기',
+		    	    	felx  : 1,
+		    	    },
+		    	    {
 		    	        xtype 	: 'sliderfield',
 		    	        id 		: 'timeSlider',
 		    	        label 	: 'no',
-		    	        labelWidth : '25%',
+		    	        labelWidth : '20%',
+		    	        width   : '100%',
 		    	        value 	: 0,
 		    	        minValue: 0,
 		    	        maxValue: 12,
-		    	        flex 	: 7,
-		    	    },
-		    	    {
-		    	    	id 		:'selectFlower',
-		    	    	action  :'clickFlower',
-		    	    	xtype 	:'button',
-		    	    	flex 	:1,
-		    	    	text 	:'확인'
+		    	        flex 	: 1,
 		    	    }
 		    	]
 		    },
