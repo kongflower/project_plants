@@ -240,7 +240,12 @@ Ext.define('plants.controller.searchController', {
     },
     
     onOverlayHide : function(myOverlay, eOpts){
+    	if(overlayFirst){
+    		overlayFirst = false;
+    		return;
+    	}
     	myOverlay.removeAll(true,false);
+    	this.setConditionFilter();
     },
     
     onSelectLeaf : function(button, e, options){
@@ -257,8 +262,6 @@ Ext.define('plants.controller.searchController', {
     		leafCondition = leafId,
     		Ext.getCmp('Leaf'+leafId).setStyle(styleFrameListOn);
     	}
-    	
-    	this.setConditionFilter();
     	// 오버레이 숨기기 
     	
     	this.getOverlay().hide();
@@ -278,8 +281,6 @@ Ext.define('plants.controller.searchController', {
     		colorCondition = colorId,
     		Ext.getCmp('color'+colorId).setStyle(styleFrameListOn);
     	}
-    	
-    	this.setConditionFilter();
     },
     
     onSelectFruit:function(button, e, options){
@@ -297,8 +298,7 @@ Ext.define('plants.controller.searchController', {
     		fruitCondition = fruitId,
     		Ext.getCmp('fruit'+fruitId).setStyle(styleFrameListOn);
     	}
-    	
-    	this.setConditionFilter();
+    
     	// 오버레이 숨기기 
     	this.getOverlay().hide();
     },
@@ -318,8 +318,6 @@ Ext.define('plants.controller.searchController', {
     		timeCondition = 'none';
     	}
     	this.getTimeSlider().setLabel(mon);
-    	
-    	this.setConditionFilter();
     },
     
     setConditionFilter:function(){
@@ -447,6 +445,7 @@ var fruitCondition = 'none';
 var colorCondition = 'none';
 var timeCondition = 'none';
 var isNone = true;
+var overlayFirst = true;
 
 var styleFrameList = "background-image:url('./resources/images/frame_list.png');" +
 					 'border:0;' +
